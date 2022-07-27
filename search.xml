@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>try</title>
+    <url>/2022/07/27/try/</url>
+    <content><![CDATA[<h1 id="第一条博客试水"><a href="#第一条博客试水" class="headerlink" title="第一条博客试水"></a>第一条博客试水</h1><p>正文开始：</p>
+<p>巴拉巴拉</p>
+<p>正文结束</p>
+]]></content>
+      <categories>
+        <category>Crawler</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2022/07/17/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -19,14 +30,11 @@
 ]]></content>
   </entry>
   <entry>
-    <title>try</title>
-    <url>/2022/07/27/try/</url>
-    <content><![CDATA[<h1 id="第一条博客试水"><a href="#第一条博客试水" class="headerlink" title="第一条博客试水"></a>第一条博客试水</h1><p>正文开始：</p>
-<p>巴拉巴拉</p>
-<p>正文结束</p>
-]]></content>
+    <title>try2</title>
+    <url>/2022/07/27/try2/</url>
+    <content><![CDATA[<h1 id="查看分类情况"><a href="#查看分类情况" class="headerlink" title="查看分类情况"></a>查看分类情况</h1>]]></content>
       <categories>
-        <category>Crawler</category>
+        <category>Python</category>
       </categories>
   </entry>
 </search>
