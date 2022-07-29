@@ -1,6 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>MD语法自查</title>
+    <url>/2022/07/29/MD%E8%AF%AD%E6%B3%95%E8%87%AA%E6%9F%A5/</url>
+    <content><![CDATA[<h1 id="MarkDown语法自查"><a href="#MarkDown语法自查" class="headerlink" title="MarkDown语法自查"></a>MarkDown语法自查</h1><p><a href="#%E6%A0%87%E9%A2%98">1. 标题</a></p>
+<p><a href="#%E5%88%97%E8%A1%A8">2. 列表</a></p>
+<p><a href="#%E5%AD%97%E4%BD%93">3. 字体</a></p>
+<p><a href="#%E9%94%9A%E7%82%B9">4. 锚点</a></p>
+<p><a href="#%E4%BB%A3%E7%A0%81%E5%9D%97">5. 代码块</a></p>
+<p><a href="#%E5%9B%BE%E7%89%87%E5%92%8C%E8%B6%85%E9%93%BE%E6%8E%A5">6. 图片和超链接</a></p>
+<p><a href="#%E8%A1%A8%E6%A0%BC">7. 表格</a></p>
+<p><a href="#%E5%BC%95%E7%94%A8">8. 引用</a></p>
+<hr>
+<hr>
+<hr>
+<h1 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h1><h1 id="主标题"><a href="#主标题" class="headerlink" title="主标题"></a>主标题</h1><h2 id="副标题"><a href="#副标题" class="headerlink" title="副标题"></a>副标题</h2><h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><h1 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h1><p>有序列表：</p>
+<ol>
+<li>首先<ul>
+<li>首先<ol>
+<li>首首先</li>
+<li>其其次</li>
+<li>最最后</li>
+</ol>
+</li>
+<li>其次</li>
+<li>最后</li>
+</ul>
+</li>
+<li>其次</li>
+<li>最后</li>
+</ol>
+<p>无序列表：</p>
+<ul>
+<li>首先<ul>
+<li>首先</li>
+<li>其次</li>
+<li>最后</li>
+</ul>
+</li>
+<li>其次</li>
+<li>最后</li>
+</ul>
+<h1 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h1><p><em>斜体</em></p>
+<p><strong>粗体</strong></p>
+<p><em><strong>粗斜体</strong></em></p>
+<p><span style="color:pink">花裙子</span></p>
+<p><del>删除线</del></p>
+<p><del>删除线</del></p>
+<h1 id="锚点"><a href="#锚点" class="headerlink" title="锚点"></a>锚点</h1><p>定位到这里</p>
+<h1 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h1><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">func</span>(<span class="params">age</span>):</span><br><span class="line">    <span class="keyword">return</span> age</span><br></pre></td></tr></table></figure>
+
+<p><code>int a=5+9;</code></p>
+<h1 id="图片和超链接"><a href="#图片和超链接" class="headerlink" title="图片和超链接"></a>图片和超链接</h1><p><img src="https://img-home.csdnimg.cn/images/20220729104705.jpg" alt="网络图片" title="网络图片"></p>
+<p><a href="https://www.csdn.net/" title="前往csdn社区">超链接</a></p>
+<p><a href="https://www.csdn.net/">https://www.csdn.net/</a></p>
+<h1 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h1><table>
+<thead>
+<tr>
+<th>姓名</th>
+<th align="right">年龄</th>
+<th align="center">职业</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>张三</td>
+<td align="right">20000</td>
+<td align="center">医生</td>
+</tr>
+<tr>
+<td>李四</td>
+<td align="right">60</td>
+<td align="center">警察叔叔</td>
+</tr>
+</tbody></table>
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>张三说：</p>
+<blockquote>
+<p>阿门阿前一棵葡萄树</p>
+<blockquote>
+<p>葡萄树说：这是不对的</p>
+</blockquote>
+</blockquote>
+]]></content>
+      <categories>
+        <category>MarkDown</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2022/07/17/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -17,23 +104,5 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>try</title>
-    <url>/2022/07/27/init/</url>
-    <content><![CDATA[<h1 id="臭屁屁觉得怎么样呀"><a href="#臭屁屁觉得怎么样呀" class="headerlink" title="臭屁屁觉得怎么样呀"></a>臭屁屁觉得怎么样呀</h1><p>诶呀有个臭屁屁点进来啦！</p>
-]]></content>
-      <categories>
-        <category>Crawler</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>try2</title>
-    <url>/2022/07/27/try/</url>
-    <content><![CDATA[<h1 id="臭屁屁吃饭饭没有呀！"><a href="#臭屁屁吃饭饭没有呀！" class="headerlink" title="臭屁屁吃饭饭没有呀！"></a>臭屁屁吃饭饭没有呀！</h1><p>诶呀有个臭屁屁点进来啦！</p>
-]]></content>
-      <categories>
-        <category>Python</category>
-      </categories>
   </entry>
 </search>
