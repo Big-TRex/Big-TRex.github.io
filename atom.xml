@@ -3,11 +3,11 @@
   <title>BuT的博客</title>
   
   <subtitle>不要因为路远而不走 只有走就能走得到 不要因为石重而不搬 只要搬就能搬得动</subtitle>
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <link href="http://bigtrex.top/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
+  <link href="http://bigtrex.top/"/>
   <updated>2022-07-29T13:59:08.556Z</updated>
-  <id>http://example.com/</id>
+  <id>http://bigtrex.top/</id>
   
   <author>
     <name>BuT</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>MD语法自查</title>
-    <link href="http://example.com/2022/07/29/MD%E8%AF%AD%E6%B3%95%E8%87%AA%E6%9F%A5/"/>
-    <id>http://example.com/2022/07/29/MD%E8%AF%AD%E6%B3%95%E8%87%AA%E6%9F%A5/</id>
+    <link href="http://bigtrex.top/2022/07/29/MD%E8%AF%AD%E6%B3%95%E8%87%AA%E6%9F%A5/"/>
+    <id>http://bigtrex.top/2022/07/29/MD%E8%AF%AD%E6%B3%95%E8%87%AA%E6%9F%A5/</id>
     <published>2022-07-29T13:58:54.000Z</published>
     <updated>2022-07-29T13:59:08.556Z</updated>
     
@@ -33,15 +33,15 @@
     
     
     
-    <category term="MarkDown" scheme="http://example.com/categories/MarkDown/"/>
+    <category term="MarkDown" scheme="http://bigtrex.top/categories/MarkDown/"/>
     
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="http://example.com/2022/07/17/hello-world/"/>
-    <id>http://example.com/2022/07/17/hello-world/</id>
+    <link href="http://bigtrex.top/2022/07/17/hello-world/"/>
+    <id>http://bigtrex.top/2022/07/17/hello-world/</id>
     <published>2022-07-17T07:33:16.509Z</published>
     <updated>2022-07-17T07:33:16.509Z</updated>
     
