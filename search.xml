@@ -90,24 +90,6 @@
       </categories>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
     <title>反反爬</title>
     <url>/%E5%8F%8D%E5%8F%8D%E7%88%AC/</url>
     <content><![CDATA[<h1 id="反反爬总结"><a href="#反反爬总结" class="headerlink" title="反反爬总结"></a>反反爬总结</h1><p><a href="#1%E7%99%BE%E5%BA%A6%E5%AE%89%E5%85%A8%E9%AA%8C%E8%AF%81">1. 百度安全验证</a></p>
@@ -128,26 +110,22 @@
       </categories>
   </entry>
   <entry>
-    <title>学习路线</title>
-    <url>/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/</url>
-    <content><![CDATA[<h1 id="爬虫学习经过"><a href="#爬虫学习经过" class="headerlink" title="爬虫学习经过"></a>爬虫学习经过</h1><ol>
-<li>使用python第三方库requests库进行网页爬取<ul>
-<li>get方法</li>
-<li>post方法</li>
-</ul>
-</li>
-<li>Fn12利用浏览器抓包工具分析<ul>
-<li>User-Agent</li>
-<li>Content-Type</li>
-</ul>
-</li>
-<li>Ajex数据分析</li>
-</ol>
-<p><img src="/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/bottom.png" alt="bottom"></p>
+    <title>Hello World</title>
+    <url>/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
-      <categories>
-        <category>爬虫</category>
-      </categories>
   </entry>
   <entry>
     <title>本地图片</title>
@@ -158,6 +136,80 @@
 ]]></content>
       <categories>
         <category>MarkDown</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>爬虫学习记录</title>
+    <url>/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/</url>
+    <content><![CDATA[<h1 id="爬虫学习记录"><a href="#爬虫学习记录" class="headerlink" title="爬虫学习记录"></a>爬虫学习记录</h1><ol>
+<li>使用python第三方库requests库进行网页爬取<ul>
+<li>get方法</li>
+<li>post方法</li>
+</ul>
+</li>
+<li>Fn12利用浏览器抓包工具分析<ul>
+<li>User-Agent</li>
+<li>Content-Type</li>
+</ul>
+</li>
+<li>Ajax数据分析<ul>
+<li>Asynchronous JavaScript and XML（异步的 JavaScript 和 XML）</li>
+<li>页面局部刷新</li>
+<li>利用爬虫爬取数据的第一步是<a href="#%E5%88%A4%E6%96%AD%E7%BD%91%E9%A1%B5%E6%98%AF%E5%90%A6%E9%87%87%E7%94%A8ajax">分析页面</a></li>
+</ul>
+</li>
+<li>XML<ul>
+<li>XML Extensiable Markup Language 可扩展标记语言</li>
+<li>html -&gt; xhtml -&gt; xml</li>
+<li>Ajax基于XML实现</li>
+</ul>
+</li>
+</ol>
+<h2 id="判断网页是否采用AJax"><a href="#判断网页是否采用AJax" class="headerlink" title="判断网页是否采用AJax"></a>判断网页是否采用AJax</h2><p>利用爬虫爬取网页数据时，首先需要分析数据到底是在服务器端组成好发回给浏览器的？还是通过Ajax请求异步发送的？</p>
+<ol>
+<li><p>利用AJax时，网页变化时url往往不会发生变化</p>
+</li>
+<li><p>对于一个AJax请求，会额外返回一个X-Requested-With: XMLHttpRequest头部字段，一个普通的请求没有该字段</p>
+</li>
+</ol>
+<p><img src="/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/bottom.png" alt="bottom"></p>
+]]></content>
+      <categories>
+        <category>爬虫</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>爬虫学习记录</title>
+    <url>/%E7%88%AC%E8%99%AB%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<h1 id="爬虫学习记录"><a href="#爬虫学习记录" class="headerlink" title="爬虫学习记录"></a>爬虫学习记录</h1><ol>
+<li>使用python第三方库requests库进行网页爬取<ul>
+<li>get方法</li>
+<li>post方法</li>
+</ul>
+</li>
+<li>Fn12利用浏览器抓包工具分析<ul>
+<li>User-Agent</li>
+<li>Content-Type</li>
+</ul>
+</li>
+<li>Ajax数据分析<ul>
+<li>Asynchronous JavaScript and XML（异步的 JavaScript 和 XML）</li>
+<li>页面局部刷新</li>
+<li>利用爬虫爬取数据的第一步是<a href="#%E5%88%A4%E6%96%AD%E7%BD%91%E9%A1%B5%E6%98%AF%E5%90%A6%E9%87%87%E7%94%A8ajax">分析页面</a></li>
+</ul>
+</li>
+<li>XML<ul>
+<li>XML Extensiable Markup Language 可扩展标记语言</li>
+<li>html -&gt; xhtml -&gt; xml</li>
+<li>Ajax基于XML实现</li>
+</ul>
+</li>
+</ol>
+<h2 id="判断网页是否采用AJax"><a href="#判断网页是否采用AJax" class="headerlink" title="判断网页是否采用AJax"></a>判断网页是否采用AJax</h2><p>利用爬虫爬取网页数据时，首先需要分析数据到底是在服务器端组成好发回给浏览器的？还是通过Ajax请求异步发送的？</p>
+<p><img src="/%E7%88%AC%E8%99%AB%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/bottom.png" alt="bottom"></p>
+]]></content>
+      <categories>
+        <category>爬虫</category>
       </categories>
   </entry>
 </search>

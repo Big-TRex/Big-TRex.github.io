@@ -6,7 +6,7 @@
   <link href="http://bigtrex.top/atom.xml" rel="self"/>
   
   <link href="http://bigtrex.top/"/>
-  <updated>2022-08-01T13:05:15.993Z</updated>
+  <updated>2022-08-01T13:47:13.041Z</updated>
   <id>http://bigtrex.top/</id>
   
   <author>
@@ -17,18 +17,43 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>学习路线</title>
+    <title>爬虫学习记录</title>
     <link href="http://bigtrex.top/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/"/>
     <id>http://bigtrex.top/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/</id>
     <published>2022-08-01T13:01:10.000Z</published>
-    <updated>2022-08-01T13:05:15.993Z</updated>
+    <updated>2022-08-01T13:47:13.041Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="爬虫学习经过"><a href="#爬虫学习经过" class="headerlink" title="爬虫学习经过"></a>爬虫学习经过</h1><ol><li>使用python第三方库requests库进行网页爬取<ul><li>get方法</li><li>post方法</li></ul></li><li>Fn12利用浏览器抓包工具分析<ul><li>User-Agent</li><li>Content-Type</li></ul></li><li>Ajex数据分析</li></ol><p><img src="/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/bottom.png" alt="bottom"></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="爬虫学习记录"><a href="#爬虫学习记录" class="headerlink" title="爬虫学习记录"></a>爬虫学习记录</h1><ol><li>使用python第三方库requests库进行网页爬取<ul><li>get方法</li><li>post方法</li></ul></li><li>Fn12利用浏览器抓包工具分析<ul><li>User-Agent</li><li>Content-Type</li></ul></li><li>Ajax数据分析<ul><li>Asynchronous JavaScript and XML（异步的 JavaScript 和 XML）</li><li>页面局部刷新</li><li>利用爬虫爬取数据的第一步是<a href="#%E5%88%A4%E6%96%AD%E7%BD%91%E9%A1%B5%E6%98%AF%E5%90%A6%E9%87%87%E7%94%A8ajax">分析页面</a></li></ul></li><li>XML<ul><li>XML Extensiable Markup Language 可扩展标记语言</li><li>html -&gt; xhtml -&gt; xml</li><li>Ajax基于XML实现</li></ul></li></ol><h2 id="判断网页是否采用AJax"><a href="#判断网页是否采用AJax" class="headerlink" title="判断网页是否采用AJax"></a>判断网页是否采用AJax</h2><p>利用爬虫爬取网页数据时，首先需要分析数据到底是在服务器端组成好发回给浏览器的？还是通过Ajax请求异步发送的？</p><ol><li><p>利用AJax时，网页变化时url往往不会发生变化</p></li><li><p>对于一个AJax请求，会额外返回一个X-Requested-With: XMLHttpRequest头部字段，一个普通的请求没有该字段</p></li></ol><p><img src="/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/bottom.png" alt="bottom"></p>]]></content>
     
     
       
       
-    <summary type="html">&lt;h1 id=&quot;爬虫学习经过&quot;&gt;&lt;a href=&quot;#爬虫学习经过&quot; class=&quot;headerlink&quot; title=&quot;爬虫学习经过&quot;&gt;&lt;/a&gt;爬虫学习经过&lt;/h1&gt;&lt;ol&gt;
+    <summary type="html">&lt;h1 id=&quot;爬虫学习记录&quot;&gt;&lt;a href=&quot;#爬虫学习记录&quot; class=&quot;headerlink&quot; title=&quot;爬虫学习记录&quot;&gt;&lt;/a&gt;爬虫学习记录&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;使用python第三方库requests库进行网页爬取&lt;ul&gt;
+&lt;li&gt;get方法&lt;/li&gt;
+&lt;</summary>
+      
+    
+    
+    
+    <category term="爬虫" scheme="http://bigtrex.top/categories/%E7%88%AC%E8%99%AB/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>爬虫学习记录</title>
+    <link href="http://bigtrex.top/%E7%88%AC%E8%99%AB%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
+    <id>http://bigtrex.top/%E7%88%AC%E8%99%AB%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</id>
+    <published>2022-08-01T13:01:10.000Z</published>
+    <updated>2022-08-01T13:33:26.726Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="爬虫学习记录"><a href="#爬虫学习记录" class="headerlink" title="爬虫学习记录"></a>爬虫学习记录</h1><ol><li>使用python第三方库requests库进行网页爬取<ul><li>get方法</li><li>post方法</li></ul></li><li>Fn12利用浏览器抓包工具分析<ul><li>User-Agent</li><li>Content-Type</li></ul></li><li>Ajax数据分析<ul><li>Asynchronous JavaScript and XML（异步的 JavaScript 和 XML）</li><li>页面局部刷新</li><li>利用爬虫爬取数据的第一步是<a href="#%E5%88%A4%E6%96%AD%E7%BD%91%E9%A1%B5%E6%98%AF%E5%90%A6%E9%87%87%E7%94%A8ajax">分析页面</a></li></ul></li><li>XML<ul><li>XML Extensiable Markup Language 可扩展标记语言</li><li>html -&gt; xhtml -&gt; xml</li><li>Ajax基于XML实现</li></ul></li></ol><h2 id="判断网页是否采用AJax"><a href="#判断网页是否采用AJax" class="headerlink" title="判断网页是否采用AJax"></a>判断网页是否采用AJax</h2><p>利用爬虫爬取网页数据时，首先需要分析数据到底是在服务器端组成好发回给浏览器的？还是通过Ajax请求异步发送的？</p><p><img src="/%E7%88%AC%E8%99%AB%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/bottom.png" alt="bottom"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;爬虫学习记录&quot;&gt;&lt;a href=&quot;#爬虫学习记录&quot; class=&quot;headerlink&quot; title=&quot;爬虫学习记录&quot;&gt;&lt;/a&gt;爬虫学习记录&lt;/h1&gt;&lt;ol&gt;
 &lt;li&gt;使用python第三方库requests库进行网页爬取&lt;ul&gt;
 &lt;li&gt;get方法&lt;/li&gt;
 &lt;</summary>
