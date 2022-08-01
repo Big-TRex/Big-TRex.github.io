@@ -27,7 +27,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://bigtrex.top/%E7%88%AC%E8%99%AB%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/bottom.png">
 <meta property="article:published_time" content="2022-08-01T13:01:10.000Z">
-<meta property="article:modified_time" content="2022-08-01T13:33:26.726Z">
+<meta property="article:modified_time" content="2022-08-01T13:51:34.912Z">
 <meta property="article:author" content="BuT">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://bigtrex.top/%E7%88%AC%E8%99%AB%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/bottom.png">
@@ -200,7 +200,7 @@
   <div class="widget">
     <h3 class="widget-title">分类</h3>
     <div class="widget-body">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/MarkDown/">MarkDown</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%88%AC%E8%99%AB/">爬虫</a><span class="category-list-count">3</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/MarkDown/">MarkDown</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%88%AC%E8%99%AB/">爬虫</a><span class="category-list-count">2</span></li></ul>
     </div>
   </div>
 
@@ -215,7 +215,7 @@
   <div class="widget">
     <h3 class="widget-title">归档</h3>
     <div class="widget-body">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/08/">八月 2022</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/07/">七月 2022</a><span class="archive-list-count">3</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/08/">八月 2022</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/07/">七月 2022</a><span class="archive-list-count">3</span></li></ul>
     </div>
   </div>
 
@@ -227,21 +227,6 @@
     <div class="widget-body">
       <ul class="recent-post-list list-unstyled no-thumbnail">
         
-          <li>
-            
-            <div class="item-inner">
-              <p class="item-category">
-                <a class="category-link" href="/categories/%E7%88%AC%E8%99%AB/">爬虫</a>
-              </p>
-              <p class="item-title">
-                <a href="/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/" class="title">爬虫学习记录</a>
-              </p>
-              <p class="item-date">
-                <time datetime="2022-08-01T13:01:10.000Z" itemprop="datePublished">2022-08-01</time>
-              </p>
-            </div>
-          </li>
-          
           <li>
             
             <div class="item-inner">
@@ -302,6 +287,21 @@
             </div>
           </li>
           
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                
+              </p>
+              <p class="item-title">
+                <a href="/hello-world/" class="title">Hello World</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2022-07-17T07:33:16.509Z" itemprop="datePublished">2022-07-17</time>
+              </p>
+            </div>
+          </li>
+          
       </ul>
     </div>
   </div>
@@ -354,7 +354,7 @@
         <span class="post-comment"><i class="icon icon-comment"></i> <a href="/%E7%88%AC%E8%99%AB%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/#comments" class="article-comment-link">评论</a></span>
         
 	
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 160(字)</span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 212(字)</span>
 	
 	
 		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 1(分)</span>
@@ -389,6 +389,12 @@
 </li>
 </ol>
 <h2 id="判断网页是否采用AJax"><a href="#判断网页是否采用AJax" class="headerlink" title="判断网页是否采用AJax"></a>判断网页是否采用AJax</h2><p>利用爬虫爬取网页数据时，首先需要分析数据到底是在服务器端组成好发回给浏览器的？还是通过Ajax请求异步发送的？</p>
+<ol>
+<li><p>利用AJax时，网页变化时url往往不会发生变化</p>
+</li>
+<li><p>对于一个AJax请求，会额外返回一个X-Requested-With: XMLHttpRequest头部字段，一个普通的请求没有该字段</p>
+</li>
+</ol>
 <p><img src="/%E7%88%AC%E8%99%AB%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/bottom.png" alt="bottom"></p>
 
       
@@ -442,10 +448,6 @@
   <div class="bar-inner">
   
   <ul class="pager pull-left">
-    
-    <li class="prev">
-      <a href="/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/" title="爬虫学习记录"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
-    </li>
     
     
     <li class="next">
