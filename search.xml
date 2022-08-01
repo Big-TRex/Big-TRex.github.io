@@ -108,6 +108,48 @@
 ]]></content>
   </entry>
   <entry>
+    <title>反反爬</title>
+    <url>/%E5%8F%8D%E5%8F%8D%E7%88%AC/</url>
+    <content><![CDATA[<h1 id="反反爬总结"><a href="#反反爬总结" class="headerlink" title="反反爬总结"></a>反反爬总结</h1><p><a href="#1%E7%99%BE%E5%BA%A6%E5%AE%89%E5%85%A8%E9%AA%8C%E8%AF%81">1. 百度安全验证</a></p>
+<h2 id="1-百度安全验证"><a href="#1-百度安全验证" class="headerlink" title="1.百度安全验证"></a>1.百度安全验证</h2><p>通常修改request的请求头载体模拟时，使用浏览器的User-Agent字段：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36 Edg/103.0.1264.77</span><br></pre></td></tr></table></figure>
+
+<p>可能遭遇百度反爬拦截，自动跳转到百度安全验证</p>
+<p><img src="/%E5%8F%8D%E5%8F%8D%E7%88%AC/%E7%99%BE%E5%BA%A6%E5%AE%89%E5%85%A8%E9%AA%8C%E8%AF%81.png" alt="百度安全验证"></p>
+<p>常用解决方案：</p>
+<ul>
+<li>修改UA字段</li>
+<li>增加更多头信息，例如Accept-Language</li>
+</ul>
+<p><img src="/%E5%8F%8D%E5%8F%8D%E7%88%AC/bottom.png" alt="bottom"></p>
+]]></content>
+      <categories>
+        <category>爬虫</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>学习路线</title>
+    <url>/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/</url>
+    <content><![CDATA[<h1 id="爬虫学习经过"><a href="#爬虫学习经过" class="headerlink" title="爬虫学习经过"></a>爬虫学习经过</h1><ol>
+<li>使用python第三方库requests库进行网页爬取<ul>
+<li>get方法</li>
+<li>post方法</li>
+</ul>
+</li>
+<li>Fn12利用浏览器抓包工具分析<ul>
+<li>User-Agent</li>
+<li>Content-Type</li>
+</ul>
+</li>
+<li>Ajex数据分析</li>
+</ol>
+<p><img src="/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/bottom.png" alt="bottom"></p>
+]]></content>
+      <categories>
+        <category>爬虫</category>
+      </categories>
+  </entry>
+  <entry>
     <title>本地图片</title>
     <url>/%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/</url>
     <content><![CDATA[<p><img src="/%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/md_icon.png" alt="本地图片"></p>

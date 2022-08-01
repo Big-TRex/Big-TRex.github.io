@@ -6,7 +6,7 @@
   <link href="http://bigtrex.top/atom.xml" rel="self"/>
   
   <link href="http://bigtrex.top/"/>
-  <updated>2022-07-31T14:29:18.329Z</updated>
+  <updated>2022-08-01T13:05:15.993Z</updated>
   <id>http://bigtrex.top/</id>
   
   <author>
@@ -15,6 +15,53 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>学习路线</title>
+    <link href="http://bigtrex.top/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/"/>
+    <id>http://bigtrex.top/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/</id>
+    <published>2022-08-01T13:01:10.000Z</published>
+    <updated>2022-08-01T13:05:15.993Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="爬虫学习经过"><a href="#爬虫学习经过" class="headerlink" title="爬虫学习经过"></a>爬虫学习经过</h1><ol><li>使用python第三方库requests库进行网页爬取<ul><li>get方法</li><li>post方法</li></ul></li><li>Fn12利用浏览器抓包工具分析<ul><li>User-Agent</li><li>Content-Type</li></ul></li><li>Ajex数据分析</li></ol><p><img src="/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/bottom.png" alt="bottom"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;爬虫学习经过&quot;&gt;&lt;a href=&quot;#爬虫学习经过&quot; class=&quot;headerlink&quot; title=&quot;爬虫学习经过&quot;&gt;&lt;/a&gt;爬虫学习经过&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;使用python第三方库requests库进行网页爬取&lt;ul&gt;
+&lt;li&gt;get方法&lt;/li&gt;
+&lt;</summary>
+      
+    
+    
+    
+    <category term="爬虫" scheme="http://bigtrex.top/categories/%E7%88%AC%E8%99%AB/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>反反爬</title>
+    <link href="http://bigtrex.top/%E5%8F%8D%E5%8F%8D%E7%88%AC/"/>
+    <id>http://bigtrex.top/%E5%8F%8D%E5%8F%8D%E7%88%AC/</id>
+    <published>2022-08-01T10:12:39.000Z</published>
+    <updated>2022-08-01T11:02:29.681Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="反反爬总结"><a href="#反反爬总结" class="headerlink" title="反反爬总结"></a>反反爬总结</h1><p><a href="#1%E7%99%BE%E5%BA%A6%E5%AE%89%E5%85%A8%E9%AA%8C%E8%AF%81">1. 百度安全验证</a></p><h2 id="1-百度安全验证"><a href="#1-百度安全验证" class="headerlink" title="1.百度安全验证"></a>1.百度安全验证</h2><p>通常修改request的请求头载体模拟时，使用浏览器的User-Agent字段：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36 Edg/103.0.1264.77</span><br></pre></td></tr></table></figure><p>可能遭遇百度反爬拦截，自动跳转到百度安全验证</p><p><img src="/%E5%8F%8D%E5%8F%8D%E7%88%AC/%E7%99%BE%E5%BA%A6%E5%AE%89%E5%85%A8%E9%AA%8C%E8%AF%81.png" alt="百度安全验证"></p><p>常用解决方案：</p><ul><li>修改UA字段</li><li>增加更多头信息，例如Accept-Language</li></ul><p><img src="/%E5%8F%8D%E5%8F%8D%E7%88%AC/bottom.png" alt="bottom"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;反反爬总结&quot;&gt;&lt;a href=&quot;#反反爬总结&quot; class=&quot;headerlink&quot; title=&quot;反反爬总结&quot;&gt;&lt;/a&gt;反反爬总结&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;#1%E7%99%BE%E5%BA%A6%E5%AE%89%E5%85%A8%E9%AA%8C%E</summary>
+      
+    
+    
+    
+    <category term="爬虫" scheme="http://bigtrex.top/categories/%E7%88%AC%E8%99%AB/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>本地图片</title>
