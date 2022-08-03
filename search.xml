@@ -90,6 +90,56 @@
       </categories>
   </entry>
   <entry>
+    <title>Python正则表达式自查</title>
+    <url>/Python%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%87%AA%E6%9F%A5/</url>
+    <content><![CDATA[<h1 id="Python正则表达式自查"><a href="#Python正则表达式自查" class="headerlink" title="Python正则表达式自查"></a>Python正则表达式自查</h1><ul>
+<li>正则表达式是一种针对字符串表达“简洁”和“特征”思想的工具</li>
+<li>正则表达式可以用来判断某字符串的特征归属</li>
+<li>正则表达式语法由字符和操作符构成</li>
+</ul>
+<p><a href="#python%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E4%BD%BF%E7%94%A8">1. Python正则表达式使用</a><br><a href="#python%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%AF%AD%E6%B3%95">2. Python正则表达式语法</a><br><a href="#regex%E5%BA%93%E6%96%B9%E6%B3%95">3. Regex库方法</a><br><a href="#match%E5%AF%B9%E8%B1%A1">4. Match对象</a><br><a href="#%E8%B4%AA%E5%A9%AA%E5%8C%B9%E9%85%8D%E5%92%8C%E6%9C%80%E5%B0%8F%E5%8C%B9%E9%85%8D">5. 贪婪匹配和最小匹配</a><br><a href="#%E5%AE%9E%E4%BE%8B">6. 实例</a></p>
+<h2 id="Python正则表达式使用"><a href="#Python正则表达式使用" class="headerlink" title="Python正则表达式使用"></a>Python正则表达式使用</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"><span class="comment"># 不需要对转义符进行转义的原生字符串类型，直接表达一个正则表达式</span></span><br><span class="line"><span class="string">r&#x27;text&#x27;</span> </span><br><span class="line"></span><br><span class="line"><span class="comment"># 两种用法</span></span><br><span class="line">rst = re.search(<span class="string">r&#x27;[1‐9]\d&#123;5&#125;&#x27;</span>, <span class="string">&#x27;BIT 100081&#x27;</span>)</span><br><span class="line"><span class="comment"># compile方法可以使用原生字符串或字符串</span></span><br><span class="line">pat = re.<span class="built_in">compile</span>(<span class="string">r&#x27;[1‐9]\d&#123;5&#125;&#x27;</span>)</span><br><span class="line">rst = pat.search(<span class="string">&#x27;BIT 100081&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<h2 id="Python正则表达式语法"><a href="#Python正则表达式语法" class="headerlink" title="Python正则表达式语法"></a>Python正则表达式语法</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">.       表示任何单个字符</span><br><span class="line">[]      对**单个字符**给出取值范围</span><br><span class="line">[^]     对**单个字符**给出排除范围</span><br><span class="line">*       *前字符重复0~无限次</span><br><span class="line">+       +前字符重复1~无限次</span><br><span class="line">?       ?前字符重复0~1次</span><br><span class="line">|       左右表达式任意一个</span><br><span class="line">&#123;m&#125;     对前一个字符重复m次</span><br><span class="line">&#123;m,n&#125;   对前一个字符重复[m,n]次，&#123;:3&#125;表示[0,3]次</span><br><span class="line">^       匹配字符串开头</span><br><span class="line">$       匹配字符串结尾</span><br><span class="line">()      分组标记，内部只能使用|操作符</span><br><span class="line">\d      表示数字字符，等价于[0-9]</span><br><span class="line">\w      表示单词字符，等价于[A-Za-z0-9_]</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="Regex库方法"><a href="#Regex库方法" class="headerlink" title="Regex库方法"></a>Regex库方法</h2><ul>
+<li>re.search(pattern, string, flags&#x3D;0)  在字符串中搜索匹配的第一个位置，返回match对象</li>
+<li>re.match(pattern, string, flags&#x3D;0)  从字符串开始位置起匹配正则表达式，返回match对象</li>
+<li>re.findall(pattern, string, flags&#x3D;0)  匹配所有的子串，返回列表</li>
+<li>re.split(pattern, string, maxsplit&#x3D;0, flags&#x3D;0)  将字符串按照正则表达式子串进行分割，返回列表</li>
+<li>re.finditer(pattern, string, flags&#x3D;0)  返回匹配的迭代类型，返回match对象</li>
+<li>re.sub(pattern, repl, string, count&#x3D;0, flags&#x3D;0)  在字符串中替换所有匹配子串，返回字符串</li>
+</ul>
+<h2 id="Match对象"><a href="#Match对象" class="headerlink" title="Match对象"></a>Match对象</h2><p>Match对象是一次匹配的结果，包含匹配的所有信息</p>
+<ul>
+<li><strong>.string</strong> 待匹配的字符串</li>
+<li><strong>.re</strong>     用于匹配的正则表达式</li>
+<li><strong>.pos</strong>    搜索的开始位置</li>
+<li><strong>.endpos</strong> 搜索的结束位置</li>
+<li><strong>.group(0)</strong>   匹配的子串</li>
+<li><strong>.start()</strong>    匹配子串在字符串中的开始位置</li>
+<li><strong>.end()</strong>      匹配子串在字符串中的结束位置</li>
+<li><strong>.span()</strong>     返回(.start(), .end())</li>
+</ul>
+<h2 id="贪婪匹配和最小匹配"><a href="#贪婪匹配和最小匹配" class="headerlink" title="贪婪匹配和最小匹配"></a>贪婪匹配和最小匹配</h2><p>对于同一个匹配子串开始位置，可能存在多个结束位置满足匹配：</p>
+<ul>
+<li>Re库默认采用贪婪匹配，即输出匹配最长的子串</li>
+<li>通过在操作符后增加?变成最小匹配<ul>
+<li>*?   前一个字符重复0~无限次，最小匹配</li>
+<li>+?    前一个字符重复1~无限次，最小匹配</li>
+<li>??    前一个字符重复0~1次，最小匹配</li>
+<li>{m,n}?    前一个字符重复[m,n]次，最小匹配</li>
+</ul>
+</li>
+</ul>
+<h2 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h2><p>[\u4e00‐\u9fa5]  匹配中文字符</p>
+<p><img src="/Python%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%87%AA%E6%9F%A5/bottom.png" alt="bottom"></p>
+]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -136,17 +186,6 @@
       </categories>
   </entry>
   <entry>
-    <title>本地图片</title>
-    <url>/%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/</url>
-    <content><![CDATA[<p><img src="/%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/md_icon.png" alt="本地图片"></p>
-<p><img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wwun?ver=f5d4" alt="网络图片"></p>
-<p><img src="/%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/bottom.png" alt="bottom"></p>
-]]></content>
-      <categories>
-        <category>MarkDown</category>
-      </categories>
-  </entry>
-  <entry>
     <title>爬虫学习记录</title>
     <url>/%E7%88%AC%E8%99%AB%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</url>
     <content><![CDATA[<h1 id="爬虫学习记录"><a href="#爬虫学习记录" class="headerlink" title="爬虫学习记录"></a>爬虫学习记录</h1><ol>
@@ -175,12 +214,17 @@
 </ul>
 </li>
 <li>json模块<ul>
+<li>requests库的Response对象的json()方法返回一个json对象，类型为字典</li>
 <li>json模块提供了4个方便的方法编码和解析json数据</li>
 <li>json.dumps() -&gt; 将Python数据转换为json格式数据</li>
 <li>jsom.loads() -&gt; 将json编码的字符串转换为一个Python数据结构</li>
 <li>json.dump() -&gt; 用于文件</li>
 <li>json.load() -&gt; 用于文件</li>
 <li><a href="https://www.json.cn/">json数据格式化工具</a></li>
+</ul>
+</li>
+<li>Python正则表达式<ul>
+<li>进行数据解析从而实现聚焦爬虫</li>
 </ul>
 </li>
 </ol>
@@ -197,6 +241,17 @@
 ]]></content>
       <categories>
         <category>爬虫</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>本地图片</title>
+    <url>/%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/</url>
+    <content><![CDATA[<p><img src="/%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/md_icon.png" alt="本地图片"></p>
+<p><img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wwun?ver=f5d4" alt="网络图片"></p>
+<p><img src="/%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/bottom.png" alt="bottom"></p>
+]]></content>
+      <categories>
+        <category>MarkDown</category>
       </categories>
   </entry>
 </search>
