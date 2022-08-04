@@ -1,10 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>反反爬</title>
+    <url>/%E5%8F%8D%E5%8F%8D%E7%88%AC/</url>
+    <content><![CDATA[<h1 id="反反爬总结"><a href="#反反爬总结" class="headerlink" title="反反爬总结"></a>反反爬总结</h1><p><a href="#1%E7%99%BE%E5%BA%A6%E5%AE%89%E5%85%A8%E9%AA%8C%E8%AF%81">1. 百度安全验证</a></p>
+<p><a href="#2%E6%9F%90%E6%95%B0%E5%8F%8D%E7%88%AC">2. 某数反爬</a></p>
+<h1 id="1-百度安全验证"><a href="#1-百度安全验证" class="headerlink" title="1.百度安全验证"></a>1.百度安全验证</h1><p>通常修改request的请求头载体模拟时，使用浏览器的User-Agent字段：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36 Edg/103.0.1264.77</span><br></pre></td></tr></table></figure>
+
+<p>可能遭遇百度反爬拦截，自动跳转到百度安全验证</p>
+<p><img src="/%E5%8F%8D%E5%8F%8D%E7%88%AC/%E7%99%BE%E5%BA%A6%E5%AE%89%E5%85%A8%E9%AA%8C%E8%AF%81.png" alt="百度安全验证"></p>
+<p>常用解决方案：</p>
+<ul>
+<li>修改UA字段</li>
+<li>增加更多头信息，例如Accept-Language</li>
+</ul>
+<h1 id="2-某数反爬"><a href="#2-某数反爬" class="headerlink" title="2.某数反爬"></a>2.某数反爬</h1><p>在练习爬取<a href="http://scxk.nmpa.gov.cn:81/xk/">化妆品生产许可信息管理服务平台</a>时遇到HTTP状态码400，打开网络检查工具会直接跳转到源代码，一种说法是陷入无限debug中（每次返回的js代码不同），也无法添加断点，该站通过AJax请求更新页面时，提交的url携带两个随机生成的参数，无法通过后端的参数验证，暂时无法破解</p>
+<p><img src="/%E5%8F%8D%E5%8F%8D%E7%88%AC/moushu.png" alt="某数反爬随机数"></p>
+<h2 id="一些某数逆向方法"><a href="#一些某数逆向方法" class="headerlink" title="一些某数逆向方法"></a>一些某数逆向方法</h2><ul>
+<li>使用fiddler进行请求拦截，进行调试</li>
+<li>使用chrome的script监听器进行调试</li>
+<li>本地搭建环境</li>
+</ul>
+<p><img src="/%E5%8F%8D%E5%8F%8D%E7%88%AC/bottom.png" alt="bottom"></p>
+]]></content>
+      <categories>
+        <category>爬虫</category>
+      </categories>
+  </entry>
+  <entry>
     <title>MD语法自查</title>
     <url>/MD%E8%AF%AD%E6%B3%95%E8%87%AA%E6%9F%A5/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer">
-
+    <content><![CDATA[<p>已修改</p>
 <h1 id="MarkDown语法自查"><a href="#MarkDown语法自查" class="headerlink" title="MarkDown语法自查"></a>MarkDown语法自查</h1><p><a href="#%E6%A0%87%E9%A2%98">1. 标题</a></p>
 <p><a href="#%E5%88%97%E8%A1%A8">2. 列表</a></p>
 <p><a href="#%E5%AD%97%E4%BD%93">3. 字体</a></p>
@@ -138,6 +165,17 @@
       </categories>
   </entry>
   <entry>
+    <title>本地图片</title>
+    <url>/%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/</url>
+    <content><![CDATA[<p><img src="/%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/md_icon.png" alt="本地图片"></p>
+<p><img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wwun?ver=f5d4" alt="网络图片"></p>
+<p><img src="/%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/bottom.png" alt="bottom"></p>
+]]></content>
+      <categories>
+        <category>MarkDown</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -154,45 +192,6 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>反反爬</title>
-    <url>/%E5%8F%8D%E5%8F%8D%E7%88%AC/</url>
-    <content><![CDATA[<h1 id="反反爬总结"><a href="#反反爬总结" class="headerlink" title="反反爬总结"></a>反反爬总结</h1><p><a href="#1%E7%99%BE%E5%BA%A6%E5%AE%89%E5%85%A8%E9%AA%8C%E8%AF%81">1. 百度安全验证</a></p>
-<p><a href="#2%E6%9F%90%E6%95%B0%E5%8F%8D%E7%88%AC">2. 某数反爬</a></p>
-<h1 id="1-百度安全验证"><a href="#1-百度安全验证" class="headerlink" title="1.百度安全验证"></a>1.百度安全验证</h1><p>通常修改request的请求头载体模拟时，使用浏览器的User-Agent字段：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36 Edg/103.0.1264.77</span><br></pre></td></tr></table></figure>
-
-<p>可能遭遇百度反爬拦截，自动跳转到百度安全验证</p>
-<p><img src="/%E5%8F%8D%E5%8F%8D%E7%88%AC/%E7%99%BE%E5%BA%A6%E5%AE%89%E5%85%A8%E9%AA%8C%E8%AF%81.png" alt="百度安全验证"></p>
-<p>常用解决方案：</p>
-<ul>
-<li>修改UA字段</li>
-<li>增加更多头信息，例如Accept-Language</li>
-</ul>
-<h1 id="2-某数反爬"><a href="#2-某数反爬" class="headerlink" title="2.某数反爬"></a>2.某数反爬</h1><p>在练习爬取<a href="http://scxk.nmpa.gov.cn:81/xk/">化妆品生产许可信息管理服务平台</a>时遇到HTTP状态码400，打开网络检查工具会直接跳转到源代码，一种说法是陷入无限debug中（每次返回的js代码不同），也无法添加断点，该站通过AJax请求更新页面时，提交的url携带两个随机生成的参数，无法通过后端的参数验证，暂时无法破解</p>
-<p><img src="/%E5%8F%8D%E5%8F%8D%E7%88%AC/moushu.png" alt="某数反爬随机数"></p>
-<h2 id="一些某数逆向方法"><a href="#一些某数逆向方法" class="headerlink" title="一些某数逆向方法"></a>一些某数逆向方法</h2><ul>
-<li>使用fiddler进行请求拦截，进行调试</li>
-<li>使用chrome的script监听器进行调试</li>
-<li>本地搭建环境</li>
-</ul>
-<p><img src="/%E5%8F%8D%E5%8F%8D%E7%88%AC/bottom.png" alt="bottom"></p>
-]]></content>
-      <categories>
-        <category>爬虫</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>本地图片</title>
-    <url>/%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/</url>
-    <content><![CDATA[<p><img src="/%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/md_icon.png" alt="本地图片"></p>
-<p><img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wwun?ver=f5d4" alt="网络图片"></p>
-<p><img src="/%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/bottom.png" alt="bottom"></p>
-]]></content>
-      <categories>
-        <category>MarkDown</category>
-      </categories>
   </entry>
   <entry>
     <title>爬虫学习记录</title>
