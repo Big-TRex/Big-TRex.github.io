@@ -8,9 +8,7 @@
 <h1 id="MarkDown语法自查"><a href="#MarkDown语法自查" class="headerlink" title="MarkDown语法自查"></a>MarkDown语法自查</h1><p><a href="#%E6%A0%87%E9%A2%98">1. 标题</a></p>
 <p><a href="#%E5%88%97%E8%A1%A8">2. 列表</a></p>
 <p><a href="#%E5%AD%97%E4%BD%93">3. 字体</a></p>
-<p><a href="#%E9%94%9A%E7%82%B9">4. 锚点</a></p>
-<p><a href="#%E4%BB%A3%E7%A0%81%E5%9D%97">5. 代码块</a></p>
-<p><a href="#%E5%9B%BE%E7%89%87%E5%92%8C%E8%B6%85%E9%93%BE%E6%8E%A5">6. 图片和超链接</a></p>
+<p><a href="#%E9%94%9A%E7%82%B9">4. 锚点</a><br><a href="#%E4%BB%A3%E7%A0%81%E5%9D%97">5. 代码块</a><br><a href="#%E5%9B%BE%E7%89%87%E5%92%8C%E8%B6%85%E9%93%BE%E6%8E%A5">6. 图片和超链接</a></p>
 <p><a href="#%E8%A1%A8%E6%A0%BC">7. 表格</a></p>
 <p><a href="#%E5%BC%95%E7%94%A8">8. 引用</a></p>
 <hr>
@@ -97,7 +95,7 @@
 <li>正则表达式可以用来判断某字符串的特征归属</li>
 <li>正则表达式语法由字符和操作符构成</li>
 </ul>
-<p><a href="#python%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E4%BD%BF%E7%94%A8">1. Python正则表达式使用</a><br><a href="#python%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%AF%AD%E6%B3%95">2. Python正则表达式语法</a><br><a href="#regex%E5%BA%93%E6%96%B9%E6%B3%95">3. Regex库方法</a><br><a href="#match%E5%AF%B9%E8%B1%A1">4. Match对象</a><br><a href="#%E8%B4%AA%E5%A9%AA%E5%8C%B9%E9%85%8D%E5%92%8C%E6%9C%80%E5%B0%8F%E5%8C%B9%E9%85%8D">5. 贪婪匹配和最小匹配</a><br><a href="#%E5%AE%9E%E4%BE%8B">6. 实例</a></p>
+<p><a href="#python%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E4%BD%BF%E7%94%A8">1. Python正则表达式使用</a><br><a id="python正则表达式使用">1. Python正则表达式使用</a><br><a href="#python%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%AF%AD%E6%B3%95">2. Python正则表达式语法</a><br><a href="#regex%E5%BA%93%E6%96%B9%E6%B3%95">3. Regex库方法</a><br><a href="#match%E5%AF%B9%E8%B1%A1">4. Match对象</a><br><a href="#%E8%B4%AA%E5%A9%AA%E5%8C%B9%E9%85%8D%E5%92%8C%E6%9C%80%E5%B0%8F%E5%8C%B9%E9%85%8D">5. 贪婪匹配和最小匹配</a><br><a href="#%E5%AE%9E%E4%BE%8B">6. 实例</a></p>
 <h2 id="Python正则表达式使用"><a href="#Python正则表达式使用" class="headerlink" title="Python正则表达式使用"></a>Python正则表达式使用</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"><span class="comment"># 不需要对转义符进行转义的原生字符串类型，直接表达一个正则表达式</span></span><br><span class="line"><span class="string">r&#x27;text&#x27;</span> </span><br><span class="line"></span><br><span class="line"><span class="comment"># 两种用法</span></span><br><span class="line">rst = re.search(<span class="string">r&#x27;[1‐9]\d&#123;5&#125;&#x27;</span>, <span class="string">&#x27;BIT 100081&#x27;</span>)</span><br><span class="line"><span class="comment"># compile方法可以使用原生字符串或字符串</span></span><br><span class="line">pat = re.<span class="built_in">compile</span>(<span class="string">r&#x27;[1‐9]\d&#123;5&#125;&#x27;</span>)</span><br><span class="line">rst = pat.search(<span class="string">&#x27;BIT 100081&#x27;</span>)</span><br></pre></td></tr></table></figure>
 
 <h2 id="Python正则表达式语法"><a href="#Python正则表达式语法" class="headerlink" title="Python正则表达式语法"></a>Python正则表达式语法</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">.       表示任何单个字符</span><br><span class="line">[]      对**单个字符**给出取值范围</span><br><span class="line">[^]     对**单个字符**给出排除范围</span><br><span class="line">*       *前字符重复0~无限次</span><br><span class="line">+       +前字符重复1~无限次</span><br><span class="line">?       ?前字符重复0~1次</span><br><span class="line">|       左右表达式任意一个</span><br><span class="line">&#123;m&#125;     对前一个字符重复m次</span><br><span class="line">&#123;m,n&#125;   对前一个字符重复[m,n]次，&#123;:3&#125;表示[0,3]次</span><br><span class="line">^       匹配字符串开头</span><br><span class="line">$       匹配字符串结尾</span><br><span class="line">()      分组标记，内部只能使用|操作符</span><br><span class="line">\d      表示数字字符，等价于[0-9]</span><br><span class="line">\w      表示单词字符，等价于[A-Za-z0-9_]</span><br><span class="line"></span><br></pre></td></tr></table></figure>

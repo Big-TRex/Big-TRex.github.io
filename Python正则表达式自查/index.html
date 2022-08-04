@@ -18,16 +18,16 @@
   
   
   <title>Python正则表达式自查 | BuT的博客</title>
-  <meta name="description" content="Python正则表达式自查 正则表达式是一种针对字符串表达“简洁”和“特征”思想的工具 正则表达式可以用来判断某字符串的特征归属 正则表达式语法由字符和操作符构成  1. Python正则表达式使用2. Python正则表达式语法3. Regex库方法4. Match对象5. 贪婪匹配和最小匹配6. 实例 Python正则表达式使用123456789import re# 不需要对转义符进行转义的原">
+  <meta name="description" content="Python正则表达式自查 正则表达式是一种针对字符串表达“简洁”和“特征”思想的工具 正则表达式可以用来判断某字符串的特征归属 正则表达式语法由字符和操作符构成  1. Python正则表达式使用1. Python正则表达式使用2. Python正则表达式语法3. Regex库方法4. Match对象5. 贪婪匹配和最小匹配6. 实例 Python正则表达式使用123456789import r">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Python正则表达式自查">
 <meta property="og:url" content="http://bigtrex.top/Python%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%87%AA%E6%9F%A5/index.html">
 <meta property="og:site_name" content="BuT的博客">
-<meta property="og:description" content="Python正则表达式自查 正则表达式是一种针对字符串表达“简洁”和“特征”思想的工具 正则表达式可以用来判断某字符串的特征归属 正则表达式语法由字符和操作符构成  1. Python正则表达式使用2. Python正则表达式语法3. Regex库方法4. Match对象5. 贪婪匹配和最小匹配6. 实例 Python正则表达式使用123456789import re# 不需要对转义符进行转义的原">
+<meta property="og:description" content="Python正则表达式自查 正则表达式是一种针对字符串表达“简洁”和“特征”思想的工具 正则表达式可以用来判断某字符串的特征归属 正则表达式语法由字符和操作符构成  1. Python正则表达式使用1. Python正则表达式使用2. Python正则表达式语法3. Regex库方法4. Match对象5. 贪婪匹配和最小匹配6. 实例 Python正则表达式使用123456789import r">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://bigtrex.top/Python%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%87%AA%E6%9F%A5/bottom.png">
 <meta property="article:published_time" content="2022-08-03T12:30:07.000Z">
-<meta property="article:modified_time" content="2022-08-03T14:19:42.161Z">
+<meta property="article:modified_time" content="2022-08-04T10:01:52.331Z">
 <meta property="article:author" content="BuT">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://bigtrex.top/Python%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%87%AA%E6%9F%A5/bottom.png">
@@ -354,10 +354,10 @@
         <span class="post-comment"><i class="icon icon-comment"></i> <a href="/Python%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%87%AA%E6%9F%A5/#comments" class="article-comment-link">评论</a></span>
         
 	
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 762(字)</span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 770(字)</span>
 	
 	
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 2(分)</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 3(分)</span>
 	
 
       </div>
@@ -369,7 +369,7 @@
 <li>正则表达式可以用来判断某字符串的特征归属</li>
 <li>正则表达式语法由字符和操作符构成</li>
 </ul>
-<p><a href="#python%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E4%BD%BF%E7%94%A8">1. Python正则表达式使用</a><br><a href="#python%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%AF%AD%E6%B3%95">2. Python正则表达式语法</a><br><a href="#regex%E5%BA%93%E6%96%B9%E6%B3%95">3. Regex库方法</a><br><a href="#match%E5%AF%B9%E8%B1%A1">4. Match对象</a><br><a href="#%E8%B4%AA%E5%A9%AA%E5%8C%B9%E9%85%8D%E5%92%8C%E6%9C%80%E5%B0%8F%E5%8C%B9%E9%85%8D">5. 贪婪匹配和最小匹配</a><br><a href="#%E5%AE%9E%E4%BE%8B">6. 实例</a></p>
+<p><a href="#python%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E4%BD%BF%E7%94%A8">1. Python正则表达式使用</a><br><a id="python正则表达式使用">1. Python正则表达式使用</a><br><a href="#python%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%AF%AD%E6%B3%95">2. Python正则表达式语法</a><br><a href="#regex%E5%BA%93%E6%96%B9%E6%B3%95">3. Regex库方法</a><br><a href="#match%E5%AF%B9%E8%B1%A1">4. Match对象</a><br><a href="#%E8%B4%AA%E5%A9%AA%E5%8C%B9%E9%85%8D%E5%92%8C%E6%9C%80%E5%B0%8F%E5%8C%B9%E9%85%8D">5. 贪婪匹配和最小匹配</a><br><a href="#%E5%AE%9E%E4%BE%8B">6. 实例</a></p>
 <h2 id="Python正则表达式使用"><a href="#Python正则表达式使用" class="headerlink" title="Python正则表达式使用"></a>Python正则表达式使用</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"><span class="comment"># 不需要对转义符进行转义的原生字符串类型，直接表达一个正则表达式</span></span><br><span class="line"><span class="string">r&#x27;text&#x27;</span> </span><br><span class="line"></span><br><span class="line"><span class="comment"># 两种用法</span></span><br><span class="line">rst = re.search(<span class="string">r&#x27;[1‐9]\d&#123;5&#125;&#x27;</span>, <span class="string">&#x27;BIT 100081&#x27;</span>)</span><br><span class="line"><span class="comment"># compile方法可以使用原生字符串或字符串</span></span><br><span class="line">pat = re.<span class="built_in">compile</span>(<span class="string">r&#x27;[1‐9]\d&#123;5&#125;&#x27;</span>)</span><br><span class="line">rst = pat.search(<span class="string">&#x27;BIT 100081&#x27;</span>)</span><br></pre></td></tr></table></figure>
 
 <h2 id="Python正则表达式语法"><a href="#Python正则表达式语法" class="headerlink" title="Python正则表达式语法"></a>Python正则表达式语法</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">.       表示任何单个字符</span><br><span class="line">[]      对**单个字符**给出取值范围</span><br><span class="line">[^]     对**单个字符**给出排除范围</span><br><span class="line">*       *前字符重复0~无限次</span><br><span class="line">+       +前字符重复1~无限次</span><br><span class="line">?       ?前字符重复0~1次</span><br><span class="line">|       左右表达式任意一个</span><br><span class="line">&#123;m&#125;     对前一个字符重复m次</span><br><span class="line">&#123;m,n&#125;   对前一个字符重复[m,n]次，&#123;:3&#125;表示[0,3]次</span><br><span class="line">^       匹配字符串开头</span><br><span class="line">$       匹配字符串结尾</span><br><span class="line">()      分组标记，内部只能使用|操作符</span><br><span class="line">\d      表示数字字符，等价于[0-9]</span><br><span class="line">\w      表示单词字符，等价于[A-Za-z0-9_]</span><br><span class="line"></span><br></pre></td></tr></table></figure>
