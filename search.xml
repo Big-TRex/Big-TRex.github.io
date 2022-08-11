@@ -219,6 +219,53 @@
 ]]></content>
   </entry>
   <entry>
+    <title>bs4方法自查</title>
+    <url>/bs4%E6%96%B9%E6%B3%95%E8%87%AA%E6%9F%A5/</url>
+    <content><![CDATA[<h1 id="bs4库方法自查"><a href="#bs4库方法自查" class="headerlink" title="bs4库方法自查"></a>bs4库方法自查</h1><p>Beautiful Soup库是解析、遍历、维护“标签树”的功能库</p>
+<h2 id="BeautifulSoup使用方法"><a href="#BeautifulSoup使用方法" class="headerlink" title="BeautifulSoup使用方法"></a>BeautifulSoup使用方法</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup</span><br><span class="line"><span class="keyword">import</span> bs4</span><br><span class="line"></span><br><span class="line">soup=BeautifulSoup(&lt;html&gt;response.text&lt;/html&gt;,<span class="string">&#x27;html.parser&#x27;</span>)</span><br><span class="line">soup=BeautifulSoup(<span class="built_in">open</span>(<span class="string">&#x27;*.html&#x27;</span>,<span class="string">&#x27;r&#x27;</span>),<span class="string">&#x27;html.parser&#x27;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="BeautifulSoup类基本元素"><a href="#BeautifulSoup类基本元素" class="headerlink" title="BeautifulSoup类基本元素"></a>BeautifulSoup类基本元素</h2><table>
+<thead>
+<tr>
+<th align="center">基本元素</th>
+<th align="center">含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">Tag</td>
+<td align="center">标签，以&lt;&gt;…&lt;&#x2F;&gt;组成</td>
+</tr>
+<tr>
+<td align="center">Name</td>
+<td align="center">标签名，&lt;p&gt;…&lt;&#x2F;p&gt;的名字是p：&lt;tag&gt;.name</td>
+</tr>
+<tr>
+<td align="center">Attributes</td>
+<td align="center">标签的属性，字典形式组织：<tag>.attrs</tag></td>
+</tr>
+<tr>
+<td align="center">NavigableString</td>
+<td align="center">标签内非属性字符串，标签下只能有一个子节点：<tag>.string，返回NavigableString</tag></td>
+</tr>
+<tr>
+<td align="center">text</td>
+<td align="center">标签内字符串，可跨域层级：<tag>.text，返回str</tag></td>
+</tr>
+<tr>
+<td align="center">Comment</td>
+<td align="center">标签内字符串的注释部分：<tag>.string</tag></td>
+</tr>
+</tbody></table>
+<p><a href="https://blog.csdn.net/weixin_30352645/article/details/99390523?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522165976942216782390551621%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=165976942216782390551621&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~baidu_landing_v2~default-2-99390523-null-null.142%5Ev39%5Epc_rank_v37,185%5Ev2%5Econtrol&utm_term=bs4%E7%9A%84string%E5%92%8Ctext&spm=1018.2226.3001.4187">text和string的区别</a></p>
+<h2 id="BeautifulSoup类常用方法"><a href="#BeautifulSoup类常用方法" class="headerlink" title="BeautifulSoup类常用方法"></a>BeautifulSoup类常用方法</h2><p>一篇总结bs4非常相近且准确的blog</p>
+<p><a href="https://www.cnblogs.com/gl1573/p/9480022.html">bs4方法详情</a></p>
+<p><img src="/bs4%E6%96%B9%E6%B3%95%E8%87%AA%E6%9F%A5/bottom.png" alt="bottom"></p>
+]]></content>
+      <categories>
+        <category>爬虫</category>
+      </categories>
+  </entry>
+  <entry>
     <title>关于MD锚点的坑</title>
     <url>/%E5%85%B3%E4%BA%8EMD%E9%94%9A%E7%82%B9%E7%9A%84%E5%9D%91/</url>
     <content><![CDATA[<h1 id="关于MD锚点的坑"><a href="#关于MD锚点的坑" class="headerlink" title="关于MD锚点的坑"></a>关于MD锚点的坑</h1><p>锚点是一个方便定位的东西，用起来还是很香的</p>
@@ -273,53 +320,6 @@
       </categories>
   </entry>
   <entry>
-    <title>bs4方法自查</title>
-    <url>/bs4%E6%96%B9%E6%B3%95%E8%87%AA%E6%9F%A5/</url>
-    <content><![CDATA[<h1 id="bs4库方法自查"><a href="#bs4库方法自查" class="headerlink" title="bs4库方法自查"></a>bs4库方法自查</h1><p>Beautiful Soup库是解析、遍历、维护“标签树”的功能库</p>
-<h2 id="BeautifulSoup使用方法"><a href="#BeautifulSoup使用方法" class="headerlink" title="BeautifulSoup使用方法"></a>BeautifulSoup使用方法</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup</span><br><span class="line"><span class="keyword">import</span> bs4</span><br><span class="line"></span><br><span class="line">soup=BeautifulSoup(&lt;html&gt;response.text&lt;/html&gt;,<span class="string">&#x27;html.parser&#x27;</span>)</span><br><span class="line">soup=BeautifulSoup(<span class="built_in">open</span>(<span class="string">&#x27;*.html&#x27;</span>,<span class="string">&#x27;r&#x27;</span>),<span class="string">&#x27;html.parser&#x27;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h2 id="BeautifulSoup类基本元素"><a href="#BeautifulSoup类基本元素" class="headerlink" title="BeautifulSoup类基本元素"></a>BeautifulSoup类基本元素</h2><table>
-<thead>
-<tr>
-<th align="center">基本元素</th>
-<th align="center">含义</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">Tag</td>
-<td align="center">标签，以&lt;&gt;…&lt;&#x2F;&gt;组成</td>
-</tr>
-<tr>
-<td align="center">Name</td>
-<td align="center">标签名，&lt;p&gt;…&lt;&#x2F;p&gt;的名字是p：&lt;tag&gt;.name</td>
-</tr>
-<tr>
-<td align="center">Attributes</td>
-<td align="center">标签的属性，字典形式组织：<tag>.attrs</tag></td>
-</tr>
-<tr>
-<td align="center">NavigableString</td>
-<td align="center">标签内非属性字符串，标签下只能有一个子节点：<tag>.string，返回NavigableString</tag></td>
-</tr>
-<tr>
-<td align="center">text</td>
-<td align="center">标签内字符串，可跨域层级：<tag>.text，返回str</tag></td>
-</tr>
-<tr>
-<td align="center">Comment</td>
-<td align="center">标签内字符串的注释部分：<tag>.string</tag></td>
-</tr>
-</tbody></table>
-<p><a href="https://blog.csdn.net/weixin_30352645/article/details/99390523?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522165976942216782390551621%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=165976942216782390551621&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~baidu_landing_v2~default-2-99390523-null-null.142%5Ev39%5Epc_rank_v37,185%5Ev2%5Econtrol&utm_term=bs4%E7%9A%84string%E5%92%8Ctext&spm=1018.2226.3001.4187">text和string的区别</a></p>
-<h2 id="BeautifulSoup类常用方法"><a href="#BeautifulSoup类常用方法" class="headerlink" title="BeautifulSoup类常用方法"></a>BeautifulSoup类常用方法</h2><p>一篇总结bs4非常相近且准确的blog</p>
-<p><a href="https://www.cnblogs.com/gl1573/p/9480022.html">bs4方法详情</a></p>
-<p><img src="/bs4%E6%96%B9%E6%B3%95%E8%87%AA%E6%9F%A5/bottom.png" alt="bottom"></p>
-]]></content>
-      <categories>
-        <category>爬虫</category>
-      </categories>
-  </entry>
-  <entry>
     <title>反反爬</title>
     <url>/%E5%8F%8D%E5%8F%8D%E7%88%AC/</url>
     <content><![CDATA[<h1 id="反反爬总结"><a href="#反反爬总结" class="headerlink" title="反反爬总结"></a>反反爬总结</h1><p><a href="#%E7%99%BE%E5%BA%A6%E5%AE%89%E5%85%A8%E9%AA%8C%E8%AF%81">1. 百度安全验证</a></p>
@@ -341,8 +341,39 @@
 <li>使用chrome的script监听器进行调试</li>
 <li>本地搭建环境</li>
 </ul>
+<h1 id="验证码"><a href="#验证码" class="headerlink" title="验证码"></a>验证码</h1><p>验证码，全称为Completely Automated Public Turing test to tell Computers and Humans Apart，即全自动区分计算机和人类的图灵测试（CAPTCHA）的缩写</p>
+<p>顾名思义，验证码是一种反爬机制，识别验证码模拟登录一般有两个方法</p>
+<ul>
+<li>肉眼识别<ul>
+<li>肉眼识别不是直接看浏览器图片，同样要爬取验证码图片到本地后再肉眼识别</li>
+</ul>
+</li>
+<li>借助第三方打码工具<ul>
+<li>云打码已经倒塌了</li>
+<li><a href="http://www.damagou.top/">打码狗</a>，性价比高，一次大概一两分钱</li>
+</ul>
+</li>
+</ul>
+<p>经过两天的满口芬芳，终于是明白了模拟普通中有关验证码的种种：</p>
+<ol>
+<li>首先，验证码图片的url一般是携带随机参数的，但是这个随机数和前端反爬没有关系，只是用来从后端库中随机选一张验证码图片（虽然url有点怪）</li>
+<li>其次，在get登录页面时，登录页面会自动向这个url发请求get一张验证码图片回来在前端显示，同时后端会记录下发起get请求的这个东西（浏览器或者是爬虫）究竟请求到了哪张验证码图片，所以当我们登录时后端才能进行比对</li>
+<li>所以事实上，前端登录页面显示出来的的验证码和后端关系其实并不大，后端并不care某一个东西究竟对登录页面get了多少次，后端care的是对验证码图片的url究竟get了多少次，只不过每次get登录页面时会自动get一下验证码图片来显示在前端，所以这两次get是有先后顺序的</li>
+<li>这个先后顺序非常重要，因为后端保存的永远是最后一次get验证码的记录，当我们在浏览器访问一个登录页面，我们会看到一个验证码A，而如果我们再去另一个窗口访问一下验证码图片的url后，我们会看到另一个验证码B，事实上，验证码B才是当前正确登录需要的验证码</li>
+<li>另外，大部分网站都会在登录后进行跳转，一般在response.headers[‘Location’]中保存，对应的状态码一般是302，303，程序并不需要特殊处理页面重定位，程序发起登录请求成功会自动进行页面的重定位直到取到最后登录成功的页面</li>
+<li>最后一点也是卡了我半天的点，我们知道登录时会有set-cookie字段设置cookie，所以程序一般要用requests.session()生成session对象发登录请求，session会自动保存response对象的set-cookie，这没什么，但是！一定要在get验证码图片时就使用session，不要先随便get一下等到发登录请求时再用session，否则你会寄的很惨</li>
+</ol>
+<p><img src="/%E5%8F%8D%E5%8F%8D%E7%88%AC/wukong.jpg" alt="wukong"></p>
 <p><img src="/%E5%8F%8D%E5%8F%8D%E7%88%AC/bottom.png" alt="bottom"></p>
 ]]></content>
+      <categories>
+        <category>爬虫</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>爬虫中文乱码</title>
+    <url>/%E7%88%AC%E8%99%AB%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81/</url>
+    <content><![CDATA[<h1 id="爬虫中文乱码"><a href="#爬虫中文乱码" class="headerlink" title="爬虫中文乱码"></a>爬虫中文乱码</h1>]]></content>
       <categories>
         <category>爬虫</category>
       </categories>
@@ -356,14 +387,6 @@
 ]]></content>
       <categories>
         <category>MarkDown</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>爬虫中文乱码</title>
-    <url>/%E7%88%AC%E8%99%AB%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81/</url>
-    <content><![CDATA[<h1 id="爬虫中文乱码"><a href="#爬虫中文乱码" class="headerlink" title="爬虫中文乱码"></a>爬虫中文乱码</h1>]]></content>
-      <categories>
-        <category>爬虫</category>
       </categories>
   </entry>
   <entry>
@@ -413,7 +436,17 @@
 <li>基于其它语言的爬虫不支持bs4</li>
 </ul>
 </li>
+<li>xpath库<ul>
+<li>xpath是通用的用于解析HTML数据的库</li>
+<li>xpath的语法简洁，但是容易出现返回空列表问题</li>
+</ul>
+</li>
+<li>验证码和打码</li>
+<li>base64数据编码</li>
 </ol>
+<ul>
+<li>用于将</li>
+</ul>
 <h2 id="动态加载数据"><a href="#动态加载数据" class="headerlink" title="动态加载数据"></a>动态加载数据</h2><p>在对一个url发起请求时，页面中的数据可能由动态加载得到，重新对该url提交请求在抓包工具中查看对应url数据包，进一步判断请求得到的数据是否包含页面中的某些数据</p>
 <h2 id="判断网页是否采用AJax"><a href="#判断网页是否采用AJax" class="headerlink" title="判断网页是否采用AJax"></a>判断网页是否采用AJax</h2><p>利用爬虫爬取网页数据时，首先需要分析数据到底是在服务器端组成好发回给浏览器的？还是通过AJax请求异步发送的？</p>
 <p>AJax请求数据包在XHR选项中</p>

@@ -27,9 +27,10 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://bigtrex.top/%E5%8F%8D%E5%8F%8D%E7%88%AC/%E7%99%BE%E5%BA%A6%E5%AE%89%E5%85%A8%E9%AA%8C%E8%AF%81.png">
 <meta property="og:image" content="http://bigtrex.top/%E5%8F%8D%E5%8F%8D%E7%88%AC/moushu.png">
+<meta property="og:image" content="http://bigtrex.top/%E5%8F%8D%E5%8F%8D%E7%88%AC/wukong.jpg">
 <meta property="og:image" content="http://bigtrex.top/%E5%8F%8D%E5%8F%8D%E7%88%AC/bottom.png">
 <meta property="article:published_time" content="2022-08-01T10:12:39.000Z">
-<meta property="article:modified_time" content="2022-08-04T12:21:56.277Z">
+<meta property="article:modified_time" content="2022-08-11T09:18:55.918Z">
 <meta property="article:author" content="BuT">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://bigtrex.top/%E5%8F%8D%E5%8F%8D%E7%88%AC/%E7%99%BE%E5%BA%A6%E5%AE%89%E5%85%A8%E9%AA%8C%E8%AF%81.png">
@@ -356,10 +357,10 @@
         <span class="post-comment"><i class="icon icon-comment"></i> <a href="/%E5%8F%8D%E5%8F%8D%E7%88%AC/#comments" class="article-comment-link">评论</a></span>
         
 	
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 276(字)</span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 1k(字)</span>
 	
 	
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 1(分)</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 3(分)</span>
 	
 
       </div>
@@ -385,6 +386,29 @@
 <li>使用chrome的script监听器进行调试</li>
 <li>本地搭建环境</li>
 </ul>
+<h1 id="验证码"><a href="#验证码" class="headerlink" title="验证码"></a>验证码</h1><p>验证码，全称为Completely Automated Public Turing test to tell Computers and Humans Apart，即全自动区分计算机和人类的图灵测试（CAPTCHA）的缩写</p>
+<p>顾名思义，验证码是一种反爬机制，识别验证码模拟登录一般有两个方法</p>
+<ul>
+<li>肉眼识别<ul>
+<li>肉眼识别不是直接看浏览器图片，同样要爬取验证码图片到本地后再肉眼识别</li>
+</ul>
+</li>
+<li>借助第三方打码工具<ul>
+<li>云打码已经倒塌了</li>
+<li><a target="_blank" rel="noopener" href="http://www.damagou.top/">打码狗</a>，性价比高，一次大概一两分钱</li>
+</ul>
+</li>
+</ul>
+<p>经过两天的满口芬芳，终于是明白了模拟普通中有关验证码的种种：</p>
+<ol>
+<li>首先，验证码图片的url一般是携带随机参数的，但是这个随机数和前端反爬没有关系，只是用来从后端库中随机选一张验证码图片（虽然url有点怪）</li>
+<li>其次，在get登录页面时，登录页面会自动向这个url发请求get一张验证码图片回来在前端显示，同时后端会记录下发起get请求的这个东西（浏览器或者是爬虫）究竟请求到了哪张验证码图片，所以当我们登录时后端才能进行比对</li>
+<li>所以事实上，前端登录页面显示出来的的验证码和后端关系其实并不大，后端并不care某一个东西究竟对登录页面get了多少次，后端care的是对验证码图片的url究竟get了多少次，只不过每次get登录页面时会自动get一下验证码图片来显示在前端，所以这两次get是有先后顺序的</li>
+<li>这个先后顺序非常重要，因为后端保存的永远是最后一次get验证码的记录，当我们在浏览器访问一个登录页面，我们会看到一个验证码A，而如果我们再去另一个窗口访问一下验证码图片的url后，我们会看到另一个验证码B，事实上，验证码B才是当前正确登录需要的验证码</li>
+<li>另外，大部分网站都会在登录后进行跳转，一般在response.headers[‘Location’]中保存，对应的状态码一般是302，303，程序并不需要特殊处理页面重定位，程序发起登录请求成功会自动进行页面的重定位直到取到最后登录成功的页面</li>
+<li>最后一点也是卡了我半天的点，我们知道登录时会有set-cookie字段设置cookie，所以程序一般要用requests.session()生成session对象发登录请求，session会自动保存response对象的set-cookie，这没什么，但是！一定要在get验证码图片时就使用session，不要先随便get一下等到发登录请求时再用session，否则你会寄的很惨</li>
+</ol>
+<p><img src="/%E5%8F%8D%E5%8F%8D%E7%88%AC/wukong.jpg" alt="wukong"></p>
 <p><img src="/%E5%8F%8D%E5%8F%8D%E7%88%AC/bottom.png" alt="bottom"></p>
 
       
