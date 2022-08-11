@@ -18,19 +18,19 @@
   
   
   <title>反反爬 | BuT的博客</title>
-  <meta name="description" content="反反爬总结1. 百度安全验证 2. 某数反爬 3. 验证码 百度安全验证通常修改request的请求头载体模拟时，使用浏览器的User-Agent字段： 1Mozilla&#x2F;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit&#x2F;537.36 (KHTML, like Gecko) Chrome&#x2F;103.0.5060.134 Safari&#x2F;537.36 Edg&#x2F;1">
+  <meta name="description" content="反反爬总结1. 百度安全验证 2. 某数反爬 3. 验证码 4. 隐藏域 百度安全验证通常修改request的请求头载体模拟时，使用浏览器的User-Agent字段： 1Mozilla&#x2F;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit&#x2F;537.36 (KHTML, like Gecko) Chrome&#x2F;103.0.5060.134 Safari&#x2F;537.3">
 <meta property="og:type" content="article">
 <meta property="og:title" content="反反爬">
 <meta property="og:url" content="http://bigtrex.top/%E5%8F%8D%E5%8F%8D%E7%88%AC/index.html">
 <meta property="og:site_name" content="BuT的博客">
-<meta property="og:description" content="反反爬总结1. 百度安全验证 2. 某数反爬 3. 验证码 百度安全验证通常修改request的请求头载体模拟时，使用浏览器的User-Agent字段： 1Mozilla&#x2F;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit&#x2F;537.36 (KHTML, like Gecko) Chrome&#x2F;103.0.5060.134 Safari&#x2F;537.36 Edg&#x2F;1">
+<meta property="og:description" content="反反爬总结1. 百度安全验证 2. 某数反爬 3. 验证码 4. 隐藏域 百度安全验证通常修改request的请求头载体模拟时，使用浏览器的User-Agent字段： 1Mozilla&#x2F;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit&#x2F;537.36 (KHTML, like Gecko) Chrome&#x2F;103.0.5060.134 Safari&#x2F;537.3">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://bigtrex.top/%E5%8F%8D%E5%8F%8D%E7%88%AC/%E7%99%BE%E5%BA%A6%E5%AE%89%E5%85%A8%E9%AA%8C%E8%AF%81.png">
 <meta property="og:image" content="http://bigtrex.top/%E5%8F%8D%E5%8F%8D%E7%88%AC/moushu.png">
 <meta property="og:image" content="http://bigtrex.top/%E5%8F%8D%E5%8F%8D%E7%88%AC/wukong.jpg">
 <meta property="og:image" content="http://bigtrex.top/%E5%8F%8D%E5%8F%8D%E7%88%AC/bottom.png">
 <meta property="article:published_time" content="2022-08-01T10:12:39.000Z">
-<meta property="article:modified_time" content="2022-08-11T09:19:46.989Z">
+<meta property="article:modified_time" content="2022-08-11T10:32:59.431Z">
 <meta property="article:author" content="BuT">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://bigtrex.top/%E5%8F%8D%E5%8F%8D%E7%88%AC/%E7%99%BE%E5%BA%A6%E5%AE%89%E5%85%A8%E9%AA%8C%E8%AF%81.png">
@@ -357,10 +357,10 @@
         <span class="post-comment"><i class="icon icon-comment"></i> <a href="/%E5%8F%8D%E5%8F%8D%E7%88%AC/#comments" class="article-comment-link">评论</a></span>
         
 	
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 1k(字)</span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 1.2k(字)</span>
 	
 	
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 3(分)</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 4(分)</span>
 	
 
       </div>
@@ -370,6 +370,7 @@
         <h1 id="反反爬总结"><a href="#反反爬总结" class="headerlink" title="反反爬总结"></a>反反爬总结</h1><p><a href="#%E7%99%BE%E5%BA%A6%E5%AE%89%E5%85%A8%E9%AA%8C%E8%AF%81">1. 百度安全验证</a></p>
 <p><a href="#%E6%9F%90%E6%95%B0%E5%8F%8D%E7%88%AC">2. 某数反爬</a></p>
 <p><a href="#%E9%AA%8C%E8%AF%81%E7%A0%81">3. 验证码</a></p>
+<p><a href="#%E9%9A%90%E8%97%8F%E5%9F%9F">4. 隐藏域</a></p>
 <h1 id="百度安全验证"><a href="#百度安全验证" class="headerlink" title="百度安全验证"></a>百度安全验证</h1><p>通常修改request的请求头载体模拟时，使用浏览器的User-Agent字段：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36 Edg/103.0.1264.77</span><br></pre></td></tr></table></figure>
 
@@ -409,7 +410,14 @@
 <li>另外，大部分网站都会在登录后进行跳转，一般在response.headers[‘Location’]中保存，对应的状态码一般是302，303，程序并不需要特殊处理页面重定位，程序发起登录请求成功会自动进行页面的重定位直到取到最后登录成功的页面</li>
 <li>最后一点也是卡了我半天的点，我们知道登录时会有set-cookie字段设置cookie，所以程序一般要用requests.session()生成session对象发登录请求，session会自动保存response对象的set-cookie，这没什么，但是！一定要在get验证码图片时就使用session，不要先随便get一下等到发登录请求时再用session，否则你会寄的很惨</li>
 </ol>
+<p>附几个练习模拟登录的网站：</p>
+<p><a target="_blank" rel="noopener" href="http://cslabcms.nju.edu.cn/login/index.php">南京大学计算机系本科支撑教育平台</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.examcoo.com/passport/login">考试酷</a></p>
+<p><a target="_blank" rel="noopener" href="https://so.gushiwen.cn/user/login.aspx?from=http://so.gushiwen.cn/user/collect.aspx">古诗文网</a></p>
 <p><img src="/%E5%8F%8D%E5%8F%8D%E7%88%AC/wukong.jpg" alt="wukong"></p>
+<h1 id="隐藏域"><a href="#隐藏域" class="headerlink" title="隐藏域"></a>隐藏域</h1><p>隐藏域是一种常见的反爬手段，post请求提交的参数是由input表单域发起的，因此所有的参数都应该在网页中有对应的input文本框，但是有一些参数没有对应的input文<br>本框，这些参数被隐藏了，这类问题称为隐藏域问题。</p>
+<p>隐藏域对于用户是不可见的，一些网站在发生请求时会将隐藏域中的值作为参数传递，如果提交时缺省这些参数可能无法通过参数匹配，常见的解决方法时在源码中搜索对应隐藏域，解析获取其value值</p>
+<p>例如<a target="_blank" rel="noopener" href="https://so.gushiwen.cn/user/login.aspx?from=http://so.gushiwen.cn/user/collect.aspx">古诗词网</a>在登陆时会用到_VIEWSTATE、_VIEWSTATEGENERATOR两个隐藏域</p>
 <p><img src="/%E5%8F%8D%E5%8F%8D%E7%88%AC/bottom.png" alt="bottom"></p>
 
       
