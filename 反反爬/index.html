@@ -18,19 +18,19 @@
   
   
   <title>反反爬 | BuT的博客</title>
-  <meta name="description" content="反反爬总结1. 百度安全验证 2. 某数反爬 3. 验证码 4. 隐藏域 5. 封ip 6. ajax携带随机参数 7. 伪url 百度安全验证通常修改request的请求头载体模拟时，使用浏览器的User-Agent字段： 1Mozilla&#x2F;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit&#x2F;537.36 (KHTML, like Gecko) Chrom">
+  <meta name="description" content="反反爬总结1. 百度安全验证 2. 某数反爬 3. 验证码 4. 隐藏域 5. 封ip 6. ajax携带随机参数 7. 伪url 8. http防盗链 百度安全验证通常修改request的请求头载体模拟时，使用浏览器的User-Agent字段： 1Mozilla&#x2F;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit&#x2F;537.36 (KHTML, like G">
 <meta property="og:type" content="article">
 <meta property="og:title" content="反反爬">
 <meta property="og:url" content="http://bigtrex.top/%E5%8F%8D%E5%8F%8D%E7%88%AC/index.html">
 <meta property="og:site_name" content="BuT的博客">
-<meta property="og:description" content="反反爬总结1. 百度安全验证 2. 某数反爬 3. 验证码 4. 隐藏域 5. 封ip 6. ajax携带随机参数 7. 伪url 百度安全验证通常修改request的请求头载体模拟时，使用浏览器的User-Agent字段： 1Mozilla&#x2F;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit&#x2F;537.36 (KHTML, like Gecko) Chrom">
+<meta property="og:description" content="反反爬总结1. 百度安全验证 2. 某数反爬 3. 验证码 4. 隐藏域 5. 封ip 6. ajax携带随机参数 7. 伪url 8. http防盗链 百度安全验证通常修改request的请求头载体模拟时，使用浏览器的User-Agent字段： 1Mozilla&#x2F;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit&#x2F;537.36 (KHTML, like G">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://bigtrex.top/%E5%8F%8D%E5%8F%8D%E7%88%AC/%E7%99%BE%E5%BA%A6%E5%AE%89%E5%85%A8%E9%AA%8C%E8%AF%81.png">
 <meta property="og:image" content="http://bigtrex.top/%E5%8F%8D%E5%8F%8D%E7%88%AC/moushu.png">
 <meta property="og:image" content="http://bigtrex.top/%E5%8F%8D%E5%8F%8D%E7%88%AC/wukong.jpg">
 <meta property="og:image" content="http://bigtrex.top/%E5%8F%8D%E5%8F%8D%E7%88%AC/bottom.png">
 <meta property="article:published_time" content="2022-08-01T10:12:39.000Z">
-<meta property="article:modified_time" content="2022-08-13T09:06:04.414Z">
+<meta property="article:modified_time" content="2022-08-13T12:53:57.636Z">
 <meta property="article:author" content="BuT">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://bigtrex.top/%E5%8F%8D%E5%8F%8D%E7%88%AC/%E7%99%BE%E5%BA%A6%E5%AE%89%E5%85%A8%E9%AA%8C%E8%AF%81.png">
@@ -203,7 +203,7 @@
   <div class="widget">
     <h3 class="widget-title">分类</h3>
     <div class="widget-body">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/MarkDown/">MarkDown</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Python/">Python</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%88%AC%E8%99%AB/">爬虫</a><span class="category-list-count">4</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/MarkDown/">MarkDown</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Python/">Python</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%88%AC%E8%99%AB/">爬虫</a><span class="category-list-count">3</span></li></ul>
     </div>
   </div>
 
@@ -218,7 +218,7 @@
   <div class="widget">
     <h3 class="widget-title">归档</h3>
     <div class="widget-body">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/08/">八月 2022</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/07/">七月 2022</a><span class="archive-list-count">3</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/08/">八月 2022</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/07/">七月 2022</a><span class="archive-list-count">3</span></li></ul>
     </div>
   </div>
 
@@ -241,21 +241,6 @@
               </p>
               <p class="item-date">
                 <time datetime="2022-08-05T07:52:39.000Z" itemprop="datePublished">2022-08-05</time>
-              </p>
-            </div>
-          </li>
-          
-          <li>
-            
-            <div class="item-inner">
-              <p class="item-category">
-                <a class="category-link" href="/categories/%E7%88%AC%E8%99%AB/">爬虫</a>
-              </p>
-              <p class="item-title">
-                <a href="/%E7%88%AC%E8%99%AB%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81/" class="title">爬虫中文乱码</a>
-              </p>
-              <p class="item-date">
-                <time datetime="2022-08-05T03:01:51.000Z" itemprop="datePublished">2022-08-05</time>
               </p>
             </div>
           </li>
@@ -301,6 +286,21 @@
               </p>
               <p class="item-date">
                 <time datetime="2022-08-01T13:01:10.000Z" itemprop="datePublished">2022-08-01</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/%E7%88%AC%E8%99%AB/">爬虫</a>
+              </p>
+              <p class="item-title">
+                <a href="/%E5%8F%8D%E5%8F%8D%E7%88%AC/" class="title">反反爬</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2022-08-01T10:12:39.000Z" itemprop="datePublished">2022-08-01</time>
               </p>
             </div>
           </li>
@@ -357,7 +357,7 @@
         <span class="post-comment"><i class="icon icon-comment"></i> <a href="/%E5%8F%8D%E5%8F%8D%E7%88%AC/#comments" class="article-comment-link">评论</a></span>
         
 	
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 2k(字)</span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 2.2k(字)</span>
 	
 	
 		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 7(分)</span>
@@ -374,6 +374,7 @@
 <p><a href="#%E5%B0%81ip">5. 封ip</a></p>
 <p><a href="#ajax%E6%90%BA%E5%B8%A6%E9%9A%8F%E6%9C%BA%E5%8F%82%E6%95%B0">6. ajax携带随机参数</a></p>
 <p><a href="#%E4%BC%AAurl">7. 伪url</a></p>
+<p><a href="#http%E9%98%B2%E7%9B%97%E9%93%BE">8. http防盗链</a></p>
 <h1 id="百度安全验证"><a href="#百度安全验证" class="headerlink" title="百度安全验证"></a>百度安全验证</h1><p>通常修改request的请求头载体模拟时，使用浏览器的User-Agent字段：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36 Edg/103.0.1264.77</span><br></pre></td></tr></table></figure>
 
@@ -411,7 +412,7 @@
 <li>所以事实上，前端登录页面显示出来的的验证码和后端关系其实并不大，后端并不care某一个东西究竟对登录页面get了多少次，后端care的是对验证码图片的url究竟get了多少次，只不过每次get登录页面时会自动get一下验证码图片来显示在前端，所以这两次get是有先后顺序的</li>
 <li>这个先后顺序非常重要，因为后端保存的永远是最后一次get验证码的记录，当我们在浏览器访问一个登录页面，我们会看到一个验证码A，而如果我们再去另一个窗口访问一下验证码图片的url后，我们会看到另一个验证码B，事实上，验证码B才是当前正确登录需要的验证码</li>
 <li>另外，大部分网站都会在登录后进行跳转，一般在response.headers[‘Location’]中保存，对应的状态码一般是302，303，程序并不需要特殊处理页面重定位，程序发起登录请求成功会自动进行页面的重定位直到取到最后登录成功的页面</li>
-<li>最后一点也是卡了我半天的点，我们知道登录时会有set-cookie字段设置cookie，所以程序一般要用requests.session()生成session对象发登录请求，session会自动保存response对象的set-cookie，这没什么，但是！一定要在get验证码图片时就使用session，不要先随便get一下等到发登录请求时再用session，否则你会寄的很惨</li>
+<li>最后一点也是卡了我半天的点，我们知道登录时会有set-cookie字段设置cookie，所以程序一般要用requests.session()生成session对象发登录请求，session会自动保存response对象的set-cookie，这没什么，但是！<strong>一定要在get验证码图片时就使用session</strong>，不要先随便get一下等到发登录请求时再用session，否则你会寄的很惨</li>
 </ol>
 <p>附几个练习模拟登录的网站：</p>
 <p><a target="_blank" rel="noopener" href="http://cslabcms.nju.edu.cn/login/index.php">南京大学计算机系本科支撑教育平台</a></p>
@@ -419,7 +420,7 @@
 <p><a target="_blank" rel="noopener" href="https://so.gushiwen.cn/user/login.aspx?from=http://so.gushiwen.cn/user/collect.aspx">古诗文网</a></p>
 <p><img src="/%E5%8F%8D%E5%8F%8D%E7%88%AC/wukong.jpg" alt="wukong"></p>
 <h1 id="隐藏域"><a href="#隐藏域" class="headerlink" title="隐藏域"></a>隐藏域</h1><p>隐藏域是一种常见的反爬手段，post请求提交的参数是由input表单域发起的，因此所有的参数都应该在网页中有对应的input文本框，但是有一些参数没有对应的input文<br>本框，这些参数被隐藏了，这类问题称为隐藏域问题。</p>
-<p>隐藏域对于用户是不可见的，一些网站在发生请求时会将隐藏域中的值作为参数传递，如果提交时缺省这些参数可能无法通过参数匹配，常见的解决方法时在源码中搜索对应隐藏域，解析获取其value值</p>
+<p>隐藏域对于用户是不可见的，一些网站在发生请求时会将隐藏域中的值作为参数传递，如果提交时缺省这些参数可能无法通过参数匹配，常见的解决方法时<strong>在源码中搜索对应隐藏域，解析获取其value值</strong></p>
 <p>例如<a target="_blank" rel="noopener" href="https://so.gushiwen.cn/user/login.aspx?from=http://so.gushiwen.cn/user/collect.aspx">古诗词网</a>在登陆时会用到_VIEWSTATE、_VIEWSTATEGENERATOR两个隐藏域</p>
 <h1 id="封ip"><a href="#封ip" class="headerlink" title="封ip"></a>封ip</h1><p>在单位时间内某ip访问次数超过阈值，服务器会禁止该ip的访问，返回403或错误信息等</p>
 <ul>
@@ -448,6 +449,10 @@
 <h1 id="伪url"><a href="#伪url" class="headerlink" title="伪url"></a>伪url</h1><p>同样在爬取<a target="_blank" rel="noopener" href="https://www.pearvideo.com/">梨视频</a>时，ajax请求返回的json数据中包含了视频的url，但直接访问该url得到404</p>
 <p>仔细观察，json数据中的url和最终前端标签中的url不完全一致，也就是说梨视频还进行了一个url的转换，json数据中的url是一个伪url</p>
 <p>这个就比较容易了，找到转换的规律进行替换就可以</p>
+<h1 id="http防盗链"><a href="#http防盗链" class="headerlink" title="http防盗链"></a>http防盗链</h1><p>http防盗链并不完全针对爬虫设计，但是确实起到了反爬的功能</p>
+<p>http防盗链主要利用请求头部的Referer字段实现，Referer字段指示了请求的来源——即从哪里链接到了当前url</p>
+<p>某些网站希望只能通过自己的网站链接到自己的资源时，会检查请求头的Referer字段，如果Referer字段不是自身网站的url则会拒绝访问并返回错误信息</p>
+<p>通常在headers中增加Referer键值对，值为当前的网站url即可直接请求资源</p>
 <p><img src="/%E5%8F%8D%E5%8F%8D%E7%88%AC/bottom.png" alt="bottom"></p>
 
       
