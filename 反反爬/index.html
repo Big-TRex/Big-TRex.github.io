@@ -18,19 +18,19 @@
   
   
   <title>反反爬 | BuT的博客</title>
-  <meta name="description" content="反反爬总结1. 百度安全验证 2. 某数反爬 3. 验证码 4. 隐藏域 百度安全验证通常修改request的请求头载体模拟时，使用浏览器的User-Agent字段： 1Mozilla&#x2F;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit&#x2F;537.36 (KHTML, like Gecko) Chrome&#x2F;103.0.5060.134 Safari&#x2F;537.3">
+  <meta name="description" content="反反爬总结1. 百度安全验证 2. 某数反爬 3. 验证码 4. 隐藏域 5. 封ip 6. ajax携带随机参数 7. 伪url 百度安全验证通常修改request的请求头载体模拟时，使用浏览器的User-Agent字段： 1Mozilla&#x2F;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit&#x2F;537.36 (KHTML, like Gecko) Chrom">
 <meta property="og:type" content="article">
 <meta property="og:title" content="反反爬">
 <meta property="og:url" content="http://bigtrex.top/%E5%8F%8D%E5%8F%8D%E7%88%AC/index.html">
 <meta property="og:site_name" content="BuT的博客">
-<meta property="og:description" content="反反爬总结1. 百度安全验证 2. 某数反爬 3. 验证码 4. 隐藏域 百度安全验证通常修改request的请求头载体模拟时，使用浏览器的User-Agent字段： 1Mozilla&#x2F;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit&#x2F;537.36 (KHTML, like Gecko) Chrome&#x2F;103.0.5060.134 Safari&#x2F;537.3">
+<meta property="og:description" content="反反爬总结1. 百度安全验证 2. 某数反爬 3. 验证码 4. 隐藏域 5. 封ip 6. ajax携带随机参数 7. 伪url 百度安全验证通常修改request的请求头载体模拟时，使用浏览器的User-Agent字段： 1Mozilla&#x2F;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit&#x2F;537.36 (KHTML, like Gecko) Chrom">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://bigtrex.top/%E5%8F%8D%E5%8F%8D%E7%88%AC/%E7%99%BE%E5%BA%A6%E5%AE%89%E5%85%A8%E9%AA%8C%E8%AF%81.png">
 <meta property="og:image" content="http://bigtrex.top/%E5%8F%8D%E5%8F%8D%E7%88%AC/moushu.png">
 <meta property="og:image" content="http://bigtrex.top/%E5%8F%8D%E5%8F%8D%E7%88%AC/wukong.jpg">
 <meta property="og:image" content="http://bigtrex.top/%E5%8F%8D%E5%8F%8D%E7%88%AC/bottom.png">
 <meta property="article:published_time" content="2022-08-01T10:12:39.000Z">
-<meta property="article:modified_time" content="2022-08-11T10:32:59.431Z">
+<meta property="article:modified_time" content="2022-08-13T09:06:04.414Z">
 <meta property="article:author" content="BuT">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://bigtrex.top/%E5%8F%8D%E5%8F%8D%E7%88%AC/%E7%99%BE%E5%BA%A6%E5%AE%89%E5%85%A8%E9%AA%8C%E8%AF%81.png">
@@ -357,10 +357,10 @@
         <span class="post-comment"><i class="icon icon-comment"></i> <a href="/%E5%8F%8D%E5%8F%8D%E7%88%AC/#comments" class="article-comment-link">评论</a></span>
         
 	
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 1.2k(字)</span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 2k(字)</span>
 	
 	
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 4(分)</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 7(分)</span>
 	
 
       </div>
@@ -371,6 +371,9 @@
 <p><a href="#%E6%9F%90%E6%95%B0%E5%8F%8D%E7%88%AC">2. 某数反爬</a></p>
 <p><a href="#%E9%AA%8C%E8%AF%81%E7%A0%81">3. 验证码</a></p>
 <p><a href="#%E9%9A%90%E8%97%8F%E5%9F%9F">4. 隐藏域</a></p>
+<p><a href="#%E5%B0%81ip">5. 封ip</a></p>
+<p><a href="#ajax%E6%90%BA%E5%B8%A6%E9%9A%8F%E6%9C%BA%E5%8F%82%E6%95%B0">6. ajax携带随机参数</a></p>
+<p><a href="#%E4%BC%AAurl">7. 伪url</a></p>
 <h1 id="百度安全验证"><a href="#百度安全验证" class="headerlink" title="百度安全验证"></a>百度安全验证</h1><p>通常修改request的请求头载体模拟时，使用浏览器的User-Agent字段：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36 Edg/103.0.1264.77</span><br></pre></td></tr></table></figure>
 
@@ -418,6 +421,33 @@
 <h1 id="隐藏域"><a href="#隐藏域" class="headerlink" title="隐藏域"></a>隐藏域</h1><p>隐藏域是一种常见的反爬手段，post请求提交的参数是由input表单域发起的，因此所有的参数都应该在网页中有对应的input文本框，但是有一些参数没有对应的input文<br>本框，这些参数被隐藏了，这类问题称为隐藏域问题。</p>
 <p>隐藏域对于用户是不可见的，一些网站在发生请求时会将隐藏域中的值作为参数传递，如果提交时缺省这些参数可能无法通过参数匹配，常见的解决方法时在源码中搜索对应隐藏域，解析获取其value值</p>
 <p>例如<a target="_blank" rel="noopener" href="https://so.gushiwen.cn/user/login.aspx?from=http://so.gushiwen.cn/user/collect.aspx">古诗词网</a>在登陆时会用到_VIEWSTATE、_VIEWSTATEGENERATOR两个隐藏域</p>
+<h1 id="封ip"><a href="#封ip" class="headerlink" title="封ip"></a>封ip</h1><p>在单位时间内某ip访问次数超过阈值，服务器会禁止该ip的访问，返回403或错误信息等</p>
+<ul>
+<li><p>最简单的处理方法，随便找个代理网站，随便拿一个ip贴过来，proxies&#x3D;{‘’}</p>
+</li>
+<li><p>搭个代理池，用的时候从里面拿一个ip</p>
+<ul>
+<li>大致思路是写个爬虫，把各个免费代理网站中的ip和端口号爬下来，测试可以用的存到本地，用的时候随便取一个</li>
+<li><a target="_blank" rel="noopener" href="http://icanhazip.com/">测试http代理</a>，该网站会返回发起请求的ip，用于测试代理是否有效</li>
+<li>代理ip时效性强弱和本机物理位置有关，所以写个爬虫随时更新代理池还是很有必要的</li>
+<li>经过自己的测试，大部分免费的ip代理延时都很大，会出现连接错误，天下没有免费的午餐</li>
+<li>另外没有必要纠结于某一个ip或某一个网站代理，只要不是爬虫的bug，出错的直接丢掉就好不必纠结错误原因</li>
+</ul>
+</li>
+</ul>
+<p>一些提供有效的免费代理的网站：</p>
+<p><a target="_blank" rel="noopener" href="https://proxy.seofangfa.com/">玛卡巴卡</a></p>
+<p><a target="_blank" rel="noopener" href="https://ip.jiangxianli.com/">唔西迪西</a></p>
+<p><a target="_blank" rel="noopener" href="https://proxy.ip3366.net/free/">依古比古</a>-该网站提供https代理</p>
+<h1 id="ajax携带随机参数"><a href="#ajax携带随机参数" class="headerlink" title="ajax携带随机参数"></a>ajax携带随机参数</h1><p>在爬取<a target="_blank" rel="noopener" href="https://www.pearvideo.com/">梨视频</a>时，其中的视频url是动态加载的，定位ajax请求却发现参数中携带mrd随机数</p>
+<p>实际上，在ajax请求中携带的随机参数多数不用于反爬目的，是前端用于欺骗浏览器或服务器的</p>
+<blockquote>
+<p>某些代理服务器会忽略no-cache之类的标识对响应结果强行缓存（例如IE），如果url不改变的话浏览器可能不会真正向服务器发送请求而调用自己的缓存<br>这样会导致后端的更新无法正确显示在前端，所以为保证每次请求都同服务器交互，前端会在url中携带一个随机数或一个时间戳，目的是使每次请求的url不同<br>对于爬虫的模拟，需要在js源代码中找到对应的参数，找到其随机数的生成方式，直接在爬虫中模拟即可</p>
+</blockquote>
+<p>总之，ajax请求携带的随机参数本意不在反爬（也就是说后端不会对数值进行比对，只会对随机数格式进行比对），但正确找到随机数的生成方式确实会对爬虫造成阻碍</p>
+<h1 id="伪url"><a href="#伪url" class="headerlink" title="伪url"></a>伪url</h1><p>同样在爬取<a target="_blank" rel="noopener" href="https://www.pearvideo.com/">梨视频</a>时，ajax请求返回的json数据中包含了视频的url，但直接访问该url得到404</p>
+<p>仔细观察，json数据中的url和最终前端标签中的url不完全一致，也就是说梨视频还进行了一个url的转换，json数据中的url是一个伪url</p>
+<p>这个就比较容易了，找到转换的规律进行替换就可以</p>
 <p><img src="/%E5%8F%8D%E5%8F%8D%E7%88%AC/bottom.png" alt="bottom"></p>
 
       

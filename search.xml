@@ -1,53 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>bs4方法自查</title>
-    <url>/bs4%E6%96%B9%E6%B3%95%E8%87%AA%E6%9F%A5/</url>
-    <content><![CDATA[<h1 id="bs4库方法自查"><a href="#bs4库方法自查" class="headerlink" title="bs4库方法自查"></a>bs4库方法自查</h1><p>Beautiful Soup库是解析、遍历、维护“标签树”的功能库</p>
-<h2 id="BeautifulSoup使用方法"><a href="#BeautifulSoup使用方法" class="headerlink" title="BeautifulSoup使用方法"></a>BeautifulSoup使用方法</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup</span><br><span class="line"><span class="keyword">import</span> bs4</span><br><span class="line"></span><br><span class="line">soup=BeautifulSoup(&lt;html&gt;response.text&lt;/html&gt;,<span class="string">&#x27;html.parser&#x27;</span>)</span><br><span class="line">soup=BeautifulSoup(<span class="built_in">open</span>(<span class="string">&#x27;*.html&#x27;</span>,<span class="string">&#x27;r&#x27;</span>),<span class="string">&#x27;html.parser&#x27;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h2 id="BeautifulSoup类基本元素"><a href="#BeautifulSoup类基本元素" class="headerlink" title="BeautifulSoup类基本元素"></a>BeautifulSoup类基本元素</h2><table>
-<thead>
-<tr>
-<th align="center">基本元素</th>
-<th align="center">含义</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">Tag</td>
-<td align="center">标签，以&lt;&gt;…&lt;&#x2F;&gt;组成</td>
-</tr>
-<tr>
-<td align="center">Name</td>
-<td align="center">标签名，&lt;p&gt;…&lt;&#x2F;p&gt;的名字是p：&lt;tag&gt;.name</td>
-</tr>
-<tr>
-<td align="center">Attributes</td>
-<td align="center">标签的属性，字典形式组织：<tag>.attrs</tag></td>
-</tr>
-<tr>
-<td align="center">NavigableString</td>
-<td align="center">标签内非属性字符串，标签下只能有一个子节点：<tag>.string，返回NavigableString</tag></td>
-</tr>
-<tr>
-<td align="center">text</td>
-<td align="center">标签内字符串，可跨域层级：<tag>.text，返回str</tag></td>
-</tr>
-<tr>
-<td align="center">Comment</td>
-<td align="center">标签内字符串的注释部分：<tag>.string</tag></td>
-</tr>
-</tbody></table>
-<p><a href="https://blog.csdn.net/weixin_30352645/article/details/99390523?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522165976942216782390551621%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=165976942216782390551621&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~baidu_landing_v2~default-2-99390523-null-null.142%5Ev39%5Epc_rank_v37,185%5Ev2%5Econtrol&utm_term=bs4%E7%9A%84string%E5%92%8Ctext&spm=1018.2226.3001.4187">text和string的区别</a></p>
-<h2 id="BeautifulSoup类常用方法"><a href="#BeautifulSoup类常用方法" class="headerlink" title="BeautifulSoup类常用方法"></a>BeautifulSoup类常用方法</h2><p>一篇总结bs4非常相近且准确的blog</p>
-<p><a href="https://www.cnblogs.com/gl1573/p/9480022.html">bs4方法详情</a></p>
-<p><img src="/bs4%E6%96%B9%E6%B3%95%E8%87%AA%E6%9F%A5/bottom.png" alt="bottom"></p>
-]]></content>
-      <categories>
-        <category>爬虫</category>
-      </categories>
-  </entry>
-  <entry>
     <title>MD语法自查</title>
     <url>/MD%E8%AF%AD%E6%B3%95%E8%87%AA%E6%9F%A5/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer">
@@ -137,75 +90,50 @@
       </categories>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+    <title>bs4方法自查</title>
+    <url>/bs4%E6%96%B9%E6%B3%95%E8%87%AA%E6%9F%A5/</url>
+    <content><![CDATA[<h1 id="bs4库方法自查"><a href="#bs4库方法自查" class="headerlink" title="bs4库方法自查"></a>bs4库方法自查</h1><p>Beautiful Soup库是解析、遍历、维护“标签树”的功能库</p>
+<h2 id="BeautifulSoup使用方法"><a href="#BeautifulSoup使用方法" class="headerlink" title="BeautifulSoup使用方法"></a>BeautifulSoup使用方法</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup</span><br><span class="line"><span class="keyword">import</span> bs4</span><br><span class="line"></span><br><span class="line">soup=BeautifulSoup(&lt;html&gt;response.text&lt;/html&gt;,<span class="string">&#x27;html.parser&#x27;</span>)</span><br><span class="line">soup=BeautifulSoup(<span class="built_in">open</span>(<span class="string">&#x27;*.html&#x27;</span>,<span class="string">&#x27;r&#x27;</span>),<span class="string">&#x27;html.parser&#x27;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>关于MD锚点的坑</title>
-    <url>/%E5%85%B3%E4%BA%8EMD%E9%94%9A%E7%82%B9%E7%9A%84%E5%9D%91/</url>
-    <content><![CDATA[<h1 id="关于MD锚点的坑"><a href="#关于MD锚点的坑" class="headerlink" title="关于MD锚点的坑"></a>关于MD锚点的坑</h1><p>锚点是一个方便定位的东西，用起来还是很香的</p>
-<p>但是不同MarkDown对锚点的解释都有些许区别，导致不同平台上锚点可能会失效</p>
-<p>MarkDown中对于锚点的语法定义如下：</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">[<span class="string">描述</span>](<span class="link">#定位的title</span>)</span><br><span class="line"></span><br><span class="line">...</span><br><span class="line"></span><br><span class="line"><span class="section"># 定位的Title</span></span><br></pre></td></tr></table></figure>
-
-<p>多级标题都可以作为’定位的title’，另外标题中大写字母会自动转为小写字母</p>
-<p><a href="#for-example">For Example</a></p>
-<p>…</p>
-<p>…</p>
-<p>…</p>
-<p>…</p>
-<p>…</p>
-<h2 id="For-Example"><a href="#For-Example" class="headerlink" title="For Example"></a>For Example</h2><p>这样的锚点在vscode这样的编辑器上是没有问题的，但是放到如github，csdn上会失效</p>
-<p>代码如下：</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">[<span class="string">For Example</span>](<span class="link">#for-example</span>)</span><br><span class="line"></span><br><span class="line"><span class="section">## For Example</span></span><br></pre></td></tr></table></figure>
-
-<p>对于hexo+github搭建的博客，这样的锚点失效在于#后的内容和标题不一致，主要在于英文大小写，中文不存在如上问题</p>
-<p>修改为如下的代码，在hexo+github上可以实现锚点，然而对于vscode这样的编辑器当然失效了，另外这样的锚点在csdn上也会失效</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">[<span class="string">For Example2</span>](<span class="link">#For-Example2</span>)</span><br><span class="line"></span><br><span class="line"><span class="section">## For Example2</span></span><br></pre></td></tr></table></figure>
-
-<p><a href="#For-Example2">For Example2</a></p>
-<p>…</p>
-<p>…</p>
-<p>…</p>
-<p>…</p>
-<p>…</p>
-<h2 id="For-Example2"><a href="#For-Example2" class="headerlink" title="For Example2"></a>For Example2</h2><p>目前来看纯MarkDown语法的锚点总会存在一些坑，一个通用解决方法是配合html中锚点的使用，代码如下：</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">[<span class="string">点击跳转到For Example3</span>](<span class="link">#Test</span>)</span><br><span class="line"></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">a</span> <span class="attr">id</span>=<span class="string">&quot;Test&quot;</span>&gt;</span></span>For Example3<span class="language-xml"><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
-
-<p>其中id值只支持英文，id值和#后的值完全一致，不支持id值包含空格</p>
-<p>当然，这样的代码并非按照MarkDown的思想直接将标题作为锚点的定位点，但是这样的锚点在vscode，github，csdn上都可以<strong>work！</strong></p>
-<p><a href="#Test">点击跳转到For Example3</a></p>
-<p>…</p>
-<p>…</p>
-<p>…</p>
-<p>…</p>
-<p>…</p>
-<p>…</p>
-<p>…</p>
-<p><a id="Test">For Example3</a></p>
-<p>…</p>
-<p>…</p>
-<p>…</p>
-<p>…</p>
-<p>…</p>
-<p><img src="/%E5%85%B3%E4%BA%8EMD%E9%94%9A%E7%82%B9%E7%9A%84%E5%9D%91/bottom.png" alt="bottom"></p>
+<h2 id="BeautifulSoup类基本元素"><a href="#BeautifulSoup类基本元素" class="headerlink" title="BeautifulSoup类基本元素"></a>BeautifulSoup类基本元素</h2><table>
+<thead>
+<tr>
+<th align="center">基本元素</th>
+<th align="center">含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">Tag</td>
+<td align="center">标签，以&lt;&gt;…&lt;&#x2F;&gt;组成</td>
+</tr>
+<tr>
+<td align="center">Name</td>
+<td align="center">标签名，&lt;p&gt;…&lt;&#x2F;p&gt;的名字是p：&lt;tag&gt;.name</td>
+</tr>
+<tr>
+<td align="center">Attributes</td>
+<td align="center">标签的属性，字典形式组织：<tag>.attrs</tag></td>
+</tr>
+<tr>
+<td align="center">NavigableString</td>
+<td align="center">标签内非属性字符串，标签下只能有一个子节点：<tag>.string，返回NavigableString</tag></td>
+</tr>
+<tr>
+<td align="center">text</td>
+<td align="center">标签内字符串，可跨域层级：<tag>.text，返回str</tag></td>
+</tr>
+<tr>
+<td align="center">Comment</td>
+<td align="center">标签内字符串的注释部分：<tag>.string</tag></td>
+</tr>
+</tbody></table>
+<p><a href="https://blog.csdn.net/weixin_30352645/article/details/99390523?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522165976942216782390551621%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=165976942216782390551621&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~baidu_landing_v2~default-2-99390523-null-null.142%5Ev39%5Epc_rank_v37,185%5Ev2%5Econtrol&utm_term=bs4%E7%9A%84string%E5%92%8Ctext&spm=1018.2226.3001.4187">text和string的区别</a></p>
+<h2 id="BeautifulSoup类常用方法"><a href="#BeautifulSoup类常用方法" class="headerlink" title="BeautifulSoup类常用方法"></a>BeautifulSoup类常用方法</h2><p>一篇总结bs4非常相近且准确的blog</p>
+<p><a href="https://www.cnblogs.com/gl1573/p/9480022.html">bs4方法详情</a></p>
+<p><img src="/bs4%E6%96%B9%E6%B3%95%E8%87%AA%E6%9F%A5/bottom.png" alt="bottom"></p>
 ]]></content>
       <categories>
-        <category>MarkDown</category>
+        <category>爬虫</category>
       </categories>
   </entry>
   <entry>
@@ -320,20 +248,15 @@
       </categories>
   </entry>
   <entry>
-    <title>爬虫中文乱码</title>
-    <url>/%E7%88%AC%E8%99%AB%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81/</url>
-    <content><![CDATA[<h1 id="爬虫中文乱码"><a href="#爬虫中文乱码" class="headerlink" title="爬虫中文乱码"></a>爬虫中文乱码</h1>]]></content>
-      <categories>
-        <category>爬虫</category>
-      </categories>
-  </entry>
-  <entry>
     <title>反反爬</title>
     <url>/%E5%8F%8D%E5%8F%8D%E7%88%AC/</url>
     <content><![CDATA[<h1 id="反反爬总结"><a href="#反反爬总结" class="headerlink" title="反反爬总结"></a>反反爬总结</h1><p><a href="#%E7%99%BE%E5%BA%A6%E5%AE%89%E5%85%A8%E9%AA%8C%E8%AF%81">1. 百度安全验证</a></p>
 <p><a href="#%E6%9F%90%E6%95%B0%E5%8F%8D%E7%88%AC">2. 某数反爬</a></p>
 <p><a href="#%E9%AA%8C%E8%AF%81%E7%A0%81">3. 验证码</a></p>
 <p><a href="#%E9%9A%90%E8%97%8F%E5%9F%9F">4. 隐藏域</a></p>
+<p><a href="#%E5%B0%81ip">5. 封ip</a></p>
+<p><a href="#ajax%E6%90%BA%E5%B8%A6%E9%9A%8F%E6%9C%BA%E5%8F%82%E6%95%B0">6. ajax携带随机参数</a></p>
+<p><a href="#%E4%BC%AAurl">7. 伪url</a></p>
 <h1 id="百度安全验证"><a href="#百度安全验证" class="headerlink" title="百度安全验证"></a>百度安全验证</h1><p>通常修改request的请求头载体模拟时，使用浏览器的User-Agent字段：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36 Edg/103.0.1264.77</span><br></pre></td></tr></table></figure>
 
@@ -381,10 +304,109 @@
 <h1 id="隐藏域"><a href="#隐藏域" class="headerlink" title="隐藏域"></a>隐藏域</h1><p>隐藏域是一种常见的反爬手段，post请求提交的参数是由input表单域发起的，因此所有的参数都应该在网页中有对应的input文本框，但是有一些参数没有对应的input文<br>本框，这些参数被隐藏了，这类问题称为隐藏域问题。</p>
 <p>隐藏域对于用户是不可见的，一些网站在发生请求时会将隐藏域中的值作为参数传递，如果提交时缺省这些参数可能无法通过参数匹配，常见的解决方法时在源码中搜索对应隐藏域，解析获取其value值</p>
 <p>例如<a href="https://so.gushiwen.cn/user/login.aspx?from=http://so.gushiwen.cn/user/collect.aspx">古诗词网</a>在登陆时会用到_VIEWSTATE、_VIEWSTATEGENERATOR两个隐藏域</p>
+<h1 id="封ip"><a href="#封ip" class="headerlink" title="封ip"></a>封ip</h1><p>在单位时间内某ip访问次数超过阈值，服务器会禁止该ip的访问，返回403或错误信息等</p>
+<ul>
+<li><p>最简单的处理方法，随便找个代理网站，随便拿一个ip贴过来，proxies&#x3D;{‘’}</p>
+</li>
+<li><p>搭个代理池，用的时候从里面拿一个ip</p>
+<ul>
+<li>大致思路是写个爬虫，把各个免费代理网站中的ip和端口号爬下来，测试可以用的存到本地，用的时候随便取一个</li>
+<li><a href="http://icanhazip.com/">测试http代理</a>，该网站会返回发起请求的ip，用于测试代理是否有效</li>
+<li>代理ip时效性强弱和本机物理位置有关，所以写个爬虫随时更新代理池还是很有必要的</li>
+<li>经过自己的测试，大部分免费的ip代理延时都很大，会出现连接错误，天下没有免费的午餐</li>
+<li>另外没有必要纠结于某一个ip或某一个网站代理，只要不是爬虫的bug，出错的直接丢掉就好不必纠结错误原因</li>
+</ul>
+</li>
+</ul>
+<p>一些提供有效的免费代理的网站：</p>
+<p><a href="https://proxy.seofangfa.com/">玛卡巴卡</a></p>
+<p><a href="https://ip.jiangxianli.com/">唔西迪西</a></p>
+<p><a href="https://proxy.ip3366.net/free/">依古比古</a>-该网站提供https代理</p>
+<h1 id="ajax携带随机参数"><a href="#ajax携带随机参数" class="headerlink" title="ajax携带随机参数"></a>ajax携带随机参数</h1><p>在爬取<a href="https://www.pearvideo.com/">梨视频</a>时，其中的视频url是动态加载的，定位ajax请求却发现参数中携带mrd随机数</p>
+<p>实际上，在ajax请求中携带的随机参数多数不用于反爬目的，是前端用于欺骗浏览器或服务器的</p>
+<blockquote>
+<p>某些代理服务器会忽略no-cache之类的标识对响应结果强行缓存（例如IE），如果url不改变的话浏览器可能不会真正向服务器发送请求而调用自己的缓存<br>这样会导致后端的更新无法正确显示在前端，所以为保证每次请求都同服务器交互，前端会在url中携带一个随机数或一个时间戳，目的是使每次请求的url不同<br>对于爬虫的模拟，需要在js源代码中找到对应的参数，找到其随机数的生成方式，直接在爬虫中模拟即可</p>
+</blockquote>
+<p>总之，ajax请求携带的随机参数本意不在反爬（也就是说后端不会对数值进行比对，只会对随机数格式进行比对），但正确找到随机数的生成方式确实会对爬虫造成阻碍</p>
+<h1 id="伪url"><a href="#伪url" class="headerlink" title="伪url"></a>伪url</h1><p>同样在爬取<a href="https://www.pearvideo.com/">梨视频</a>时，ajax请求返回的json数据中包含了视频的url，但直接访问该url得到404</p>
+<p>仔细观察，json数据中的url和最终前端标签中的url不完全一致，也就是说梨视频还进行了一个url的转换，json数据中的url是一个伪url</p>
+<p>这个就比较容易了，找到转换的规律进行替换就可以</p>
 <p><img src="/%E5%8F%8D%E5%8F%8D%E7%88%AC/bottom.png" alt="bottom"></p>
 ]]></content>
       <categories>
         <category>爬虫</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>关于MD锚点的坑</title>
+    <url>/%E5%85%B3%E4%BA%8EMD%E9%94%9A%E7%82%B9%E7%9A%84%E5%9D%91/</url>
+    <content><![CDATA[<h1 id="关于MD锚点的坑"><a href="#关于MD锚点的坑" class="headerlink" title="关于MD锚点的坑"></a>关于MD锚点的坑</h1><p>锚点是一个方便定位的东西，用起来还是很香的</p>
+<p>但是不同MarkDown对锚点的解释都有些许区别，导致不同平台上锚点可能会失效</p>
+<p>MarkDown中对于锚点的语法定义如下：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">[<span class="string">描述</span>](<span class="link">#定位的title</span>)</span><br><span class="line"></span><br><span class="line">...</span><br><span class="line"></span><br><span class="line"><span class="section"># 定位的Title</span></span><br></pre></td></tr></table></figure>
+
+<p>多级标题都可以作为’定位的title’，另外标题中大写字母会自动转为小写字母</p>
+<p><a href="#for-example">For Example</a></p>
+<p>…</p>
+<p>…</p>
+<p>…</p>
+<p>…</p>
+<p>…</p>
+<h2 id="For-Example"><a href="#For-Example" class="headerlink" title="For Example"></a>For Example</h2><p>这样的锚点在vscode这样的编辑器上是没有问题的，但是放到如github，csdn上会失效</p>
+<p>代码如下：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">[<span class="string">For Example</span>](<span class="link">#for-example</span>)</span><br><span class="line"></span><br><span class="line"><span class="section">## For Example</span></span><br></pre></td></tr></table></figure>
+
+<p>对于hexo+github搭建的博客，这样的锚点失效在于#后的内容和标题不一致，主要在于英文大小写，中文不存在如上问题</p>
+<p>修改为如下的代码，在hexo+github上可以实现锚点，然而对于vscode这样的编辑器当然失效了，另外这样的锚点在csdn上也会失效</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">[<span class="string">For Example2</span>](<span class="link">#For-Example2</span>)</span><br><span class="line"></span><br><span class="line"><span class="section">## For Example2</span></span><br></pre></td></tr></table></figure>
+
+<p><a href="#For-Example2">For Example2</a></p>
+<p>…</p>
+<p>…</p>
+<p>…</p>
+<p>…</p>
+<p>…</p>
+<h2 id="For-Example2"><a href="#For-Example2" class="headerlink" title="For Example2"></a>For Example2</h2><p>目前来看纯MarkDown语法的锚点总会存在一些坑，一个通用解决方法是配合html中锚点的使用，代码如下：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">[<span class="string">点击跳转到For Example3</span>](<span class="link">#Test</span>)</span><br><span class="line"></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">a</span> <span class="attr">id</span>=<span class="string">&quot;Test&quot;</span>&gt;</span></span>For Example3<span class="language-xml"><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+
+<p>其中id值只支持英文，id值和#后的值完全一致，不支持id值包含空格</p>
+<p>当然，这样的代码并非按照MarkDown的思想直接将标题作为锚点的定位点，但是这样的锚点在vscode，github，csdn上都可以<strong>work！</strong></p>
+<p><a href="#Test">点击跳转到For Example3</a></p>
+<p>…</p>
+<p>…</p>
+<p>…</p>
+<p>…</p>
+<p>…</p>
+<p>…</p>
+<p>…</p>
+<p><a id="Test">For Example3</a></p>
+<p>…</p>
+<p>…</p>
+<p>…</p>
+<p>…</p>
+<p>…</p>
+<p><img src="/%E5%85%B3%E4%BA%8EMD%E9%94%9A%E7%82%B9%E7%9A%84%E5%9D%91/bottom.png" alt="bottom"></p>
+]]></content>
+      <categories>
+        <category>MarkDown</category>
       </categories>
   </entry>
   <entry>
@@ -396,6 +418,14 @@
 ]]></content>
       <categories>
         <category>MarkDown</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>爬虫中文乱码</title>
+    <url>/%E7%88%AC%E8%99%AB%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81/</url>
+    <content><![CDATA[<h1 id="爬虫中文乱码"><a href="#爬虫中文乱码" class="headerlink" title="爬虫中文乱码"></a>爬虫中文乱码</h1>]]></content>
+      <categories>
+        <category>爬虫</category>
       </categories>
   </entry>
   <entry>
