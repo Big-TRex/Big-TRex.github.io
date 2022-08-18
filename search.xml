@@ -201,24 +201,6 @@
       </categories>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
     <title>bs4方法自查</title>
     <url>/bs4%E6%96%B9%E6%B3%95%E8%87%AA%E6%9F%A5/</url>
     <content><![CDATA[<h1 id="bs4库方法自查"><a href="#bs4库方法自查" class="headerlink" title="bs4库方法自查"></a>bs4库方法自查</h1><p>Beautiful Soup库是解析、遍历、维护“标签树”的功能库</p>
@@ -264,6 +246,54 @@
       <categories>
         <category>爬虫</category>
       </categories>
+  </entry>
+  <entry>
+    <title>selenium自查</title>
+    <url>/selenium%E8%87%AA%E6%9F%A5/</url>
+    <content><![CDATA[<h1 id="selenium自查"><a href="#selenium自查" class="headerlink" title="selenium自查"></a>selenium自查</h1><h2 id="无头浏览器"><a href="#无头浏览器" class="headerlink" title="无头浏览器"></a>无头浏览器</h2><p>无头浏览器即执行爬虫程序时浏览器在后台运行而不显示</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line"><span class="keyword">from</span> selenium.webdriver.edge.options <span class="keyword">import</span> Options</span><br><span class="line"></span><br><span class="line"><span class="comment"># 设置无头</span></span><br><span class="line">edge_options.add_argument(<span class="string">&#x27;--headless&#x27;</span>)</span><br><span class="line"><span class="comment"># 禁用GPU，防止无头模式出现莫名的BUG</span></span><br><span class="line">edge_options.add_argument(<span class="string">&#x27;--disable-gpu&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将参数传给浏览器</span></span><br><span class="line">edge = webdriver.Edge(options=edge_options)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="反selenium检测"><a href="#反selenium检测" class="headerlink" title="反selenium检测"></a>反selenium检测</h2><p>防止对应网站针对selenium进行反爬</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line"><span class="keyword">from</span> selenium.webdriver.edge.options <span class="keyword">import</span> Options</span><br><span class="line"></span><br><span class="line"><span class="comment"># 开启开发者模式</span></span><br><span class="line">edge_options.add_experimental_option(<span class="string">&#x27;excludeSwitches&#x27;</span>, [<span class="string">&#x27;enable-automation&#x27;</span>])</span><br><span class="line"><span class="comment"># 禁用启用Blink运行时的功能</span></span><br><span class="line">edge_options.add_argument(<span class="string">&#x27;--disable-blink-features=AutomationControlled&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将参数传给浏览器</span></span><br><span class="line">edge = webdriver.Edge(options=edge_options)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="selenium截取全屏"><a href="#selenium截取全屏" class="headerlink" title="selenium截取全屏"></a>selenium截取全屏</h2><p>使用selenium进行模拟登录时，如果网页存在验证码，那么是无法再通过requests对验证码的url发起get请求下载图片的，这就相当于用两个不同的浏览器进行登录，验证码肯定是不相同的</p>
+<p>那么只能对响浏览器进行截屏，接着定位到验证码图片的矩形区域以截取验证码图片</p>
+<p>我们当然希望通过程序自动截屏并且定位验证码图片的坐标，所以一般思路是获取验证码图片对应的标签，然后获取对应的坐标和长宽数据</p>
+<p>但是有一个问题是，如果页面无法全部显示在当前浏览器界面时，使用selenium截屏只能截取部分页面，也就是电脑显示的部分，而标签定位是相对于整张页面的，所以在部分页面截屏上无法准确定位到验证码图片坐标</p>
+<p>那么必须先通过selenium截取全部页面</p>
+<p>当然我们也可以借助其它工具在部分截屏页面中定位到验证码图片的坐标，但是一般都需要手动操作，那模拟登录还有什么意义。。。</p>
+<p><em><strong>截取整张页面的一般方法</strong></em></p>
+<ol>
+<li><p>最常见的就是先手动设置浏览器或者屏幕分辨率，使得整张页面可以在浏览器中显示，此时的截屏当然是整张页面了，这样做比较麻烦</p>
+</li>
+<li><p>通过js代码设置浏览器分辨率，但是此时只能使用<strong>无头浏览器</strong></p>
+</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">width = edge.execute_script(<span class="string">&quot;return document.documentElement.scrollWidth&quot;</span>)</span><br><span class="line">height = edge.execute_script(<span class="string">&quot;return document.documentElement.scrollHeight&quot;</span>)</span><br><span class="line"><span class="comment"># 将浏览器的宽高设置成页面的宽高</span></span><br><span class="line">edge.set_window_size(width, height)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><img src="/selenium%E8%87%AA%E6%9F%A5/bottom.png" alt="bottom"></p>
+]]></content>
+      <categories>
+        <category>爬虫</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
   </entry>
   <entry>
     <title>关于MD锚点的坑</title>
@@ -363,7 +393,8 @@
 </li>
 <li>借助第三方打码工具<ul>
 <li>云打码已经倒塌了</li>
-<li><a href="http://www.damagou.top/">打码狗</a>，性价比高，一次大概一两分钱</li>
+<li><a href="http://www.damagou.top/">打码狗</a></li>
+<li><a href="http://www.chaojiying.com/about.html">超级鹰</a></li>
 </ul>
 </li>
 </ul>
