@@ -18,16 +18,16 @@
   
   
   <title>selenium自查 | BuT的博客</title>
-  <meta name="description" content="selenium自查无头浏览器无头浏览器即执行爬虫程序时浏览器在后台运行而不显示 123456789101112from selenium import webdriverfrom selenium.webdriver.edge.options import Options# 设置无头edge_options.add_argument(&amp;#x27;--headless&amp;#x27;)# 禁用GPU，">
+  <meta name="description" content="selenium自查1. 无头浏览器 2. 反selenium检测 3. selenium截取全屏 无头浏览器无头浏览器即执行爬虫程序时浏览器在后台运行而不显示 123456789101112from selenium import webdriverfrom selenium.webdriver.edge.options import Options# 设置无头edge_options.add_">
 <meta property="og:type" content="article">
 <meta property="og:title" content="selenium自查">
 <meta property="og:url" content="http://bigtrex.top/selenium%E8%87%AA%E6%9F%A5/index.html">
 <meta property="og:site_name" content="BuT的博客">
-<meta property="og:description" content="selenium自查无头浏览器无头浏览器即执行爬虫程序时浏览器在后台运行而不显示 123456789101112from selenium import webdriverfrom selenium.webdriver.edge.options import Options# 设置无头edge_options.add_argument(&amp;#x27;--headless&amp;#x27;)# 禁用GPU，">
+<meta property="og:description" content="selenium自查1. 无头浏览器 2. 反selenium检测 3. selenium截取全屏 无头浏览器无头浏览器即执行爬虫程序时浏览器在后台运行而不显示 123456789101112from selenium import webdriverfrom selenium.webdriver.edge.options import Options# 设置无头edge_options.add_">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://bigtrex.top/selenium%E8%87%AA%E6%9F%A5/bottom.png">
 <meta property="article:published_time" content="2022-08-18T12:41:56.000Z">
-<meta property="article:modified_time" content="2022-08-18T12:46:55.818Z">
+<meta property="article:modified_time" content="2022-08-18T12:50:00.912Z">
 <meta property="article:author" content="BuT">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://bigtrex.top/selenium%E8%87%AA%E6%9F%A5/bottom.png">
@@ -354,7 +354,7 @@
         <span class="post-comment"><i class="icon icon-comment"></i> <a href="/selenium%E8%87%AA%E6%9F%A5/#comments" class="article-comment-link">评论</a></span>
         
 	
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 613(字)</span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 656(字)</span>
 	
 	
 		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 2(分)</span>
@@ -364,7 +364,10 @@
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
       
-        <h1 id="selenium自查"><a href="#selenium自查" class="headerlink" title="selenium自查"></a>selenium自查</h1><h2 id="无头浏览器"><a href="#无头浏览器" class="headerlink" title="无头浏览器"></a>无头浏览器</h2><p>无头浏览器即执行爬虫程序时浏览器在后台运行而不显示</p>
+        <h1 id="selenium自查"><a href="#selenium自查" class="headerlink" title="selenium自查"></a>selenium自查</h1><p><a href="#%E6%97%A0%E5%A4%B4%E6%B5%8F%E8%A7%88%E5%99%A8">1. 无头浏览器</a></p>
+<p><a href="#%E5%8F%8Dselenium%E6%A3%80%E6%B5%8B">2. 反selenium检测</a></p>
+<p><a href="#selenium%E6%88%AA%E5%8F%96%E5%85%A8%E5%B1%8F">3. selenium截取全屏</a></p>
+<h2 id="无头浏览器"><a href="#无头浏览器" class="headerlink" title="无头浏览器"></a>无头浏览器</h2><p>无头浏览器即执行爬虫程序时浏览器在后台运行而不显示</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line"><span class="keyword">from</span> selenium.webdriver.edge.options <span class="keyword">import</span> Options</span><br><span class="line"></span><br><span class="line"><span class="comment"># 设置无头</span></span><br><span class="line">edge_options.add_argument(<span class="string">&#x27;--headless&#x27;</span>)</span><br><span class="line"><span class="comment"># 禁用GPU，防止无头模式出现莫名的BUG</span></span><br><span class="line">edge_options.add_argument(<span class="string">&#x27;--disable-gpu&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将参数传给浏览器</span></span><br><span class="line">edge = webdriver.Edge(options=edge_options)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 <h2 id="反selenium检测"><a href="#反selenium检测" class="headerlink" title="反selenium检测"></a>反selenium检测</h2><p>防止对应网站针对selenium进行反爬</p>
@@ -385,6 +388,7 @@
 </ol>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">width = edge.execute_script(<span class="string">&quot;return document.documentElement.scrollWidth&quot;</span>)</span><br><span class="line">height = edge.execute_script(<span class="string">&quot;return document.documentElement.scrollHeight&quot;</span>)</span><br><span class="line"><span class="comment"># 将浏览器的宽高设置成页面的宽高</span></span><br><span class="line">edge.set_window_size(width, height)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
+<p><strong>ps.使用selenium进行图像处理时一定要用png格式，jpg格式会存在解码错误</strong></p>
 <p><img src="/selenium%E8%87%AA%E6%9F%A5/bottom.png" alt="bottom"></p>
 
       
