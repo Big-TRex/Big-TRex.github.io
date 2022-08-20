@@ -1,6 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>MD语法自查</title>
+    <url>/MD%E8%AF%AD%E6%B3%95%E8%87%AA%E6%9F%A5/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer">
+
+<h1 id="MarkDown语法自查"><a href="#MarkDown语法自查" class="headerlink" title="MarkDown语法自查"></a>MarkDown语法自查</h1><p><a href="#%E6%A0%87%E9%A2%98">1. 标题</a></p>
+<p><a href="#%E5%88%97%E8%A1%A8">2. 列表</a></p>
+<p><a href="#%E5%AD%97%E4%BD%93">3. 字体</a></p>
+<p><a href="#%E9%94%9A%E7%82%B9">4. 锚点</a></p>
+<p><a href="#%E4%BB%A3%E7%A0%81%E5%9D%97">5. 代码块</a></p>
+<p><a href="#%E5%9B%BE%E7%89%87%E5%92%8C%E8%B6%85%E9%93%BE%E6%8E%A5">6. 图片和超链接</a></p>
+<p><a href="#%E8%A1%A8%E6%A0%BC">7. 表格</a></p>
+<p><a href="#%E5%BC%95%E7%94%A8">8. 引用</a></p>
+<hr>
+<hr>
+<hr>
+<h1 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h1><h1 id="主标题"><a href="#主标题" class="headerlink" title="主标题"></a>主标题</h1><h2 id="副标题"><a href="#副标题" class="headerlink" title="副标题"></a>副标题</h2><h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><h1 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h1><p>有序列表：</p>
+<ol>
+<li>首先<ul>
+<li>首先<ol>
+<li>首首先</li>
+<li>其其次</li>
+<li>最最后</li>
+</ol>
+</li>
+<li>其次</li>
+<li>最后</li>
+</ul>
+</li>
+<li>其次</li>
+<li>最后</li>
+</ol>
+<p>无序列表：</p>
+<ul>
+<li>首先<ul>
+<li>首先</li>
+<li>其次</li>
+<li>最后</li>
+</ul>
+</li>
+<li>其次</li>
+<li>最后</li>
+</ul>
+<h1 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h1><p><em>斜体</em></p>
+<p><strong>粗体</strong></p>
+<p><em><strong>粗斜体</strong></em></p>
+<p><span style="color:pink">花裙子</span></p>
+<p><del>删除线</del></p>
+<p><del>删除线</del></p>
+<h1 id="锚点"><a href="#锚点" class="headerlink" title="锚点"></a>锚点</h1><p>定位到这里</p>
+<h2 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">func</span>(<span class="params">age</span>):</span><br><span class="line">    <span class="keyword">return</span> age</span><br></pre></td></tr></table></figure>
+
+<p><code>int a=5+9;</code></p>
+<h1 id="图片和超链接"><a href="#图片和超链接" class="headerlink" title="图片和超链接"></a>图片和超链接</h1><p><img src="https://img-home.csdnimg.cn/images/20220729104705.jpg" alt="网络图片" title="网络图片"></p>
+<p><a href="https://www.csdn.net/" title="前往csdn社区">csdn社区</a></p>
+<p><a href="https://www.csdn.net/">https://www.csdn.net/</a></p>
+<h1 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h1><table>
+<thead>
+<tr>
+<th>姓名</th>
+<th align="right">年龄</th>
+<th align="center">职业</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>张三</td>
+<td align="right">20000</td>
+<td align="center">医生</td>
+</tr>
+<tr>
+<td>李四</td>
+<td align="right">60</td>
+<td align="center">警察叔叔</td>
+</tr>
+</tbody></table>
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>张三说：</p>
+<blockquote>
+<p>阿门阿前一棵葡萄树</p>
+<blockquote>
+<p>葡萄树说：这是不对的</p>
+</blockquote>
+</blockquote>
+]]></content>
+      <categories>
+        <category>MarkDown</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Python正则表达式自查</title>
     <url>/Python%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%87%AA%E6%9F%A5/</url>
     <content><![CDATA[<h1 id="Python正则表达式自查"><a href="#Python正则表达式自查" class="headerlink" title="Python正则表达式自查"></a>Python正则表达式自查</h1><ul>
@@ -112,95 +201,6 @@
       </categories>
   </entry>
   <entry>
-    <title>MD语法自查</title>
-    <url>/MD%E8%AF%AD%E6%B3%95%E8%87%AA%E6%9F%A5/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer">
-
-<h1 id="MarkDown语法自查"><a href="#MarkDown语法自查" class="headerlink" title="MarkDown语法自查"></a>MarkDown语法自查</h1><p><a href="#%E6%A0%87%E9%A2%98">1. 标题</a></p>
-<p><a href="#%E5%88%97%E8%A1%A8">2. 列表</a></p>
-<p><a href="#%E5%AD%97%E4%BD%93">3. 字体</a></p>
-<p><a href="#%E9%94%9A%E7%82%B9">4. 锚点</a></p>
-<p><a href="#%E4%BB%A3%E7%A0%81%E5%9D%97">5. 代码块</a></p>
-<p><a href="#%E5%9B%BE%E7%89%87%E5%92%8C%E8%B6%85%E9%93%BE%E6%8E%A5">6. 图片和超链接</a></p>
-<p><a href="#%E8%A1%A8%E6%A0%BC">7. 表格</a></p>
-<p><a href="#%E5%BC%95%E7%94%A8">8. 引用</a></p>
-<hr>
-<hr>
-<hr>
-<h1 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h1><h1 id="主标题"><a href="#主标题" class="headerlink" title="主标题"></a>主标题</h1><h2 id="副标题"><a href="#副标题" class="headerlink" title="副标题"></a>副标题</h2><h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><h1 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h1><p>有序列表：</p>
-<ol>
-<li>首先<ul>
-<li>首先<ol>
-<li>首首先</li>
-<li>其其次</li>
-<li>最最后</li>
-</ol>
-</li>
-<li>其次</li>
-<li>最后</li>
-</ul>
-</li>
-<li>其次</li>
-<li>最后</li>
-</ol>
-<p>无序列表：</p>
-<ul>
-<li>首先<ul>
-<li>首先</li>
-<li>其次</li>
-<li>最后</li>
-</ul>
-</li>
-<li>其次</li>
-<li>最后</li>
-</ul>
-<h1 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h1><p><em>斜体</em></p>
-<p><strong>粗体</strong></p>
-<p><em><strong>粗斜体</strong></em></p>
-<p><span style="color:pink">花裙子</span></p>
-<p><del>删除线</del></p>
-<p><del>删除线</del></p>
-<h1 id="锚点"><a href="#锚点" class="headerlink" title="锚点"></a>锚点</h1><p>定位到这里</p>
-<h2 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">func</span>(<span class="params">age</span>):</span><br><span class="line">    <span class="keyword">return</span> age</span><br></pre></td></tr></table></figure>
-
-<p><code>int a=5+9;</code></p>
-<h1 id="图片和超链接"><a href="#图片和超链接" class="headerlink" title="图片和超链接"></a>图片和超链接</h1><p><img src="https://img-home.csdnimg.cn/images/20220729104705.jpg" alt="网络图片" title="网络图片"></p>
-<p><a href="https://www.csdn.net/" title="前往csdn社区">csdn社区</a></p>
-<p><a href="https://www.csdn.net/">https://www.csdn.net/</a></p>
-<h1 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h1><table>
-<thead>
-<tr>
-<th>姓名</th>
-<th align="right">年龄</th>
-<th align="center">职业</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>张三</td>
-<td align="right">20000</td>
-<td align="center">医生</td>
-</tr>
-<tr>
-<td>李四</td>
-<td align="right">60</td>
-<td align="center">警察叔叔</td>
-</tr>
-</tbody></table>
-<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>张三说：</p>
-<blockquote>
-<p>阿门阿前一棵葡萄树</p>
-<blockquote>
-<p>葡萄树说：这是不对的</p>
-</blockquote>
-</blockquote>
-]]></content>
-      <categories>
-        <category>MarkDown</category>
-      </categories>
-  </entry>
-  <entry>
     <title>bs4方法自查</title>
     <url>/bs4%E6%96%B9%E6%B3%95%E8%87%AA%E6%9F%A5/</url>
     <content><![CDATA[<h1 id="bs4库方法自查"><a href="#bs4库方法自查" class="headerlink" title="bs4库方法自查"></a>bs4库方法自查</h1><p>Beautiful Soup库是解析、遍历、维护“标签树”的功能库</p>
@@ -271,6 +271,9 @@
     <content><![CDATA[<h1 id="selenium自查"><a href="#selenium自查" class="headerlink" title="selenium自查"></a>selenium自查</h1><p><a href="#%E6%97%A0%E5%A4%B4%E6%B5%8F%E8%A7%88%E5%99%A8">1. 无头浏览器</a></p>
 <p><a href="#%E5%8F%8Dselenium%E6%A3%80%E6%B5%8B">2. 反selenium检测</a></p>
 <p><a href="#selenium%E6%88%AA%E5%8F%96%E5%85%A8%E5%B1%8F">3. selenium截取全屏</a></p>
+<p><a href="#selenium%E4%B8%8D%E8%87%AA%E5%8A%A8%E5%85%B3%E9%97%AD%E6%B5%8F%E8%A7%88%E5%99%A8">4. selenium不自动关闭浏览器</a></p>
+<p><a href="#selenium%E5%88%87%E6%8D%A2%E5%88%B0iframe">5. selenium切换到iframe</a></p>
+<p><a href="#selenium%E7%AA%97%E5%8F%A3%E6%9C%80%E5%A4%A7%E5%8C%96">6. selenium窗口最大化</a></p>
 <h2 id="无头浏览器"><a href="#无头浏览器" class="headerlink" title="无头浏览器"></a>无头浏览器</h2><p>无头浏览器即执行爬虫程序时浏览器在后台运行而不显示</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line"><span class="keyword">from</span> selenium.webdriver.edge.options <span class="keyword">import</span> Options</span><br><span class="line"></span><br><span class="line"><span class="comment"># 设置无头</span></span><br><span class="line">edge_options.add_argument(<span class="string">&#x27;--headless&#x27;</span>)</span><br><span class="line"><span class="comment"># 禁用GPU，防止无头模式出现莫名的BUG</span></span><br><span class="line">edge_options.add_argument(<span class="string">&#x27;--disable-gpu&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将参数传给浏览器</span></span><br><span class="line">edge = webdriver.Edge(options=edge_options)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
@@ -293,64 +296,24 @@
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">width = edge.execute_script(<span class="string">&quot;return document.documentElement.scrollWidth&quot;</span>)</span><br><span class="line">height = edge.execute_script(<span class="string">&quot;return document.documentElement.scrollHeight&quot;</span>)</span><br><span class="line"><span class="comment"># 将浏览器的宽高设置成页面的宽高</span></span><br><span class="line">edge.set_window_size(width, height)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 <p><strong>ps.使用selenium进行图像处理时一定要用png格式，jpg格式会存在解码错误</strong></p>
+<h2 id="selenium不自动关闭浏览器"><a href="#selenium不自动关闭浏览器" class="headerlink" title="selenium不自动关闭浏览器"></a>selenium不自动关闭浏览器</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line"><span class="keyword">from</span> selenium.webdriver.edge.options <span class="keyword">import</span> Options</span><br><span class="line"></span><br><span class="line">edge_options.add_experimental_option(<span class="string">&quot;detach&quot;</span>, <span class="literal">True</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将参数传给浏览器</span></span><br><span class="line">edge = webdriver.Edge(options=edge_options)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>如果需要关闭可以加入<code>edge.quit()</code></p>
+<h2 id="selenium切换到iframe"><a href="#selenium切换到iframe" class="headerlink" title="selenium切换到iframe"></a>selenium切换到iframe</h2><ol>
+<li>如果iframe具有id或name属性，直接通过<code>edge.switch_to.frame(&quot;id\name&quot;)</code></li>
+</ol>
+<p>其中id是唯一的，name可能不唯一</p>
+<ol start="2">
+<li>如果iframe不具有id和name，那么首先利用一般定位方式定位到iframe标签，再切换到iframe</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">iframe=edge.find_element()</span><br><span class="line">edge.switch_to.frame(iframe)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="selenium窗口最大化"><a href="#selenium窗口最大化" class="headerlink" title="selenium窗口最大化"></a>selenium窗口最大化</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">edge.maximize_window()</span><br></pre></td></tr></table></figure>
+
 <p><img src="/selenium%E8%87%AA%E6%9F%A5/bottom.png" alt="bottom"></p>
 ]]></content>
       <categories>
         <category>爬虫</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>关于MD锚点的坑</title>
-    <url>/%E5%85%B3%E4%BA%8EMD%E9%94%9A%E7%82%B9%E7%9A%84%E5%9D%91/</url>
-    <content><![CDATA[<h1 id="关于MD锚点的坑"><a href="#关于MD锚点的坑" class="headerlink" title="关于MD锚点的坑"></a>关于MD锚点的坑</h1><p>锚点是一个方便定位的东西，用起来还是很香的</p>
-<p>但是不同MarkDown对锚点的解释都有些许区别，导致不同平台上锚点可能会失效</p>
-<p>MarkDown中对于锚点的语法定义如下：</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">[<span class="string">描述</span>](<span class="link">#定位的title</span>)</span><br><span class="line"></span><br><span class="line">...</span><br><span class="line"></span><br><span class="line"><span class="section"># 定位的Title</span></span><br></pre></td></tr></table></figure>
-
-<p>多级标题都可以作为’定位的title’，另外标题中大写字母会自动转为小写字母</p>
-<p><a href="#for-example">For Example</a></p>
-<p>…</p>
-<p>…</p>
-<p>…</p>
-<p>…</p>
-<p>…</p>
-<h2 id="For-Example"><a href="#For-Example" class="headerlink" title="For Example"></a>For Example</h2><p>这样的锚点在vscode这样的编辑器上是没有问题的，但是放到如github，csdn上会失效</p>
-<p>代码如下：</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">[<span class="string">For Example</span>](<span class="link">#for-example</span>)</span><br><span class="line"></span><br><span class="line"><span class="section">## For Example</span></span><br></pre></td></tr></table></figure>
-
-<p>对于hexo+github搭建的博客，这样的锚点失效在于#后的内容和标题不一致，主要在于英文大小写，中文不存在如上问题</p>
-<p>修改为如下的代码，在hexo+github上可以实现锚点，然而对于vscode这样的编辑器当然失效了，另外这样的锚点在csdn上也会失效</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">[<span class="string">For Example2</span>](<span class="link">#For-Example2</span>)</span><br><span class="line"></span><br><span class="line"><span class="section">## For Example2</span></span><br></pre></td></tr></table></figure>
-
-<p><a href="#For-Example2">For Example2</a></p>
-<p>…</p>
-<p>…</p>
-<p>…</p>
-<p>…</p>
-<p>…</p>
-<h2 id="For-Example2"><a href="#For-Example2" class="headerlink" title="For Example2"></a>For Example2</h2><p>目前来看纯MarkDown语法的锚点总会存在一些坑，一个通用解决方法是配合html中锚点的使用，代码如下：</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">[<span class="string">点击跳转到For Example3</span>](<span class="link">#Test</span>)</span><br><span class="line"></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">a</span> <span class="attr">id</span>=<span class="string">&quot;Test&quot;</span>&gt;</span></span>For Example3<span class="language-xml"><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
-
-<p>其中id值只支持英文，id值和#后的值完全一致，不支持id值包含空格</p>
-<p>当然，这样的代码并非按照MarkDown的思想直接将标题作为锚点的定位点，但是这样的锚点在vscode，github，csdn上都可以<strong>work！</strong></p>
-<p><a href="#Test">点击跳转到For Example3</a></p>
-<p>…</p>
-<p>…</p>
-<p>…</p>
-<p>…</p>
-<p>…</p>
-<p>…</p>
-<p>…</p>
-<p><a id="Test">For Example3</a></p>
-<p>…</p>
-<p>…</p>
-<p>…</p>
-<p>…</p>
-<p>…</p>
-<p><img src="/%E5%85%B3%E4%BA%8EMD%E9%94%9A%E7%82%B9%E7%9A%84%E5%9D%91/bottom.png" alt="bottom"></p>
-]]></content>
-      <categories>
-        <category>MarkDown</category>
       </categories>
   </entry>
   <entry>
@@ -370,7 +333,7 @@
 <p><a href="#ajax%E6%90%BA%E5%B8%A6%E9%9A%8F%E6%9C%BA%E5%8F%82%E6%95%B0">6. ajax携带随机参数</a></p>
 <p><a href="#%E4%BC%AAurl">7. 伪url</a></p>
 <p><a href="#http%E9%98%B2%E7%9B%97%E9%93%BE">8. http防盗链</a></p>
-<p><a href="#selenium%E6%A3%80%E6%B5%8B">9. selenium检测</a></p>
+<p><a href="#selenium%E8%A7%84%E9%81%BF%E6%A3%80%E6%B5%8B">9. selenium规避检测</a></p>
 <h1 id="百度安全验证"><a href="#百度安全验证" class="headerlink" title="百度安全验证"></a>百度安全验证</h1><p>通常修改request的请求头载体模拟时，使用浏览器的User-Agent字段：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36 Edg/103.0.1264.77</span><br></pre></td></tr></table></figure>
 
@@ -451,17 +414,67 @@
 <p>某些网站希望只能通过自己的网站链接到自己的资源时，会检查请求头的Referer字段，如果Referer字段不是自身网站的url则会拒绝访问并返回错误信息</p>
 <p>通常在headers中增加Referer键值对，值为当前的网站url即可直接请求资源</p>
 <p><img src="/%E5%8F%8D%E5%8F%8D%E7%88%AC/bottom.png" alt="bottom"></p>
-<h1 id="selenium检测"><a href="#selenium检测" class="headerlink" title="selenium检测"></a>selenium检测</h1><p>当手动在浏览器访问一个url时，在控制台执行<code>window.navigator.webdriver</code>会返回false，而通过selenium访问时，该代码会返回true</p>
-<p>所以网站很容易根据这一点检测到selenium进行反爬</p>
-<p><a href="https://intoli.com/blog/not-possible-to-block-chrome-headless/chrome-headless-test.html">玛卡巴卡</a>，这个网站查询是否检测到了selenium</p>
-<p>如果检测到selenium其中的WebDriver字段如下：</p>
-<p><img src="/%E5%8F%8D%E5%8F%8D%E7%88%AC/test_fail.png" alt="fail"></p>
-<p>正常访问或成功反检测的WebDriver字段如下：</p>
-<p><img src="/%E5%8F%8D%E5%8F%8D%E7%88%AC/test_pass.png" alt="pass"></p>
-<p>反检测代码：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line"><span class="keyword">from</span> selenium.webdriver.edge.options <span class="keyword">import</span> Options</span><br><span class="line"></span><br><span class="line">edge_options = Options()</span><br><span class="line"><span class="comment"># 开启开发者模式</span></span><br><span class="line">edge_options.add_experimental_option(<span class="string">&#x27;excludeSwitches&#x27;</span>, [<span class="string">&#x27;enable-automation&#x27;</span>])</span><br><span class="line"><span class="comment"># 禁用启用Blink运行时的功能</span></span><br><span class="line">edge_options.add_argument(<span class="string">&#x27;--disable-blink-features=AutomationControlled&#x27;</span>)</span><br><span class="line"><span class="comment"># 将参数传给浏览器</span></span><br><span class="line">browser = webdriver.Edge(options=edge_options)</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+<h1 id="selenium规避检测"><a href="#selenium规避检测" class="headerlink" title="selenium规避检测"></a>selenium规避检测</h1><p>浏览器都带有一系列指纹特征，手动打开浏览器和通过selenium自动测试所携带的指纹特征并不一致，最典型的特征是当手动打开浏览器后，在控制台执行</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">门户网站很容易根据这些指纹特征识别出selenium并且返回错误数据，常见的如登录验证错误</span><br><span class="line"></span><br><span class="line">[玛卡巴卡](https://bot.sannysoft.com/)，这个网站用于检测是否来自selenium访问</span><br><span class="line"></span><br><span class="line">检测到selenium后的WebDriver字段如下：</span><br><span class="line"></span><br><span class="line">![fail](./%E5%8F%8D%E5%8F%8D%E7%88%AC/test_fail.png)</span><br><span class="line"></span><br><span class="line">正常访问或成功反检测的WebDriver字段如下：</span><br><span class="line"></span><br><span class="line">![pass](./%E5%8F%8D%E5%8F%8D%E7%88%AC/test_pass.png)</span><br><span class="line"></span><br><span class="line">规避selenium检测的本质是修改指纹特征，避免门户网站识别，目前最有效的方法是在访问前先执行stealth.min.js脚本，可以做到规避检测</span><br><span class="line"></span><br><span class="line">[stealth.min.js源码](https://github.com/requireCool/stealth.min.js)</span><br><span class="line"></span><br><span class="line">在爬虫程序中执行</span><br><span class="line"></span><br><span class="line">```python</span><br><span class="line"></span><br><span class="line">edge=webdriver.Edge()</span><br><span class="line">with open(&#x27;./stealth.min.js&#x27;) as f:</span><br><span class="line">    js = f.read()</span><br><span class="line"></span><br><span class="line">edge.execute_cdp_cmd(&quot;Page.addScriptToEvaluateOnNewDocument&quot;, &#123;</span><br><span class="line">    &quot;source&quot;: js</span><br><span class="line">&#125;)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><img src="/%E5%8F%8D%E5%8F%8D%E7%88%AC/bottom.png" alt="bottom"></p>
+]]></content>
       <categories>
         <category>爬虫</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>关于MD锚点的坑</title>
+    <url>/%E5%85%B3%E4%BA%8EMD%E9%94%9A%E7%82%B9%E7%9A%84%E5%9D%91/</url>
+    <content><![CDATA[<h1 id="关于MD锚点的坑"><a href="#关于MD锚点的坑" class="headerlink" title="关于MD锚点的坑"></a>关于MD锚点的坑</h1><p>锚点是一个方便定位的东西，用起来还是很香的</p>
+<p>但是不同MarkDown对锚点的解释都有些许区别，导致不同平台上锚点可能会失效</p>
+<p>MarkDown中对于锚点的语法定义如下：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">[<span class="string">描述</span>](<span class="link">#定位的title</span>)</span><br><span class="line"></span><br><span class="line">...</span><br><span class="line"></span><br><span class="line"><span class="section"># 定位的Title</span></span><br></pre></td></tr></table></figure>
+
+<p>多级标题都可以作为’定位的title’，另外标题中大写字母会自动转为小写字母</p>
+<p><a href="#for-example">For Example</a></p>
+<p>…</p>
+<p>…</p>
+<p>…</p>
+<p>…</p>
+<p>…</p>
+<h2 id="For-Example"><a href="#For-Example" class="headerlink" title="For Example"></a>For Example</h2><p>这样的锚点在vscode这样的编辑器上是没有问题的，但是放到如github，csdn上会失效</p>
+<p>代码如下：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">[<span class="string">For Example</span>](<span class="link">#for-example</span>)</span><br><span class="line"></span><br><span class="line"><span class="section">## For Example</span></span><br></pre></td></tr></table></figure>
+
+<p>对于hexo+github搭建的博客，这样的锚点失效在于#后的内容和标题不一致，主要在于英文大小写，中文不存在如上问题</p>
+<p>修改为如下的代码，在hexo+github上可以实现锚点，然而对于vscode这样的编辑器当然失效了，另外这样的锚点在csdn上也会失效</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">[<span class="string">For Example2</span>](<span class="link">#For-Example2</span>)</span><br><span class="line"></span><br><span class="line"><span class="section">## For Example2</span></span><br></pre></td></tr></table></figure>
+
+<p><a href="#For-Example2">For Example2</a></p>
+<p>…</p>
+<p>…</p>
+<p>…</p>
+<p>…</p>
+<p>…</p>
+<h2 id="For-Example2"><a href="#For-Example2" class="headerlink" title="For Example2"></a>For Example2</h2><p>目前来看纯MarkDown语法的锚点总会存在一些坑，一个通用解决方法是配合html中锚点的使用，代码如下：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">[<span class="string">点击跳转到For Example3</span>](<span class="link">#Test</span>)</span><br><span class="line"></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">a</span> <span class="attr">id</span>=<span class="string">&quot;Test&quot;</span>&gt;</span></span>For Example3<span class="language-xml"><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+
+<p>其中id值只支持英文，id值和#后的值完全一致，不支持id值包含空格</p>
+<p>当然，这样的代码并非按照MarkDown的思想直接将标题作为锚点的定位点，但是这样的锚点在vscode，github，csdn上都可以<strong>work！</strong></p>
+<p><a href="#Test">点击跳转到For Example3</a></p>
+<p>…</p>
+<p>…</p>
+<p>…</p>
+<p>…</p>
+<p>…</p>
+<p>…</p>
+<p>…</p>
+<p><a id="Test">For Example3</a></p>
+<p>…</p>
+<p>…</p>
+<p>…</p>
+<p>…</p>
+<p>…</p>
+<p><img src="/%E5%85%B3%E4%BA%8EMD%E9%94%9A%E7%82%B9%E7%9A%84%E5%9D%91/bottom.png" alt="bottom"></p>
+]]></content>
+      <categories>
+        <category>MarkDown</category>
       </categories>
   </entry>
   <entry>
