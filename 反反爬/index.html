@@ -28,10 +28,11 @@
 <meta property="og:image" content="http://bigtrex.top/%E5%8F%8D%E5%8F%8D%E7%88%AC/%E7%99%BE%E5%BA%A6%E5%AE%89%E5%85%A8%E9%AA%8C%E8%AF%81.png">
 <meta property="og:image" content="http://bigtrex.top/%E5%8F%8D%E5%8F%8D%E7%88%AC/moushu.png">
 <meta property="og:image" content="http://bigtrex.top/%E5%8F%8D%E5%8F%8D%E7%88%AC/wukong.jpg">
-<meta property="og:image" content="http://bigtrex.top/%E5%8F%8D%E5%8F%8D%E7%88%AC/bottom.png">
+<meta property="og:image" content="http://bigtrex.top/%E5%8F%8D%E5%8F%8D%E7%88%AC/test_fail.png">
+<meta property="og:image" content="http://bigtrex.top/%E5%8F%8D%E5%8F%8D%E7%88%AC/test_pass.png">
 <meta property="og:image" content="http://bigtrex.top/%E5%8F%8D%E5%8F%8D%E7%88%AC/bottom.png">
 <meta property="article:published_time" content="2022-08-01T10:12:39.000Z">
-<meta property="article:modified_time" content="2022-08-20T07:58:50.628Z">
+<meta property="article:modified_time" content="2022-08-20T08:11:11.108Z">
 <meta property="article:author" content="BuT">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://bigtrex.top/%E5%8F%8D%E5%8F%8D%E7%88%AC/%E7%99%BE%E5%BA%A6%E5%AE%89%E5%85%A8%E9%AA%8C%E8%AF%81.png">
@@ -452,7 +453,13 @@
 <h1 id="ajax携带随机参数"><a href="#ajax携带随机参数" class="headerlink" title="ajax携带随机参数"></a>ajax携带随机参数</h1><p>在爬取<a target="_blank" rel="noopener" href="https://www.pearvideo.com/">梨视频</a>时，其中的视频url是动态加载的，定位ajax请求却发现参数中携带mrd随机数</p>
 <p>实际上，在ajax请求中携带的随机参数多数不用于反爬目的，是前端用于欺骗浏览器或服务器的</p>
 <blockquote>
-<p>某些代理服务器会忽略no-cache之类的标识对响应结果强行缓存（例如IE），如果url不改变的话浏览器可能不会真正向服务器发送请求而调用自己的缓存<br>这样会导致后端的更新无法正确显示在前端，所以为保证每次请求都同服务器交互，前端会在url中携带一个随机数或一个时间戳，目的是使每次请求的url不同<br>对于爬虫的模拟，需要在js源代码中找到对应的参数，找到其随机数的生成方式，直接在爬虫中模拟即可</p>
+<p>某些代理服务器会忽略no-cache之类的标识对响应结果强行缓存（例如IE），如果url不改变的话浏览器可能不会真正向服务器发送请求而调用自己的缓存</p>
+</blockquote>
+<blockquote>
+<p>这样会导致后端的更新无法正确显示在前端，所以为保证每次请求都同服务器交互，前端会在url中携带一个随机数或一个时间戳，目的是使每次请求的url不同</p>
+</blockquote>
+<blockquote>
+<p>对于爬虫的模拟，需要在js源代码中找到对应的参数，找到其随机数的生成方式，直接在爬虫中模拟即可</p>
 </blockquote>
 <p>总之，ajax请求携带的随机参数本意不在反爬（也就是说后端不会对数值进行比对，只会对随机数格式进行比对），但正确找到随机数的生成方式确实会对爬虫造成阻碍</p>
 <h1 id="伪url"><a href="#伪url" class="headerlink" title="伪url"></a>伪url</h1><p>同样在爬取<a target="_blank" rel="noopener" href="https://www.pearvideo.com/">梨视频</a>时，ajax请求返回的json数据中包含了视频的url，但直接访问该url得到404</p>
@@ -462,10 +469,20 @@
 <p>http防盗链主要利用请求头部的Referer字段实现，Referer字段指示了请求的来源——即从哪里链接到了当前url</p>
 <p>某些网站希望只能通过自己的网站链接到自己的资源时，会检查请求头的Referer字段，如果Referer字段不是自身网站的url则会拒绝访问并返回错误信息</p>
 <p>通常在headers中增加Referer键值对，值为当前的网站url即可直接请求资源</p>
-<p><img src="/%E5%8F%8D%E5%8F%8D%E7%88%AC/bottom.png" alt="bottom"></p>
 <h1 id="selenium规避检测"><a href="#selenium规避检测" class="headerlink" title="selenium规避检测"></a>selenium规避检测</h1><p>浏览器都带有一系列指纹特征，手动打开浏览器和通过selenium自动测试所携带的指纹特征并不一致，最典型的特征是当手动打开浏览器后，在控制台执行</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">门户网站很容易根据这些指纹特征识别出selenium并且返回错误数据，常见的如登录验证错误</span><br><span class="line"></span><br><span class="line">[玛卡巴卡](https://bot.sannysoft.com/)，这个网站用于检测是否来自selenium访问</span><br><span class="line"></span><br><span class="line">检测到selenium后的WebDriver字段如下：</span><br><span class="line"></span><br><span class="line">![fail](./%E5%8F%8D%E5%8F%8D%E7%88%AC/test_fail.png)</span><br><span class="line"></span><br><span class="line">正常访问或成功反检测的WebDriver字段如下：</span><br><span class="line"></span><br><span class="line">![pass](./%E5%8F%8D%E5%8F%8D%E7%88%AC/test_pass.png)</span><br><span class="line"></span><br><span class="line">规避selenium检测的本质是修改指纹特征，避免门户网站识别，目前最有效的方法是在访问前先执行stealth.min.js脚本，可以做到规避检测</span><br><span class="line"></span><br><span class="line">[stealth.min.js源码](https://github.com/requireCool/stealth.min.js)</span><br><span class="line"></span><br><span class="line">在爬虫程序中执行</span><br><span class="line"></span><br><span class="line">```python</span><br><span class="line"></span><br><span class="line">edge=webdriver.Edge()</span><br><span class="line">with open(&#x27;./stealth.min.js&#x27;) as f:</span><br><span class="line">    js = f.read()</span><br><span class="line"></span><br><span class="line">edge.execute_cdp_cmd(&quot;Page.addScriptToEvaluateOnNewDocument&quot;, &#123;</span><br><span class="line">    &quot;source&quot;: js</span><br><span class="line">&#125;)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p><code>window.navigator.webdriver</code>会返回false，而通过selenium自动测试时会返回true</p>
+<p>门户网站很容易根据这些指纹特征识别出selenium并且返回错误数据，常见的如登录验证错误</p>
+<p><a target="_blank" rel="noopener" href="https://bot.sannysoft.com/">玛卡巴卡</a>，这个网站用于检测是否来自selenium访问</p>
+<p>检测到selenium后的WebDriver字段如下：</p>
+<p><img src="/%E5%8F%8D%E5%8F%8D%E7%88%AC/test_fail.png" alt="fail"></p>
+<p>正常访问或成功反检测的WebDriver字段如下：</p>
+<p><img src="/%E5%8F%8D%E5%8F%8D%E7%88%AC/test_pass.png" alt="pass"></p>
+<p>规避selenium检测的本质是修改指纹特征，避免门户网站识别，目前最有效的方法是在访问前先执行stealth.min.js脚本，可以做到规避检测</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/requireCool/stealth.min.js">stealth.min.js源码</a></p>
+<p>在爬虫程序中执行</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">edge=webdriver.Edge()</span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&#x27;./stealth.min.js&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">    js = f.read()</span><br><span class="line"></span><br><span class="line">edge.execute_cdp_cmd(<span class="string">&quot;Page.addScriptToEvaluateOnNewDocument&quot;</span>, &#123;</span><br><span class="line">    <span class="string">&quot;source&quot;</span>: js</span><br><span class="line">&#125;)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
+<p><a target="_blank" rel="noopener" href="https://jishuin.proginn.com/p/763bfbd33b73">推荐-最完美方案！如何防止 Selenium 被检测出来</a></p>
 <p><img src="/%E5%8F%8D%E5%8F%8D%E7%88%AC/bottom.png" alt="bottom"></p>
 
       
