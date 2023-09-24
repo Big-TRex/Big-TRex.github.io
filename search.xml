@@ -90,71 +90,6 @@
       </categories>
   </entry>
   <entry>
-    <title>bs4方法自查</title>
-    <url>/bs4%E6%96%B9%E6%B3%95%E8%87%AA%E6%9F%A5/</url>
-    <content><![CDATA[<h1 id="bs4库方法自查"><a href="#bs4库方法自查" class="headerlink" title="bs4库方法自查"></a>bs4库方法自查</h1><p>Beautiful Soup库是解析、遍历、维护“标签树”的功能库</p>
-<h2 id="BeautifulSoup使用方法"><a href="#BeautifulSoup使用方法" class="headerlink" title="BeautifulSoup使用方法"></a>BeautifulSoup使用方法</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup</span><br><span class="line"><span class="keyword">import</span> bs4</span><br><span class="line"></span><br><span class="line">soup=BeautifulSoup(&lt;html&gt;response.text&lt;/html&gt;,<span class="string">&#x27;html.parser&#x27;</span>)</span><br><span class="line">soup=BeautifulSoup(<span class="built_in">open</span>(<span class="string">&#x27;*.html&#x27;</span>,<span class="string">&#x27;r&#x27;</span>),<span class="string">&#x27;html.parser&#x27;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h2 id="BeautifulSoup类基本元素"><a href="#BeautifulSoup类基本元素" class="headerlink" title="BeautifulSoup类基本元素"></a>BeautifulSoup类基本元素</h2><table>
-<thead>
-<tr>
-<th align="center">基本元素</th>
-<th align="center">含义</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">Tag</td>
-<td align="center">标签，以&lt;&gt;…&lt;&#x2F;&gt;组成</td>
-</tr>
-<tr>
-<td align="center">Name</td>
-<td align="center">标签名，&lt;p&gt;…&lt;&#x2F;p&gt;的名字是p：&lt;tag&gt;.name</td>
-</tr>
-<tr>
-<td align="center">Attributes</td>
-<td align="center">标签的属性，字典形式组织：<tag>.attrs</tag></td>
-</tr>
-<tr>
-<td align="center">NavigableString</td>
-<td align="center">标签内非属性字符串，标签下只能有一个子节点：<tag>.string，返回NavigableString</tag></td>
-</tr>
-<tr>
-<td align="center">text</td>
-<td align="center">标签内字符串，可跨域层级：<tag>.text，返回str</tag></td>
-</tr>
-<tr>
-<td align="center">Comment</td>
-<td align="center">标签内字符串的注释部分：<tag>.string</tag></td>
-</tr>
-</tbody></table>
-<p><a href="https://blog.csdn.net/weixin_30352645/article/details/99390523?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522165976942216782390551621%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=165976942216782390551621&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~baidu_landing_v2~default-2-99390523-null-null.142%5Ev39%5Epc_rank_v37,185%5Ev2%5Econtrol&utm_term=bs4%E7%9A%84string%E5%92%8Ctext&spm=1018.2226.3001.4187">text和string的区别</a></p>
-<h2 id="BeautifulSoup类常用方法"><a href="#BeautifulSoup类常用方法" class="headerlink" title="BeautifulSoup类常用方法"></a>BeautifulSoup类常用方法</h2><p>一篇总结bs4非常相近且准确的blog</p>
-<p><a href="https://www.cnblogs.com/gl1573/p/9480022.html">bs4方法详情</a></p>
-<p><img src="/bs4%E6%96%B9%E6%B3%95%E8%87%AA%E6%9F%A5/bottom.png" alt="bottom"></p>
-]]></content>
-      <categories>
-        <category>爬虫</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
     <title>Python正则表达式自查</title>
     <url>/Python%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%87%AA%E6%9F%A5/</url>
     <content><![CDATA[<h1 id="Python正则表达式自查"><a href="#Python正则表达式自查" class="headerlink" title="Python正则表达式自查"></a>Python正则表达式自查</h1><ul>
@@ -266,6 +201,86 @@
       </categories>
   </entry>
   <entry>
+    <title>bs4方法自查</title>
+    <url>/bs4%E6%96%B9%E6%B3%95%E8%87%AA%E6%9F%A5/</url>
+    <content><![CDATA[<h1 id="bs4库方法自查"><a href="#bs4库方法自查" class="headerlink" title="bs4库方法自查"></a>bs4库方法自查</h1><p>Beautiful Soup库是解析、遍历、维护“标签树”的功能库</p>
+<h2 id="BeautifulSoup使用方法"><a href="#BeautifulSoup使用方法" class="headerlink" title="BeautifulSoup使用方法"></a>BeautifulSoup使用方法</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup</span><br><span class="line"><span class="keyword">import</span> bs4</span><br><span class="line"></span><br><span class="line">soup=BeautifulSoup(&lt;html&gt;response.text&lt;/html&gt;,<span class="string">&#x27;html.parser&#x27;</span>)</span><br><span class="line">soup=BeautifulSoup(<span class="built_in">open</span>(<span class="string">&#x27;*.html&#x27;</span>,<span class="string">&#x27;r&#x27;</span>),<span class="string">&#x27;html.parser&#x27;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="BeautifulSoup类基本元素"><a href="#BeautifulSoup类基本元素" class="headerlink" title="BeautifulSoup类基本元素"></a>BeautifulSoup类基本元素</h2><table>
+<thead>
+<tr>
+<th align="center">基本元素</th>
+<th align="center">含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">Tag</td>
+<td align="center">标签，以&lt;&gt;…&lt;&#x2F;&gt;组成</td>
+</tr>
+<tr>
+<td align="center">Name</td>
+<td align="center">标签名，&lt;p&gt;…&lt;&#x2F;p&gt;的名字是p：&lt;tag&gt;.name</td>
+</tr>
+<tr>
+<td align="center">Attributes</td>
+<td align="center">标签的属性，字典形式组织：<tag>.attrs</tag></td>
+</tr>
+<tr>
+<td align="center">NavigableString</td>
+<td align="center">标签内非属性字符串，标签下只能有一个子节点：<tag>.string，返回NavigableString</tag></td>
+</tr>
+<tr>
+<td align="center">text</td>
+<td align="center">标签内字符串，可跨域层级：<tag>.text，返回str</tag></td>
+</tr>
+<tr>
+<td align="center">Comment</td>
+<td align="center">标签内字符串的注释部分：<tag>.string</tag></td>
+</tr>
+</tbody></table>
+<p><a href="https://blog.csdn.net/weixin_30352645/article/details/99390523?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522165976942216782390551621%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=165976942216782390551621&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~baidu_landing_v2~default-2-99390523-null-null.142%5Ev39%5Epc_rank_v37,185%5Ev2%5Econtrol&utm_term=bs4%E7%9A%84string%E5%92%8Ctext&spm=1018.2226.3001.4187">text和string的区别</a></p>
+<h2 id="BeautifulSoup类常用方法"><a href="#BeautifulSoup类常用方法" class="headerlink" title="BeautifulSoup类常用方法"></a>BeautifulSoup类常用方法</h2><p>一篇总结bs4非常相近且准确的blog</p>
+<p><a href="https://www.cnblogs.com/gl1573/p/9480022.html">bs4方法详情</a></p>
+<p><img src="/bs4%E6%96%B9%E6%B3%95%E8%87%AA%E6%9F%A5/bottom.png" alt="bottom"></p>
+]]></content>
+      <categories>
+        <category>爬虫</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>scrapy自查</title>
+    <url>/scrapy%E8%87%AA%E6%9F%A5/</url>
+    <content><![CDATA[<h1 id="scrapy自查"><a href="#scrapy自查" class="headerlink" title="scrapy自查"></a>scrapy自查</h1><p><a href="#scrapy%E5%AE%89%E8%A3%85">1. scrapy安装</a></p>
+<p><a href="#scrapy%E5%91%BD%E4%BB%A4">2. scrapy命令</a></p>
+<h2 id="scrapy安装"><a href="#scrapy安装" class="headerlink" title="scrapy安装"></a>scrapy安装</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># windows</span><br><span class="line">pip install wheel</span><br><span class="line">[下载twisted](https://www.lfd.uci.edu/~gohlke/pythonlibs/#twisted)</span><br><span class="line">pip install Twisted-20.3.0-cp39-cp39-win_amd64.whl</span><br><span class="line">pip install pywin32</span><br><span class="line">pip install scrapy</span><br></pre></td></tr></table></figure>
+
+<h2 id="scrapy命令"><a href="#scrapy命令" class="headerlink" title="scrapy命令"></a>scrapy命令</h2><p>创建工程：<code>scrapy startproject name_0</code></p>
+<p>在工程文件夹下创建爬虫文件（首先进入该文件夹）：<code>scrapy genspider name_1 www.balabala.com</code></p>
+<p>执行程序：<code>scrapy crawl name_1</code></p>
+]]></content>
+      <categories>
+        <category>爬虫</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
     <title>selenium自查</title>
     <url>/selenium%E8%87%AA%E6%9F%A5/</url>
     <content><![CDATA[<h1 id="selenium自查"><a href="#selenium自查" class="headerlink" title="selenium自查"></a>selenium自查</h1><p><a href="#%E6%97%A0%E5%A4%B4%E6%B5%8F%E8%A7%88%E5%99%A8">1. 无头浏览器</a></p>
@@ -365,17 +380,6 @@
 <p>…</p>
 <p>…</p>
 <p><img src="/%E5%85%B3%E4%BA%8EMD%E9%94%9A%E7%82%B9%E7%9A%84%E5%9D%91/bottom.png" alt="bottom"></p>
-]]></content>
-      <categories>
-        <category>MarkDown</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>本地图片</title>
-    <url>/%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/</url>
-    <content><![CDATA[<p><img src="/%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/md_icon.png" alt="本地图片"></p>
-<p><img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wwun?ver=f5d4" alt="网络图片"></p>
-<p><img src="/%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/bottom.png" alt="bottom"></p>
 ]]></content>
       <categories>
         <category>MarkDown</category>
@@ -502,6 +506,17 @@
 ]]></content>
       <categories>
         <category>爬虫</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>本地图片</title>
+    <url>/%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/</url>
+    <content><![CDATA[<p><img src="/%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/md_icon.png" alt="本地图片"></p>
+<p><img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wwun?ver=f5d4" alt="网络图片"></p>
+<p><img src="/%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/bottom.png" alt="bottom"></p>
+]]></content>
+      <categories>
+        <category>MarkDown</category>
       </categories>
   </entry>
   <entry>

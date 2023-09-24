@@ -6,7 +6,7 @@
   <link href="http://bigtrex.top/atom.xml" rel="self"/>
   
   <link href="http://bigtrex.top/"/>
-  <updated>2022-08-19T08:55:57.804Z</updated>
+  <updated>2022-08-21T04:18:53.155Z</updated>
   <id>http://bigtrex.top/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>scrapy自查</title>
+    <link href="http://bigtrex.top/scrapy%E8%87%AA%E6%9F%A5/"/>
+    <id>http://bigtrex.top/scrapy%E8%87%AA%E6%9F%A5/</id>
+    <published>2022-08-20T10:58:52.000Z</published>
+    <updated>2022-08-21T04:18:53.155Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="scrapy自查"><a href="#scrapy自查" class="headerlink" title="scrapy自查"></a>scrapy自查</h1><p><a href="#scrapy%E5%AE%89%E8%A3%85">1. scrapy安装</a></p><p><a href="#scrapy%E5%91%BD%E4%BB%A4">2. scrapy命令</a></p><h2 id="scrapy安装"><a href="#scrapy安装" class="headerlink" title="scrapy安装"></a>scrapy安装</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># windows</span><br><span class="line">pip install wheel</span><br><span class="line">[下载twisted](https://www.lfd.uci.edu/~gohlke/pythonlibs/#twisted)</span><br><span class="line">pip install Twisted-20.3.0-cp39-cp39-win_amd64.whl</span><br><span class="line">pip install pywin32</span><br><span class="line">pip install scrapy</span><br></pre></td></tr></table></figure><h2 id="scrapy命令"><a href="#scrapy命令" class="headerlink" title="scrapy命令"></a>scrapy命令</h2><p>创建工程：<code>scrapy startproject name_0</code></p><p>在工程文件夹下创建爬虫文件（首先进入该文件夹）：<code>scrapy genspider name_1 www.balabala.com</code></p><p>执行程序：<code>scrapy crawl name_1</code></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;scrapy自查&quot;&gt;&lt;a href=&quot;#scrapy自查&quot; class=&quot;headerlink&quot; title=&quot;scrapy自查&quot;&gt;&lt;/a&gt;scrapy自查&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;#scrapy%E5%AE%89%E8%A3%85&quot;&gt;1. scrapy安</summary>
+      
+    
+    
+    
+    <category term="爬虫" scheme="http://bigtrex.top/categories/%E7%88%AC%E8%99%AB/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>selenium自查</title>
