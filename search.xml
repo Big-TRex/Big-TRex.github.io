@@ -1,6 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>bs4方法自查</title>
+    <url>/bs4%E6%96%B9%E6%B3%95%E8%87%AA%E6%9F%A5/</url>
+    <content><![CDATA[<h1 id="bs4库方法自查"><a href="#bs4库方法自查" class="headerlink" title="bs4库方法自查"></a>bs4库方法自查</h1><p>Beautiful Soup库是解析、遍历、维护“标签树”的功能库</p>
+<h2 id="BeautifulSoup使用方法"><a href="#BeautifulSoup使用方法" class="headerlink" title="BeautifulSoup使用方法"></a>BeautifulSoup使用方法</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup</span><br><span class="line"><span class="keyword">import</span> bs4</span><br><span class="line"></span><br><span class="line">soup=BeautifulSoup(&lt;html&gt;response.text&lt;/html&gt;,<span class="string">&#x27;html.parser&#x27;</span>)</span><br><span class="line">soup=BeautifulSoup(<span class="built_in">open</span>(<span class="string">&#x27;*.html&#x27;</span>,<span class="string">&#x27;r&#x27;</span>),<span class="string">&#x27;html.parser&#x27;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="BeautifulSoup类基本元素"><a href="#BeautifulSoup类基本元素" class="headerlink" title="BeautifulSoup类基本元素"></a>BeautifulSoup类基本元素</h2><table>
+<thead>
+<tr>
+<th align="center">基本元素</th>
+<th align="center">含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">Tag</td>
+<td align="center">标签，以&lt;&gt;…&lt;&#x2F;&gt;组成</td>
+</tr>
+<tr>
+<td align="center">Name</td>
+<td align="center">标签名，&lt;p&gt;…&lt;&#x2F;p&gt;的名字是p：&lt;tag&gt;.name</td>
+</tr>
+<tr>
+<td align="center">Attributes</td>
+<td align="center">标签的属性，字典形式组织：<tag>.attrs</tag></td>
+</tr>
+<tr>
+<td align="center">NavigableString</td>
+<td align="center">标签内非属性字符串，标签下只能有一个子节点：<tag>.string，返回NavigableString</tag></td>
+</tr>
+<tr>
+<td align="center">text</td>
+<td align="center">标签内字符串，可跨域层级：<tag>.text，返回str</tag></td>
+</tr>
+<tr>
+<td align="center">Comment</td>
+<td align="center">标签内字符串的注释部分：<tag>.string</tag></td>
+</tr>
+</tbody></table>
+<p><a href="https://blog.csdn.net/weixin_30352645/article/details/99390523?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522165976942216782390551621%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=165976942216782390551621&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~baidu_landing_v2~default-2-99390523-null-null.142%5Ev39%5Epc_rank_v37,185%5Ev2%5Econtrol&utm_term=bs4%E7%9A%84string%E5%92%8Ctext&spm=1018.2226.3001.4187">text和string的区别</a></p>
+<h2 id="BeautifulSoup类常用方法"><a href="#BeautifulSoup类常用方法" class="headerlink" title="BeautifulSoup类常用方法"></a>BeautifulSoup类常用方法</h2><p>一篇总结bs4非常相近且准确的blog</p>
+<p><a href="https://www.cnblogs.com/gl1573/p/9480022.html">bs4方法详情</a></p>
+<p><img src="/bs4%E6%96%B9%E6%B3%95%E8%87%AA%E6%9F%A5/bottom.png" alt="bottom"></p>
+]]></content>
+      <categories>
+        <category>爬虫</category>
+      </categories>
+  </entry>
+  <entry>
     <title>MD语法自查</title>
     <url>/MD%E8%AF%AD%E6%B3%95%E8%87%AA%E6%9F%A5/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer">
@@ -201,53 +248,6 @@
       </categories>
   </entry>
   <entry>
-    <title>bs4方法自查</title>
-    <url>/bs4%E6%96%B9%E6%B3%95%E8%87%AA%E6%9F%A5/</url>
-    <content><![CDATA[<h1 id="bs4库方法自查"><a href="#bs4库方法自查" class="headerlink" title="bs4库方法自查"></a>bs4库方法自查</h1><p>Beautiful Soup库是解析、遍历、维护“标签树”的功能库</p>
-<h2 id="BeautifulSoup使用方法"><a href="#BeautifulSoup使用方法" class="headerlink" title="BeautifulSoup使用方法"></a>BeautifulSoup使用方法</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup</span><br><span class="line"><span class="keyword">import</span> bs4</span><br><span class="line"></span><br><span class="line">soup=BeautifulSoup(&lt;html&gt;response.text&lt;/html&gt;,<span class="string">&#x27;html.parser&#x27;</span>)</span><br><span class="line">soup=BeautifulSoup(<span class="built_in">open</span>(<span class="string">&#x27;*.html&#x27;</span>,<span class="string">&#x27;r&#x27;</span>),<span class="string">&#x27;html.parser&#x27;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h2 id="BeautifulSoup类基本元素"><a href="#BeautifulSoup类基本元素" class="headerlink" title="BeautifulSoup类基本元素"></a>BeautifulSoup类基本元素</h2><table>
-<thead>
-<tr>
-<th align="center">基本元素</th>
-<th align="center">含义</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">Tag</td>
-<td align="center">标签，以&lt;&gt;…&lt;&#x2F;&gt;组成</td>
-</tr>
-<tr>
-<td align="center">Name</td>
-<td align="center">标签名，&lt;p&gt;…&lt;&#x2F;p&gt;的名字是p：&lt;tag&gt;.name</td>
-</tr>
-<tr>
-<td align="center">Attributes</td>
-<td align="center">标签的属性，字典形式组织：<tag>.attrs</tag></td>
-</tr>
-<tr>
-<td align="center">NavigableString</td>
-<td align="center">标签内非属性字符串，标签下只能有一个子节点：<tag>.string，返回NavigableString</tag></td>
-</tr>
-<tr>
-<td align="center">text</td>
-<td align="center">标签内字符串，可跨域层级：<tag>.text，返回str</tag></td>
-</tr>
-<tr>
-<td align="center">Comment</td>
-<td align="center">标签内字符串的注释部分：<tag>.string</tag></td>
-</tr>
-</tbody></table>
-<p><a href="https://blog.csdn.net/weixin_30352645/article/details/99390523?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522165976942216782390551621%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=165976942216782390551621&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~baidu_landing_v2~default-2-99390523-null-null.142%5Ev39%5Epc_rank_v37,185%5Ev2%5Econtrol&utm_term=bs4%E7%9A%84string%E5%92%8Ctext&spm=1018.2226.3001.4187">text和string的区别</a></p>
-<h2 id="BeautifulSoup类常用方法"><a href="#BeautifulSoup类常用方法" class="headerlink" title="BeautifulSoup类常用方法"></a>BeautifulSoup类常用方法</h2><p>一篇总结bs4非常相近且准确的blog</p>
-<p><a href="https://www.cnblogs.com/gl1573/p/9480022.html">bs4方法详情</a></p>
-<p><img src="/bs4%E6%96%B9%E6%B3%95%E8%87%AA%E6%9F%A5/bottom.png" alt="bottom"></p>
-]]></content>
-      <categories>
-        <category>爬虫</category>
-      </categories>
-  </entry>
-  <entry>
     <title>scrapy自查</title>
     <url>/scrapy%E8%87%AA%E6%9F%A5/</url>
     <content><![CDATA[<h1 id="scrapy自查"><a href="#scrapy自查" class="headerlink" title="scrapy自查"></a>scrapy自查</h1><p><a href="#scrapy%E5%AE%89%E8%A3%85">1. scrapy安装</a></p>
@@ -260,6 +260,60 @@
 ]]></content>
       <categories>
         <category>爬虫</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>关于MD锚点的坑</title>
+    <url>/%E5%85%B3%E4%BA%8EMD%E9%94%9A%E7%82%B9%E7%9A%84%E5%9D%91/</url>
+    <content><![CDATA[<h1 id="关于MD锚点的坑"><a href="#关于MD锚点的坑" class="headerlink" title="关于MD锚点的坑"></a>关于MD锚点的坑</h1><p>锚点是一个方便定位的东西，用起来还是很香的</p>
+<p>但是不同MarkDown对锚点的解释都有些许区别，导致不同平台上锚点可能会失效</p>
+<p>MarkDown中对于锚点的语法定义如下：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">[<span class="string">描述</span>](<span class="link">#定位的title</span>)</span><br><span class="line"></span><br><span class="line">...</span><br><span class="line"></span><br><span class="line"><span class="section"># 定位的Title</span></span><br></pre></td></tr></table></figure>
+
+<p>多级标题都可以作为’定位的title’，另外标题中大写字母会自动转为小写字母</p>
+<p><a href="#for-example">For Example</a></p>
+<p>…</p>
+<p>…</p>
+<p>…</p>
+<p>…</p>
+<p>…</p>
+<h2 id="For-Example"><a href="#For-Example" class="headerlink" title="For Example"></a>For Example</h2><p>这样的锚点在vscode这样的编辑器上是没有问题的，但是放到如github，csdn上会失效</p>
+<p>代码如下：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">[<span class="string">For Example</span>](<span class="link">#for-example</span>)</span><br><span class="line"></span><br><span class="line"><span class="section">## For Example</span></span><br></pre></td></tr></table></figure>
+
+<p>对于hexo+github搭建的博客，这样的锚点失效在于#后的内容和标题不一致，主要在于英文大小写，中文不存在如上问题</p>
+<p>修改为如下的代码，在hexo+github上可以实现锚点，然而对于vscode这样的编辑器当然失效了，另外这样的锚点在csdn上也会失效</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">[<span class="string">For Example2</span>](<span class="link">#For-Example2</span>)</span><br><span class="line"></span><br><span class="line"><span class="section">## For Example2</span></span><br></pre></td></tr></table></figure>
+
+<p><a href="#For-Example2">For Example2</a></p>
+<p>…</p>
+<p>…</p>
+<p>…</p>
+<p>…</p>
+<p>…</p>
+<h2 id="For-Example2"><a href="#For-Example2" class="headerlink" title="For Example2"></a>For Example2</h2><p>目前来看纯MarkDown语法的锚点总会存在一些坑，一个通用解决方法是配合html中锚点的使用，代码如下：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">[<span class="string">点击跳转到For Example3</span>](<span class="link">#Test</span>)</span><br><span class="line"></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">a</span> <span class="attr">id</span>=<span class="string">&quot;Test&quot;</span>&gt;</span></span>For Example3<span class="language-xml"><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+
+<p>其中id值只支持英文，id值和#后的值完全一致，不支持id值包含空格</p>
+<p>当然，这样的代码并非按照MarkDown的思想直接将标题作为锚点的定位点，但是这样的锚点在vscode，github，csdn上都可以<strong>work！</strong></p>
+<p><a href="#Test">点击跳转到For Example3</a></p>
+<p>…</p>
+<p>…</p>
+<p>…</p>
+<p>…</p>
+<p>…</p>
+<p>…</p>
+<p>…</p>
+<p><a id="Test">For Example3</a></p>
+<p>…</p>
+<p>…</p>
+<p>…</p>
+<p>…</p>
+<p>…</p>
+<p><img src="/%E5%85%B3%E4%BA%8EMD%E9%94%9A%E7%82%B9%E7%9A%84%E5%9D%91/bottom.png" alt="bottom"></p>
+]]></content>
+      <categories>
+        <category>MarkDown</category>
       </categories>
   </entry>
   <entry>
@@ -329,60 +383,6 @@
 ]]></content>
       <categories>
         <category>爬虫</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>关于MD锚点的坑</title>
-    <url>/%E5%85%B3%E4%BA%8EMD%E9%94%9A%E7%82%B9%E7%9A%84%E5%9D%91/</url>
-    <content><![CDATA[<h1 id="关于MD锚点的坑"><a href="#关于MD锚点的坑" class="headerlink" title="关于MD锚点的坑"></a>关于MD锚点的坑</h1><p>锚点是一个方便定位的东西，用起来还是很香的</p>
-<p>但是不同MarkDown对锚点的解释都有些许区别，导致不同平台上锚点可能会失效</p>
-<p>MarkDown中对于锚点的语法定义如下：</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">[<span class="string">描述</span>](<span class="link">#定位的title</span>)</span><br><span class="line"></span><br><span class="line">...</span><br><span class="line"></span><br><span class="line"><span class="section"># 定位的Title</span></span><br></pre></td></tr></table></figure>
-
-<p>多级标题都可以作为’定位的title’，另外标题中大写字母会自动转为小写字母</p>
-<p><a href="#for-example">For Example</a></p>
-<p>…</p>
-<p>…</p>
-<p>…</p>
-<p>…</p>
-<p>…</p>
-<h2 id="For-Example"><a href="#For-Example" class="headerlink" title="For Example"></a>For Example</h2><p>这样的锚点在vscode这样的编辑器上是没有问题的，但是放到如github，csdn上会失效</p>
-<p>代码如下：</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">[<span class="string">For Example</span>](<span class="link">#for-example</span>)</span><br><span class="line"></span><br><span class="line"><span class="section">## For Example</span></span><br></pre></td></tr></table></figure>
-
-<p>对于hexo+github搭建的博客，这样的锚点失效在于#后的内容和标题不一致，主要在于英文大小写，中文不存在如上问题</p>
-<p>修改为如下的代码，在hexo+github上可以实现锚点，然而对于vscode这样的编辑器当然失效了，另外这样的锚点在csdn上也会失效</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">[<span class="string">For Example2</span>](<span class="link">#For-Example2</span>)</span><br><span class="line"></span><br><span class="line"><span class="section">## For Example2</span></span><br></pre></td></tr></table></figure>
-
-<p><a href="#For-Example2">For Example2</a></p>
-<p>…</p>
-<p>…</p>
-<p>…</p>
-<p>…</p>
-<p>…</p>
-<h2 id="For-Example2"><a href="#For-Example2" class="headerlink" title="For Example2"></a>For Example2</h2><p>目前来看纯MarkDown语法的锚点总会存在一些坑，一个通用解决方法是配合html中锚点的使用，代码如下：</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">[<span class="string">点击跳转到For Example3</span>](<span class="link">#Test</span>)</span><br><span class="line"></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">a</span> <span class="attr">id</span>=<span class="string">&quot;Test&quot;</span>&gt;</span></span>For Example3<span class="language-xml"><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
-
-<p>其中id值只支持英文，id值和#后的值完全一致，不支持id值包含空格</p>
-<p>当然，这样的代码并非按照MarkDown的思想直接将标题作为锚点的定位点，但是这样的锚点在vscode，github，csdn上都可以<strong>work！</strong></p>
-<p><a href="#Test">点击跳转到For Example3</a></p>
-<p>…</p>
-<p>…</p>
-<p>…</p>
-<p>…</p>
-<p>…</p>
-<p>…</p>
-<p>…</p>
-<p><a id="Test">For Example3</a></p>
-<p>…</p>
-<p>…</p>
-<p>…</p>
-<p>…</p>
-<p>…</p>
-<p><img src="/%E5%85%B3%E4%BA%8EMD%E9%94%9A%E7%82%B9%E7%9A%84%E5%9D%91/bottom.png" alt="bottom"></p>
-]]></content>
-      <categories>
-        <category>MarkDown</category>
       </categories>
   </entry>
   <entry>
