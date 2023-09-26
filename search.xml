@@ -1,142 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>bs4方法自查</title>
-    <url>/bs4%E6%96%B9%E6%B3%95%E8%87%AA%E6%9F%A5/</url>
-    <content><![CDATA[<h1 id="bs4库方法自查"><a href="#bs4库方法自查" class="headerlink" title="bs4库方法自查"></a>bs4库方法自查</h1><p>Beautiful Soup库是解析、遍历、维护“标签树”的功能库</p>
-<h2 id="BeautifulSoup使用方法"><a href="#BeautifulSoup使用方法" class="headerlink" title="BeautifulSoup使用方法"></a>BeautifulSoup使用方法</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup</span><br><span class="line"><span class="keyword">import</span> bs4</span><br><span class="line"></span><br><span class="line">soup=BeautifulSoup(&lt;html&gt;response.text&lt;/html&gt;,<span class="string">&#x27;html.parser&#x27;</span>)</span><br><span class="line">soup=BeautifulSoup(<span class="built_in">open</span>(<span class="string">&#x27;*.html&#x27;</span>,<span class="string">&#x27;r&#x27;</span>),<span class="string">&#x27;html.parser&#x27;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h2 id="BeautifulSoup类基本元素"><a href="#BeautifulSoup类基本元素" class="headerlink" title="BeautifulSoup类基本元素"></a>BeautifulSoup类基本元素</h2><table>
-<thead>
-<tr>
-<th align="center">基本元素</th>
-<th align="center">含义</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">Tag</td>
-<td align="center">标签，以&lt;&gt;…&lt;&#x2F;&gt;组成</td>
-</tr>
-<tr>
-<td align="center">Name</td>
-<td align="center">标签名，&lt;p&gt;…&lt;&#x2F;p&gt;的名字是p：&lt;tag&gt;.name</td>
-</tr>
-<tr>
-<td align="center">Attributes</td>
-<td align="center">标签的属性，字典形式组织：<tag>.attrs</tag></td>
-</tr>
-<tr>
-<td align="center">NavigableString</td>
-<td align="center">标签内非属性字符串，标签下只能有一个子节点：<tag>.string，返回NavigableString</tag></td>
-</tr>
-<tr>
-<td align="center">text</td>
-<td align="center">标签内字符串，可跨域层级：<tag>.text，返回str</tag></td>
-</tr>
-<tr>
-<td align="center">Comment</td>
-<td align="center">标签内字符串的注释部分：<tag>.string</tag></td>
-</tr>
-</tbody></table>
-<p><a href="https://blog.csdn.net/weixin_30352645/article/details/99390523?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522165976942216782390551621%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=165976942216782390551621&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~baidu_landing_v2~default-2-99390523-null-null.142%5Ev39%5Epc_rank_v37,185%5Ev2%5Econtrol&utm_term=bs4%E7%9A%84string%E5%92%8Ctext&spm=1018.2226.3001.4187">text和string的区别</a></p>
-<h2 id="BeautifulSoup类常用方法"><a href="#BeautifulSoup类常用方法" class="headerlink" title="BeautifulSoup类常用方法"></a>BeautifulSoup类常用方法</h2><p>一篇总结bs4非常相近且准确的blog</p>
-<p><a href="https://www.cnblogs.com/gl1573/p/9480022.html">bs4方法详情</a></p>
-<p><img src="/bs4%E6%96%B9%E6%B3%95%E8%87%AA%E6%9F%A5/bottom.png" alt="bottom"></p>
-]]></content>
-      <categories>
-        <category>爬虫</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>MD语法自查</title>
-    <url>/MD%E8%AF%AD%E6%B3%95%E8%87%AA%E6%9F%A5/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer">
-
-<h1 id="MarkDown语法自查"><a href="#MarkDown语法自查" class="headerlink" title="MarkDown语法自查"></a>MarkDown语法自查</h1><p><a href="#%E6%A0%87%E9%A2%98">1. 标题</a></p>
-<p><a href="#%E5%88%97%E8%A1%A8">2. 列表</a></p>
-<p><a href="#%E5%AD%97%E4%BD%93">3. 字体</a></p>
-<p><a href="#%E9%94%9A%E7%82%B9">4. 锚点</a></p>
-<p><a href="#%E4%BB%A3%E7%A0%81%E5%9D%97">5. 代码块</a></p>
-<p><a href="#%E5%9B%BE%E7%89%87%E5%92%8C%E8%B6%85%E9%93%BE%E6%8E%A5">6. 图片和超链接</a></p>
-<p><a href="#%E8%A1%A8%E6%A0%BC">7. 表格</a></p>
-<p><a href="#%E5%BC%95%E7%94%A8">8. 引用</a></p>
-<hr>
-<hr>
-<hr>
-<h1 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h1><h1 id="主标题"><a href="#主标题" class="headerlink" title="主标题"></a>主标题</h1><h2 id="副标题"><a href="#副标题" class="headerlink" title="副标题"></a>副标题</h2><h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><h1 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h1><p>有序列表：</p>
-<ol>
-<li>首先<ul>
-<li>首先<ol>
-<li>首首先</li>
-<li>其其次</li>
-<li>最最后</li>
-</ol>
-</li>
-<li>其次</li>
-<li>最后</li>
-</ul>
-</li>
-<li>其次</li>
-<li>最后</li>
-</ol>
-<p>无序列表：</p>
-<ul>
-<li>首先<ul>
-<li>首先</li>
-<li>其次</li>
-<li>最后</li>
-</ul>
-</li>
-<li>其次</li>
-<li>最后</li>
-</ul>
-<h1 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h1><p><em>斜体</em></p>
-<p><strong>粗体</strong></p>
-<p><em><strong>粗斜体</strong></em></p>
-<p><span style="color:pink">花裙子</span></p>
-<p><del>删除线</del></p>
-<p><del>删除线</del></p>
-<h1 id="锚点"><a href="#锚点" class="headerlink" title="锚点"></a>锚点</h1><p>定位到这里</p>
-<h2 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">func</span>(<span class="params">age</span>):</span><br><span class="line">    <span class="keyword">return</span> age</span><br></pre></td></tr></table></figure>
-
-<p><code>int a=5+9;</code></p>
-<h1 id="图片和超链接"><a href="#图片和超链接" class="headerlink" title="图片和超链接"></a>图片和超链接</h1><p><img src="https://img-home.csdnimg.cn/images/20220729104705.jpg" alt="网络图片" title="网络图片"></p>
-<p><a href="https://www.csdn.net/" title="前往csdn社区">csdn社区</a></p>
-<p><a href="https://www.csdn.net/">https://www.csdn.net/</a></p>
-<h1 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h1><table>
-<thead>
-<tr>
-<th>姓名</th>
-<th align="right">年龄</th>
-<th align="center">职业</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>张三</td>
-<td align="right">20000</td>
-<td align="center">医生</td>
-</tr>
-<tr>
-<td>李四</td>
-<td align="right">60</td>
-<td align="center">警察叔叔</td>
-</tr>
-</tbody></table>
-<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>张三说：</p>
-<blockquote>
-<p>阿门阿前一棵葡萄树</p>
-<blockquote>
-<p>葡萄树说：这是不对的</p>
-</blockquote>
-</blockquote>
-]]></content>
-      <categories>
-        <category>MarkDown</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Python正则表达式自查</title>
     <url>/Python%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%87%AA%E6%9F%A5/</url>
     <content><![CDATA[<h1 id="Python正则表达式自查"><a href="#Python正则表达式自查" class="headerlink" title="Python正则表达式自查"></a>Python正则表达式自查</h1><ul>
@@ -248,6 +112,53 @@
       </categories>
   </entry>
   <entry>
+    <title>bs4方法自查</title>
+    <url>/bs4%E6%96%B9%E6%B3%95%E8%87%AA%E6%9F%A5/</url>
+    <content><![CDATA[<h1 id="bs4库方法自查"><a href="#bs4库方法自查" class="headerlink" title="bs4库方法自查"></a>bs4库方法自查</h1><p>Beautiful Soup库是解析、遍历、维护“标签树”的功能库</p>
+<h2 id="BeautifulSoup使用方法"><a href="#BeautifulSoup使用方法" class="headerlink" title="BeautifulSoup使用方法"></a>BeautifulSoup使用方法</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup</span><br><span class="line"><span class="keyword">import</span> bs4</span><br><span class="line"></span><br><span class="line">soup=BeautifulSoup(&lt;html&gt;response.text&lt;/html&gt;,<span class="string">&#x27;html.parser&#x27;</span>)</span><br><span class="line">soup=BeautifulSoup(<span class="built_in">open</span>(<span class="string">&#x27;*.html&#x27;</span>,<span class="string">&#x27;r&#x27;</span>),<span class="string">&#x27;html.parser&#x27;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="BeautifulSoup类基本元素"><a href="#BeautifulSoup类基本元素" class="headerlink" title="BeautifulSoup类基本元素"></a>BeautifulSoup类基本元素</h2><table>
+<thead>
+<tr>
+<th align="center">基本元素</th>
+<th align="center">含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">Tag</td>
+<td align="center">标签，以&lt;&gt;…&lt;&#x2F;&gt;组成</td>
+</tr>
+<tr>
+<td align="center">Name</td>
+<td align="center">标签名，&lt;p&gt;…&lt;&#x2F;p&gt;的名字是p：&lt;tag&gt;.name</td>
+</tr>
+<tr>
+<td align="center">Attributes</td>
+<td align="center">标签的属性，字典形式组织：<tag>.attrs</tag></td>
+</tr>
+<tr>
+<td align="center">NavigableString</td>
+<td align="center">标签内非属性字符串，标签下只能有一个子节点：<tag>.string，返回NavigableString</tag></td>
+</tr>
+<tr>
+<td align="center">text</td>
+<td align="center">标签内字符串，可跨域层级：<tag>.text，返回str</tag></td>
+</tr>
+<tr>
+<td align="center">Comment</td>
+<td align="center">标签内字符串的注释部分：<tag>.string</tag></td>
+</tr>
+</tbody></table>
+<p><a href="https://blog.csdn.net/weixin_30352645/article/details/99390523?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522165976942216782390551621%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=165976942216782390551621&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~baidu_landing_v2~default-2-99390523-null-null.142%5Ev39%5Epc_rank_v37,185%5Ev2%5Econtrol&utm_term=bs4%E7%9A%84string%E5%92%8Ctext&spm=1018.2226.3001.4187">text和string的区别</a></p>
+<h2 id="BeautifulSoup类常用方法"><a href="#BeautifulSoup类常用方法" class="headerlink" title="BeautifulSoup类常用方法"></a>BeautifulSoup类常用方法</h2><p>一篇总结bs4非常相近且准确的blog</p>
+<p><a href="https://www.cnblogs.com/gl1573/p/9480022.html">bs4方法详情</a></p>
+<p><img src="/bs4%E6%96%B9%E6%B3%95%E8%87%AA%E6%9F%A5/bottom.png" alt="bottom"></p>
+]]></content>
+      <categories>
+        <category>爬虫</category>
+      </categories>
+  </entry>
+  <entry>
     <title>scrapy自查</title>
     <url>/scrapy%E8%87%AA%E6%9F%A5/</url>
     <content><![CDATA[<h1 id="scrapy自查"><a href="#scrapy自查" class="headerlink" title="scrapy自查"></a>scrapy自查</h1><p><a href="#scrapy%E5%AE%89%E8%A3%85">1. scrapy安装</a></p>
@@ -261,6 +172,175 @@
       <categories>
         <category>爬虫</category>
       </categories>
+  </entry>
+  <entry>
+    <title>MD语法自查</title>
+    <url>/MD%E8%AF%AD%E6%B3%95%E8%87%AA%E6%9F%A5/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer">
+
+<h1 id="MarkDown语法自查"><a href="#MarkDown语法自查" class="headerlink" title="MarkDown语法自查"></a>MarkDown语法自查</h1><p><a href="#%E6%A0%87%E9%A2%98">1. 标题</a></p>
+<p><a href="#%E5%88%97%E8%A1%A8">2. 列表</a></p>
+<p><a href="#%E5%AD%97%E4%BD%93">3. 字体</a></p>
+<p><a href="#%E9%94%9A%E7%82%B9">4. 锚点</a></p>
+<p><a href="#%E4%BB%A3%E7%A0%81%E5%9D%97">5. 代码块</a></p>
+<p><a href="#%E5%9B%BE%E7%89%87%E5%92%8C%E8%B6%85%E9%93%BE%E6%8E%A5">6. 图片和超链接</a></p>
+<p><a href="#%E8%A1%A8%E6%A0%BC">7. 表格</a></p>
+<p><a href="#%E5%BC%95%E7%94%A8">8. 引用</a></p>
+<hr>
+<hr>
+<hr>
+<h1 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h1><h1 id="主标题"><a href="#主标题" class="headerlink" title="主标题"></a>主标题</h1><h2 id="副标题"><a href="#副标题" class="headerlink" title="副标题"></a>副标题</h2><h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><h1 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h1><p>有序列表：</p>
+<ol>
+<li>首先<ul>
+<li>首先<ol>
+<li>首首先</li>
+<li>其其次</li>
+<li>最最后</li>
+</ol>
+</li>
+<li>其次</li>
+<li>最后</li>
+</ul>
+</li>
+<li>其次</li>
+<li>最后</li>
+</ol>
+<p>无序列表：</p>
+<ul>
+<li>首先<ul>
+<li>首先</li>
+<li>其次</li>
+<li>最后</li>
+</ul>
+</li>
+<li>其次</li>
+<li>最后</li>
+</ul>
+<h1 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h1><p><em>斜体</em></p>
+<p><strong>粗体</strong></p>
+<p><em><strong>粗斜体</strong></em></p>
+<p><span style="color:pink">花裙子</span></p>
+<p><del>删除线</del></p>
+<p><del>删除线</del></p>
+<h1 id="锚点"><a href="#锚点" class="headerlink" title="锚点"></a>锚点</h1><p>定位到这里</p>
+<h2 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">func</span>(<span class="params">age</span>):</span><br><span class="line">    <span class="keyword">return</span> age</span><br></pre></td></tr></table></figure>
+
+<p><code>int a=5+9;</code></p>
+<h1 id="图片和超链接"><a href="#图片和超链接" class="headerlink" title="图片和超链接"></a>图片和超链接</h1><p><img src="https://img-home.csdnimg.cn/images/20220729104705.jpg" alt="网络图片" title="网络图片"></p>
+<p><a href="https://www.csdn.net/" title="前往csdn社区">csdn社区</a></p>
+<p><a href="https://www.csdn.net/">https://www.csdn.net/</a></p>
+<h1 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h1><table>
+<thead>
+<tr>
+<th>姓名</th>
+<th align="right">年龄</th>
+<th align="center">职业</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>张三</td>
+<td align="right">20000</td>
+<td align="center">医生</td>
+</tr>
+<tr>
+<td>李四</td>
+<td align="right">60</td>
+<td align="center">警察叔叔</td>
+</tr>
+</tbody></table>
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>张三说：</p>
+<blockquote>
+<p>阿门阿前一棵葡萄树</p>
+<blockquote>
+<p>葡萄树说：这是不对的</p>
+</blockquote>
+</blockquote>
+]]></content>
+      <categories>
+        <category>MarkDown</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>selenium自查</title>
+    <url>/selenium%E8%87%AA%E6%9F%A5/</url>
+    <content><![CDATA[<h1 id="selenium自查"><a href="#selenium自查" class="headerlink" title="selenium自查"></a>selenium自查</h1><p><a href="#%E6%97%A0%E5%A4%B4%E6%B5%8F%E8%A7%88%E5%99%A8">1. 无头浏览器</a></p>
+<p><a href="#%E5%8F%8Dselenium%E6%A3%80%E6%B5%8B">2. 反selenium检测</a></p>
+<p><a href="#selenium%E6%88%AA%E5%8F%96%E5%85%A8%E5%B1%8F">3. selenium截取全屏</a></p>
+<p><a href="#selenium%E4%B8%8D%E8%87%AA%E5%8A%A8%E5%85%B3%E9%97%AD%E6%B5%8F%E8%A7%88%E5%99%A8">4. selenium不自动关闭浏览器</a></p>
+<p><a href="#selenium%E5%88%87%E6%8D%A2%E5%88%B0iframe">5. selenium切换到iframe</a></p>
+<p><a href="#selenium%E7%AA%97%E5%8F%A3%E6%9C%80%E5%A4%A7%E5%8C%96">6. selenium窗口最大化</a></p>
+<h2 id="无头浏览器"><a href="#无头浏览器" class="headerlink" title="无头浏览器"></a>无头浏览器</h2><p>无头浏览器即执行爬虫程序时浏览器在后台运行而不显示</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line"><span class="keyword">from</span> selenium.webdriver.edge.options <span class="keyword">import</span> Options</span><br><span class="line"></span><br><span class="line"><span class="comment"># 设置无头</span></span><br><span class="line">edge_options.add_argument(<span class="string">&#x27;--headless&#x27;</span>)</span><br><span class="line"><span class="comment"># 禁用GPU，防止无头模式出现莫名的BUG</span></span><br><span class="line">edge_options.add_argument(<span class="string">&#x27;--disable-gpu&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将参数传给浏览器</span></span><br><span class="line">edge = webdriver.Edge(options=edge_options)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="反selenium检测"><a href="#反selenium检测" class="headerlink" title="反selenium检测"></a>反selenium检测</h2><p>防止对应网站针对selenium进行反爬</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line"><span class="keyword">from</span> selenium.webdriver.edge.options <span class="keyword">import</span> Options</span><br><span class="line"></span><br><span class="line"><span class="comment"># 开启开发者模式</span></span><br><span class="line">edge_options.add_experimental_option(<span class="string">&#x27;excludeSwitches&#x27;</span>, [<span class="string">&#x27;enable-automation&#x27;</span>])</span><br><span class="line"><span class="comment"># 禁用启用Blink运行时的功能</span></span><br><span class="line">edge_options.add_argument(<span class="string">&#x27;--disable-blink-features=AutomationControlled&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将参数传给浏览器</span></span><br><span class="line">edge = webdriver.Edge(options=edge_options)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="selenium截取全屏"><a href="#selenium截取全屏" class="headerlink" title="selenium截取全屏"></a>selenium截取全屏</h2><p>使用selenium进行模拟登录时，如果网页存在验证码，那么是无法再通过requests对验证码的url发起get请求下载图片的，这就相当于用两个不同的浏览器进行登录，验证码肯定是不相同的</p>
+<p>那么只能对响浏览器进行截屏，接着定位到验证码图片的矩形区域以截取验证码图片</p>
+<p>我们当然希望通过程序自动截屏并且定位验证码图片的坐标，所以一般思路是获取验证码图片对应的标签，然后获取对应的坐标和长宽数据</p>
+<p>但是有一个问题是，如果页面无法全部显示在当前浏览器界面时，使用selenium截屏只能截取部分页面，也就是电脑显示的部分，而标签定位是相对于整张页面的，所以在部分页面截屏上无法准确定位到验证码图片坐标</p>
+<p>那么必须先通过selenium截取全部页面</p>
+<p>当然我们也可以借助其它工具在部分截屏页面中定位到验证码图片的坐标，但是一般都需要手动操作，那模拟登录还有什么意义。。。</p>
+<p><em><strong>截取整张页面的一般方法</strong></em></p>
+<ol>
+<li><p>最常见的就是先手动设置浏览器或者屏幕分辨率，使得整张页面可以在浏览器中显示，此时的截屏当然是整张页面了，这样做比较麻烦</p>
+</li>
+<li><p>通过js代码设置浏览器分辨率，但是此时只能使用<strong>无头浏览器</strong></p>
+</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">width = edge.execute_script(<span class="string">&quot;return document.documentElement.scrollWidth&quot;</span>)</span><br><span class="line">height = edge.execute_script(<span class="string">&quot;return document.documentElement.scrollHeight&quot;</span>)</span><br><span class="line"><span class="comment"># 将浏览器的宽高设置成页面的宽高</span></span><br><span class="line">edge.set_window_size(width, height)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><strong>ps.使用selenium进行图像处理时一定要用png格式，jpg格式会存在解码错误</strong></p>
+<h2 id="selenium不自动关闭浏览器"><a href="#selenium不自动关闭浏览器" class="headerlink" title="selenium不自动关闭浏览器"></a>selenium不自动关闭浏览器</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line"><span class="keyword">from</span> selenium.webdriver.edge.options <span class="keyword">import</span> Options</span><br><span class="line"></span><br><span class="line">edge_options.add_experimental_option(<span class="string">&quot;detach&quot;</span>, <span class="literal">True</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将参数传给浏览器</span></span><br><span class="line">edge = webdriver.Edge(options=edge_options)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>如果需要关闭可以加入<code>edge.quit()</code></p>
+<h2 id="selenium切换到iframe"><a href="#selenium切换到iframe" class="headerlink" title="selenium切换到iframe"></a>selenium切换到iframe</h2><ol>
+<li>如果iframe具有id或name属性，直接通过<code>edge.switch_to.frame(&quot;id\name&quot;)</code></li>
+</ol>
+<p>其中id是唯一的，name可能不唯一</p>
+<ol start="2">
+<li>如果iframe不具有id和name，那么首先利用一般定位方式定位到iframe标签，再切换到iframe</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">iframe=edge.find_element()</span><br><span class="line">edge.switch_to.frame(iframe)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="selenium窗口最大化"><a href="#selenium窗口最大化" class="headerlink" title="selenium窗口最大化"></a>selenium窗口最大化</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">edge.maximize_window()</span><br></pre></td></tr></table></figure>
+
+<p><img src="/selenium%E8%87%AA%E6%9F%A5/bottom.png" alt="bottom"></p>
+]]></content>
+      <categories>
+        <category>爬虫</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>本地图片</title>
+    <url>/%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/</url>
+    <content><![CDATA[<p><img src="/%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/md_icon.png" alt="本地图片"></p>
+<p><img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wwun?ver=f5d4" alt="网络图片"></p>
+<p><img src="/%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/bottom.png" alt="bottom"></p>
+]]></content>
+      <categories>
+        <category>MarkDown</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
   </entry>
   <entry>
     <title>关于MD锚点的坑</title>
@@ -314,75 +394,6 @@
 ]]></content>
       <categories>
         <category>MarkDown</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>selenium自查</title>
-    <url>/selenium%E8%87%AA%E6%9F%A5/</url>
-    <content><![CDATA[<h1 id="selenium自查"><a href="#selenium自查" class="headerlink" title="selenium自查"></a>selenium自查</h1><p><a href="#%E6%97%A0%E5%A4%B4%E6%B5%8F%E8%A7%88%E5%99%A8">1. 无头浏览器</a></p>
-<p><a href="#%E5%8F%8Dselenium%E6%A3%80%E6%B5%8B">2. 反selenium检测</a></p>
-<p><a href="#selenium%E6%88%AA%E5%8F%96%E5%85%A8%E5%B1%8F">3. selenium截取全屏</a></p>
-<p><a href="#selenium%E4%B8%8D%E8%87%AA%E5%8A%A8%E5%85%B3%E9%97%AD%E6%B5%8F%E8%A7%88%E5%99%A8">4. selenium不自动关闭浏览器</a></p>
-<p><a href="#selenium%E5%88%87%E6%8D%A2%E5%88%B0iframe">5. selenium切换到iframe</a></p>
-<p><a href="#selenium%E7%AA%97%E5%8F%A3%E6%9C%80%E5%A4%A7%E5%8C%96">6. selenium窗口最大化</a></p>
-<h2 id="无头浏览器"><a href="#无头浏览器" class="headerlink" title="无头浏览器"></a>无头浏览器</h2><p>无头浏览器即执行爬虫程序时浏览器在后台运行而不显示</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line"><span class="keyword">from</span> selenium.webdriver.edge.options <span class="keyword">import</span> Options</span><br><span class="line"></span><br><span class="line"><span class="comment"># 设置无头</span></span><br><span class="line">edge_options.add_argument(<span class="string">&#x27;--headless&#x27;</span>)</span><br><span class="line"><span class="comment"># 禁用GPU，防止无头模式出现莫名的BUG</span></span><br><span class="line">edge_options.add_argument(<span class="string">&#x27;--disable-gpu&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将参数传给浏览器</span></span><br><span class="line">edge = webdriver.Edge(options=edge_options)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h2 id="反selenium检测"><a href="#反selenium检测" class="headerlink" title="反selenium检测"></a>反selenium检测</h2><p>防止对应网站针对selenium进行反爬</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line"><span class="keyword">from</span> selenium.webdriver.edge.options <span class="keyword">import</span> Options</span><br><span class="line"></span><br><span class="line"><span class="comment"># 开启开发者模式</span></span><br><span class="line">edge_options.add_experimental_option(<span class="string">&#x27;excludeSwitches&#x27;</span>, [<span class="string">&#x27;enable-automation&#x27;</span>])</span><br><span class="line"><span class="comment"># 禁用启用Blink运行时的功能</span></span><br><span class="line">edge_options.add_argument(<span class="string">&#x27;--disable-blink-features=AutomationControlled&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将参数传给浏览器</span></span><br><span class="line">edge = webdriver.Edge(options=edge_options)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h2 id="selenium截取全屏"><a href="#selenium截取全屏" class="headerlink" title="selenium截取全屏"></a>selenium截取全屏</h2><p>使用selenium进行模拟登录时，如果网页存在验证码，那么是无法再通过requests对验证码的url发起get请求下载图片的，这就相当于用两个不同的浏览器进行登录，验证码肯定是不相同的</p>
-<p>那么只能对响浏览器进行截屏，接着定位到验证码图片的矩形区域以截取验证码图片</p>
-<p>我们当然希望通过程序自动截屏并且定位验证码图片的坐标，所以一般思路是获取验证码图片对应的标签，然后获取对应的坐标和长宽数据</p>
-<p>但是有一个问题是，如果页面无法全部显示在当前浏览器界面时，使用selenium截屏只能截取部分页面，也就是电脑显示的部分，而标签定位是相对于整张页面的，所以在部分页面截屏上无法准确定位到验证码图片坐标</p>
-<p>那么必须先通过selenium截取全部页面</p>
-<p>当然我们也可以借助其它工具在部分截屏页面中定位到验证码图片的坐标，但是一般都需要手动操作，那模拟登录还有什么意义。。。</p>
-<p><em><strong>截取整张页面的一般方法</strong></em></p>
-<ol>
-<li><p>最常见的就是先手动设置浏览器或者屏幕分辨率，使得整张页面可以在浏览器中显示，此时的截屏当然是整张页面了，这样做比较麻烦</p>
-</li>
-<li><p>通过js代码设置浏览器分辨率，但是此时只能使用<strong>无头浏览器</strong></p>
-</li>
-</ol>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">width = edge.execute_script(<span class="string">&quot;return document.documentElement.scrollWidth&quot;</span>)</span><br><span class="line">height = edge.execute_script(<span class="string">&quot;return document.documentElement.scrollHeight&quot;</span>)</span><br><span class="line"><span class="comment"># 将浏览器的宽高设置成页面的宽高</span></span><br><span class="line">edge.set_window_size(width, height)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p><strong>ps.使用selenium进行图像处理时一定要用png格式，jpg格式会存在解码错误</strong></p>
-<h2 id="selenium不自动关闭浏览器"><a href="#selenium不自动关闭浏览器" class="headerlink" title="selenium不自动关闭浏览器"></a>selenium不自动关闭浏览器</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line"><span class="keyword">from</span> selenium.webdriver.edge.options <span class="keyword">import</span> Options</span><br><span class="line"></span><br><span class="line">edge_options.add_experimental_option(<span class="string">&quot;detach&quot;</span>, <span class="literal">True</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将参数传给浏览器</span></span><br><span class="line">edge = webdriver.Edge(options=edge_options)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>如果需要关闭可以加入<code>edge.quit()</code></p>
-<h2 id="selenium切换到iframe"><a href="#selenium切换到iframe" class="headerlink" title="selenium切换到iframe"></a>selenium切换到iframe</h2><ol>
-<li>如果iframe具有id或name属性，直接通过<code>edge.switch_to.frame(&quot;id\name&quot;)</code></li>
-</ol>
-<p>其中id是唯一的，name可能不唯一</p>
-<ol start="2">
-<li>如果iframe不具有id和name，那么首先利用一般定位方式定位到iframe标签，再切换到iframe</li>
-</ol>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">iframe=edge.find_element()</span><br><span class="line">edge.switch_to.frame(iframe)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h2 id="selenium窗口最大化"><a href="#selenium窗口最大化" class="headerlink" title="selenium窗口最大化"></a>selenium窗口最大化</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">edge.maximize_window()</span><br></pre></td></tr></table></figure>
-
-<p><img src="/selenium%E8%87%AA%E6%9F%A5/bottom.png" alt="bottom"></p>
-]]></content>
-      <categories>
-        <category>爬虫</category>
       </categories>
   </entry>
   <entry>
@@ -509,14 +520,87 @@
       </categories>
   </entry>
   <entry>
-    <title>本地图片</title>
-    <url>/%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/</url>
-    <content><![CDATA[<p><img src="/%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/md_icon.png" alt="本地图片"></p>
-<p><img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wwun?ver=f5d4" alt="网络图片"></p>
-<p><img src="/%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/bottom.png" alt="bottom"></p>
+    <title>10.5 木兰草原一日</title>
+    <url>/%E5%B0%8F%E5%8D%9A%E4%B8%93%E5%B1%9E/10_5_%E6%9C%A8%E5%85%B0%E8%8D%89%E5%8E%9F/</url>
+    <content><![CDATA[<h1 id="10-5-木兰草原一日"><a href="#10-5-木兰草原一日" class="headerlink" title="10.5 木兰草原一日"></a>10.5 木兰草原一日</h1><p><em>双人套票-云中战歌+萌心牧场+飞天魔毯+游乐项目9选4</em></p>
+<hr>
+<p>木兰草原国庆演出时间表</p>
+<img src="/%E5%B0%8F%E5%8D%9A%E4%B8%93%E5%B1%9E/10_5_%E6%9C%A8%E5%85%B0%E8%8D%89%E5%8E%9F/timetable.jpg" align="middle" width="300">
+
+
+<h3 id="plan-A"><a href="#plan-A" class="headerlink" title="plan A"></a>plan A</h3><p><em><strong>第一站-吉祥广场</strong></em></p>
+<p>《敖包祭祀》- 11:30</p>
+<hr>
+<p><em><strong>第二站-云中镇古街</strong></em></p>
+<ul>
+<li>《黄梅戏》- 14:30</li>
+</ul>
+<p>17:40（backup！）</p>
+<ul>
+<li>《王府招婿》- 15:00</li>
+</ul>
+<p>18:00（backup！）</p>
+<ul>
+<li>《木兰将军巡游》- 15:30</li>
+</ul>
+<p>18:30（backup！）</p>
+<hr>
+<p><em><strong>第三站-云中镇剧场</strong></em></p>
+<p>《花木兰·云中战歌》- 16:00-16:45</p>
+<p>19:00-19:45（backup！）</p>
+<hr>
+<p><em><strong>第四站-白鹭湖</strong></em></p>
+<p>《木兰情》- 18:50</p>
+<hr>
+<p><em><strong>第五站-梦栖谷·凤凰广场</strong></em></p>
+<ul>
+<li>《篝火晚会》- 20:10</li>
+</ul>
+<p><font color="#1E90FF" size="2">p.s 提早去有好位置</font></p>
+<ul>
+<li>《音乐烟花秀》- 20:30</li>
+</ul>
+<p>maybe之后会有篝火蹦野迪和泼水节&amp;#9835;</p>
+<hr>
+<h4 id="游玩项目"><a href="#游玩项目" class="headerlink" title="游玩项目"></a>游玩项目</h4><ul>
+<li>激流勇进（地上有水的话不能站人）</li>
+<li>彩虹滑道（和滑草比较像:worried:）</li>
+<li>滑草（<font color="#FF0000">草道上有水很臭！:worried:</font>）</li>
+<li>水上自行车（凉快！）</li>
+<li>凌波飞度（吊着绳索过河）</li>
+<li>射箭（一人六只箭）</li>
+<li>竹筏（据说可）</li>
+<li>吃奶鱼</li>
+<li>悠波球</li>
+</ul>
+<p>演出间隔就闲逛找点乐子！</p>
+<hr>
+<p><strong><font color="#FF0000">WARNING!</font></strong></p>
+<ul>
+<li><p><strong>带！花！露！水！</strong></p>
+</li>
+<li><p><strong>带！伞！</strong></p>
+</li>
+</ul>
+<h3 id="plan-B"><a href="#plan-B" class="headerlink" title="plan B"></a>plan B</h3><p>lie still and sleep！<font color="#FF0000">&amp;#10084;</font></p>
+<h4 id="Hotel"><a href="#Hotel" class="headerlink" title="Hotel"></a>Hotel</h4><ul>
+<li>草原可以租帐篷露营</li>
+<li>hotel待定</li>
+</ul>
+<h4 id="Eating"><a href="#Eating" class="headerlink" title="Eating"></a>Eating</h4><p>可以带零食野餐，景区maybe也有吃饭的地方。</p>
+<h4 id="Traffic"><a href="#Traffic" class="headerlink" title="Traffic"></a>Traffic</h4><p>Taxi or</p>
+<img src="/%E5%B0%8F%E5%8D%9A%E4%B8%93%E5%B1%9E/10_5_%E6%9C%A8%E5%85%B0%E8%8D%89%E5%8E%9F/bus.jpg" align="middle" width="300">
+
+<h4 id="木兰草原"><a href="#木兰草原" class="headerlink" title="木兰草原"></a>木兰草原</h4><img src="/%E5%B0%8F%E5%8D%9A%E4%B8%93%E5%B1%9E/10_5_%E6%9C%A8%E5%85%B0%E8%8D%89%E5%8E%9F/map1.jpg" align="left" width="50%">
+
+
+
+<img src="/%E5%B0%8F%E5%8D%9A%E4%B8%93%E5%B1%9E/10_5_%E6%9C%A8%E5%85%B0%E8%8D%89%E5%8E%9F/map2.jpg" align="right" width="50%">
+
+<p><img src="/%E5%B0%8F%E5%8D%9A%E4%B8%93%E5%B1%9E/10_5_%E6%9C%A8%E5%85%B0%E8%8D%89%E5%8E%9F/bottom.png" alt="bottom"></p>
 ]]></content>
       <categories>
-        <category>MarkDown</category>
+        <category>小博专属</category>
       </categories>
   </entry>
   <entry>
