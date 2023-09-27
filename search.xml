@@ -1,3 +1,702 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
+  <entry>
+    <title>MD语法自查</title>
+    <url>/MD%E8%AF%AD%E6%B3%95%E8%87%AA%E6%9F%A5/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer">
+
+<h1 id="MarkDown语法自查"><a href="#MarkDown语法自查" class="headerlink" title="MarkDown语法自查"></a>MarkDown语法自查</h1><p><a href="#%E6%A0%87%E9%A2%98">1. 标题</a></p>
+<p><a href="#%E5%88%97%E8%A1%A8">2. 列表</a></p>
+<p><a href="#%E5%AD%97%E4%BD%93">3. 字体</a></p>
+<p><a href="#%E9%94%9A%E7%82%B9">4. 锚点</a></p>
+<p><a href="#%E4%BB%A3%E7%A0%81%E5%9D%97">5. 代码块</a></p>
+<p><a href="#%E5%9B%BE%E7%89%87%E5%92%8C%E8%B6%85%E9%93%BE%E6%8E%A5">6. 图片和超链接</a></p>
+<p><a href="#%E8%A1%A8%E6%A0%BC">7. 表格</a></p>
+<p><a href="#%E5%BC%95%E7%94%A8">8. 引用</a></p>
+<hr>
+<hr>
+<hr>
+<h1 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h1><h1 id="主标题"><a href="#主标题" class="headerlink" title="主标题"></a>主标题</h1><h2 id="副标题"><a href="#副标题" class="headerlink" title="副标题"></a>副标题</h2><h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><h1 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h1><p>有序列表：</p>
+<ol>
+<li>首先<ul>
+<li>首先<ol>
+<li>首首先</li>
+<li>其其次</li>
+<li>最最后</li>
+</ol>
+</li>
+<li>其次</li>
+<li>最后</li>
+</ul>
+</li>
+<li>其次</li>
+<li>最后</li>
+</ol>
+<p>无序列表：</p>
+<ul>
+<li>首先<ul>
+<li>首先</li>
+<li>其次</li>
+<li>最后</li>
+</ul>
+</li>
+<li>其次</li>
+<li>最后</li>
+</ul>
+<h1 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h1><p><em>斜体</em></p>
+<p><strong>粗体</strong></p>
+<p><em><strong>粗斜体</strong></em></p>
+<p><span style="color:pink">花裙子</span></p>
+<p><del>删除线</del></p>
+<p><del>删除线</del></p>
+<h1 id="锚点"><a href="#锚点" class="headerlink" title="锚点"></a>锚点</h1><p>定位到这里</p>
+<h2 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">func</span>(<span class="params">age</span>):</span><br><span class="line">    <span class="keyword">return</span> age</span><br></pre></td></tr></table></figure>
+
+<p><code>int a=5+9;</code></p>
+<h1 id="图片和超链接"><a href="#图片和超链接" class="headerlink" title="图片和超链接"></a>图片和超链接</h1><p><img src="https://img-home.csdnimg.cn/images/20220729104705.jpg" alt="网络图片" title="网络图片"></p>
+<p><a href="https://www.csdn.net/" title="前往csdn社区">csdn社区</a></p>
+<p><a href="https://www.csdn.net/">https://www.csdn.net/</a></p>
+<h1 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h1><table>
+<thead>
+<tr>
+<th>姓名</th>
+<th align="right">年龄</th>
+<th align="center">职业</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>张三</td>
+<td align="right">20000</td>
+<td align="center">医生</td>
+</tr>
+<tr>
+<td>李四</td>
+<td align="right">60</td>
+<td align="center">警察叔叔</td>
+</tr>
+</tbody></table>
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>张三说：</p>
+<blockquote>
+<p>阿门阿前一棵葡萄树</p>
+<blockquote>
+<p>葡萄树说：这是不对的</p>
+</blockquote>
+</blockquote>
+]]></content>
+      <categories>
+        <category>MarkDown</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Python正则表达式自查</title>
+    <url>/Python%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%87%AA%E6%9F%A5/</url>
+    <content><![CDATA[<h1 id="Python正则表达式自查"><a href="#Python正则表达式自查" class="headerlink" title="Python正则表达式自查"></a>Python正则表达式自查</h1><ul>
+<li>正则表达式是一种针对字符串表达“简洁”和“特征”思想的工具</li>
+<li>正则表达式可以用来判断某字符串的特征归属</li>
+<li>正则表达式语法由字符和操作符构成</li>
+</ul>
+<p><a href="#python%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E4%BD%BF%E7%94%A8">1. Python正则表达式使用</a></p>
+<p><a href="#python%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%AF%AD%E6%B3%95">2. Python正则表达式语法</a></p>
+<p><a href="#regex%E5%BA%93%E6%96%B9%E6%B3%95">3. Regex库方法</a></p>
+<p><a href="#match%E5%AF%B9%E8%B1%A1">4. Match对象</a></p>
+<p><a href="#%E8%B4%AA%E5%A9%AA%E5%8C%B9%E9%85%8D%E5%92%8C%E6%9C%80%E5%B0%8F%E5%8C%B9%E9%85%8D">5. 贪婪匹配和最小匹配</a></p>
+<p><a href="#%E5%AE%9E%E4%BE%8B">6. 实例</a></p>
+<h2 id="python正则表达式使用"><a href="#python正则表达式使用" class="headerlink" title="python正则表达式使用"></a>python正则表达式使用</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line"><span class="comment"># 不需要对转义符进行转义的原生字符串类型，直接表达一个正则表达式</span></span><br><span class="line"><span class="string">r&#x27;text&#x27;</span> </span><br><span class="line"></span><br><span class="line"><span class="comment"># 两种用法</span></span><br><span class="line">rst = re.search(<span class="string">r&#x27;[1‐9]\d&#123;5&#125;&#x27;</span>, <span class="string">&#x27;BIT 100081&#x27;</span>)</span><br><span class="line"><span class="comment"># compile方法可以使用原生字符串或字符串</span></span><br><span class="line">pat = re.<span class="built_in">compile</span>(<span class="string">r&#x27;[1‐9]\d&#123;5&#125;&#x27;</span>)</span><br><span class="line">rst = pat.search(<span class="string">&#x27;BIT 100081&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> rst:</span><br><span class="line">    <span class="built_in">print</span>(rst.group(<span class="number">0</span>))</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="python正则表达式语法"><a href="#python正则表达式语法" class="headerlink" title="python正则表达式语法"></a>python正则表达式语法</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">.       表示任何单个字符</span><br><span class="line">[]      对**单个字符**给出取值范围</span><br><span class="line">[^]     对**单个字符**给出排除范围</span><br><span class="line">*       *前字符重复0~无限次</span><br><span class="line">+       +前字符重复1~无限次</span><br><span class="line">?       ?前字符重复0~1次</span><br><span class="line">|       左右表达式任意一个</span><br><span class="line">&#123;m&#125;     对前一个字符重复m次</span><br><span class="line">&#123;m,n&#125;   对前一个字符重复[m,n]次，&#123;:3&#125;表示[0,3]次</span><br><span class="line">^       匹配字符串开头</span><br><span class="line">$       匹配字符串结尾</span><br><span class="line">()      分组标记，内部只能使用|操作符</span><br><span class="line">\d      表示数字字符，等价于[0-9]</span><br><span class="line">\w      表示单词字符，等价于[A-Za-z0-9_]</span><br></pre></td></tr></table></figure>
+
+<h2 id="regex库方法"><a href="#regex库方法" class="headerlink" title="regex库方法"></a>regex库方法</h2><ul>
+<li><strong>re.search(pattern, string, flags&#x3D;0)</strong><br>在字符串中搜索匹配的第一个位置，返回match对象</li>
+<li><strong>re.match(pattern, string, flags&#x3D;0)</strong><br>从字符串开始位置起匹配正则表达式，返回match对象</li>
+<li><strong>re.findall(pattern, string, flags&#x3D;0)</strong><br>匹配所有的子串，返回列表</li>
+<li><strong>re.split(pattern, string, maxsplit&#x3D;0, flags&#x3D;0)</strong><br>将字符串按照正则表达式子串进行分割，返回列表</li>
+<li><strong>re.finditer(pattern, string, flags&#x3D;0)</strong><br>返回匹配的迭代类型，返回match对象</li>
+<li><strong>re.sub(pattern, repl, string, count&#x3D;0, flags&#x3D;0)</strong><br>在字符串中替换所有匹配子串，返回字符串</li>
+</ul>
+<p>参数含义：</p>
+<table>
+<thead>
+<tr>
+<th align="center">参数</th>
+<th align="center">含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">pattern</td>
+<td align="center">正则表达式的字符串或原生字符串表示</td>
+</tr>
+<tr>
+<td align="center">string</td>
+<td align="center">待匹配字符串</td>
+</tr>
+<tr>
+<td align="center">flags</td>
+<td align="center">正则表达式使用时的控制标记</td>
+</tr>
+<tr>
+<td align="center">maxsplit</td>
+<td align="center">最大分割数，剩余部分作为最后一个元素输出</td>
+</tr>
+<tr>
+<td align="center">repl</td>
+<td align="center">替换匹配字符串的字符串</td>
+</tr>
+<tr>
+<td align="center">count</td>
+<td align="center">最大替换次数</td>
+</tr>
+</tbody></table>
+<p>控制标记含义：</p>
+<table>
+<thead>
+<tr>
+<th align="center">控制标记</th>
+<th align="center">含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">re.I re.IGNORECASE</td>
+<td align="center">忽略正则表达式的大小写，[A‐Z]能够匹配小写字符</td>
+</tr>
+<tr>
+<td align="center">re.M re.MULTILINE</td>
+<td align="center">正则表达式中的^操作符能够将给定字符串的每行当作匹配开始</td>
+</tr>
+<tr>
+<td align="center">re.S re.DOTALL</td>
+<td align="center">正则表达式中的.操作符能够匹配所有字符，默认匹配除换行外的所有字符</td>
+</tr>
+</tbody></table>
+<h2 id="match对象"><a href="#match对象" class="headerlink" title="match对象"></a>match对象</h2><p>Match对象是一次匹配的结果，包含匹配的所有信息</p>
+<ul>
+<li><strong>.string</strong> 待匹配的字符串</li>
+<li><strong>.re</strong>     用于匹配的正则表达式</li>
+<li><strong>.pos</strong>    搜索的开始位置</li>
+<li><strong>.endpos</strong> 搜索的结束位置</li>
+<li><strong>.group(0)</strong>   匹配的子串</li>
+<li><strong>.start()</strong>    匹配子串在字符串中的开始位置</li>
+<li><strong>.end()</strong>      匹配子串在字符串中的结束位置</li>
+<li><strong>.span()</strong>     返回(.start(), .end())</li>
+</ul>
+<h2 id="贪婪匹配和最小匹配"><a href="#贪婪匹配和最小匹配" class="headerlink" title="贪婪匹配和最小匹配"></a>贪婪匹配和最小匹配</h2><p>对于同一个匹配子串开始位置，可能存在多个结束位置满足匹配：</p>
+<ul>
+<li>Re库默认采用贪婪匹配，即输出匹配最长的子串</li>
+<li>通过在操作符后增加?变成最小匹配<ul>
+<li>*?   前一个字符重复0~无限次，最小匹配</li>
+<li>+?    前一个字符重复1~无限次，最小匹配</li>
+<li>??    前一个字符重复0~1次，最小匹配</li>
+<li>{m,n}?    前一个字符重复[m,n]次，最小匹配</li>
+</ul>
+</li>
+</ul>
+<h2 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[\u4e00‐\u9fa5]         匹配中文字符</span><br><span class="line">^[A‐Za‐z]+$             由26个字母组成的字符串</span><br><span class="line">^‐?\d+$                 整数</span><br><span class="line">^[0‐9]*[1‐9][0‐9]*$     正整数</span><br><span class="line">(([1‐9]?\d|1\d&#123;2&#125;|2[0‐4]\d|25[0‐5]).)&#123;3&#125;([1‐9]?\d|1\d&#123;2&#125;|2[0‐4]\d|25[0‐5])  匹配IPv4地址</span><br></pre></td></tr></table></figure>
+
+
+<p><img src="/Python%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%87%AA%E6%9F%A5/bottom.png" alt="bottom"></p>
+]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>bs4方法自查</title>
+    <url>/bs4%E6%96%B9%E6%B3%95%E8%87%AA%E6%9F%A5/</url>
+    <content><![CDATA[<h1 id="bs4库方法自查"><a href="#bs4库方法自查" class="headerlink" title="bs4库方法自查"></a>bs4库方法自查</h1><p>Beautiful Soup库是解析、遍历、维护“标签树”的功能库</p>
+<h2 id="BeautifulSoup使用方法"><a href="#BeautifulSoup使用方法" class="headerlink" title="BeautifulSoup使用方法"></a>BeautifulSoup使用方法</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup</span><br><span class="line"><span class="keyword">import</span> bs4</span><br><span class="line"></span><br><span class="line">soup=BeautifulSoup(&lt;html&gt;response.text&lt;/html&gt;,<span class="string">&#x27;html.parser&#x27;</span>)</span><br><span class="line">soup=BeautifulSoup(<span class="built_in">open</span>(<span class="string">&#x27;*.html&#x27;</span>,<span class="string">&#x27;r&#x27;</span>),<span class="string">&#x27;html.parser&#x27;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="BeautifulSoup类基本元素"><a href="#BeautifulSoup类基本元素" class="headerlink" title="BeautifulSoup类基本元素"></a>BeautifulSoup类基本元素</h2><table>
+<thead>
+<tr>
+<th align="center">基本元素</th>
+<th align="center">含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">Tag</td>
+<td align="center">标签，以&lt;&gt;…&lt;&#x2F;&gt;组成</td>
+</tr>
+<tr>
+<td align="center">Name</td>
+<td align="center">标签名，&lt;p&gt;…&lt;&#x2F;p&gt;的名字是p：&lt;tag&gt;.name</td>
+</tr>
+<tr>
+<td align="center">Attributes</td>
+<td align="center">标签的属性，字典形式组织：<tag>.attrs</tag></td>
+</tr>
+<tr>
+<td align="center">NavigableString</td>
+<td align="center">标签内非属性字符串，标签下只能有一个子节点：<tag>.string，返回NavigableString</tag></td>
+</tr>
+<tr>
+<td align="center">text</td>
+<td align="center">标签内字符串，可跨域层级：<tag>.text，返回str</tag></td>
+</tr>
+<tr>
+<td align="center">Comment</td>
+<td align="center">标签内字符串的注释部分：<tag>.string</tag></td>
+</tr>
+</tbody></table>
+<p><a href="https://blog.csdn.net/weixin_30352645/article/details/99390523?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522165976942216782390551621%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=165976942216782390551621&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~baidu_landing_v2~default-2-99390523-null-null.142%5Ev39%5Epc_rank_v37,185%5Ev2%5Econtrol&utm_term=bs4%E7%9A%84string%E5%92%8Ctext&spm=1018.2226.3001.4187">text和string的区别</a></p>
+<h2 id="BeautifulSoup类常用方法"><a href="#BeautifulSoup类常用方法" class="headerlink" title="BeautifulSoup类常用方法"></a>BeautifulSoup类常用方法</h2><p>一篇总结bs4非常相近且准确的blog</p>
+<p><a href="https://www.cnblogs.com/gl1573/p/9480022.html">bs4方法详情</a></p>
+<p><img src="/bs4%E6%96%B9%E6%B3%95%E8%87%AA%E6%9F%A5/bottom.png" alt="bottom"></p>
+]]></content>
+      <categories>
+        <category>爬虫</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>scrapy自查</title>
+    <url>/scrapy%E8%87%AA%E6%9F%A5/</url>
+    <content><![CDATA[<h1 id="scrapy自查"><a href="#scrapy自查" class="headerlink" title="scrapy自查"></a>scrapy自查</h1><p><a href="#scrapy%E5%AE%89%E8%A3%85">1. scrapy安装</a></p>
+<p><a href="#scrapy%E5%91%BD%E4%BB%A4">2. scrapy命令</a></p>
+<h2 id="scrapy安装"><a href="#scrapy安装" class="headerlink" title="scrapy安装"></a>scrapy安装</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># windows</span><br><span class="line">pip install wheel</span><br><span class="line">[下载twisted](https://www.lfd.uci.edu/~gohlke/pythonlibs/#twisted)</span><br><span class="line">pip install Twisted-20.3.0-cp39-cp39-win_amd64.whl</span><br><span class="line">pip install pywin32</span><br><span class="line">pip install scrapy</span><br></pre></td></tr></table></figure>
+
+<h2 id="scrapy命令"><a href="#scrapy命令" class="headerlink" title="scrapy命令"></a>scrapy命令</h2><p>创建工程：<code>scrapy startproject name_0</code></p>
+<p>在工程文件夹下创建爬虫文件（首先进入该文件夹）：<code>scrapy genspider name_1 www.balabala.com</code></p>
+<p>执行程序：<code>scrapy crawl name_1</code></p>
+]]></content>
+      <categories>
+        <category>爬虫</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>selenium自查</title>
+    <url>/selenium%E8%87%AA%E6%9F%A5/</url>
+    <content><![CDATA[<h1 id="selenium自查"><a href="#selenium自查" class="headerlink" title="selenium自查"></a>selenium自查</h1><p><a href="#%E6%97%A0%E5%A4%B4%E6%B5%8F%E8%A7%88%E5%99%A8">1. 无头浏览器</a></p>
+<p><a href="#%E5%8F%8Dselenium%E6%A3%80%E6%B5%8B">2. 反selenium检测</a></p>
+<p><a href="#selenium%E6%88%AA%E5%8F%96%E5%85%A8%E5%B1%8F">3. selenium截取全屏</a></p>
+<p><a href="#selenium%E4%B8%8D%E8%87%AA%E5%8A%A8%E5%85%B3%E9%97%AD%E6%B5%8F%E8%A7%88%E5%99%A8">4. selenium不自动关闭浏览器</a></p>
+<p><a href="#selenium%E5%88%87%E6%8D%A2%E5%88%B0iframe">5. selenium切换到iframe</a></p>
+<p><a href="#selenium%E7%AA%97%E5%8F%A3%E6%9C%80%E5%A4%A7%E5%8C%96">6. selenium窗口最大化</a></p>
+<h2 id="无头浏览器"><a href="#无头浏览器" class="headerlink" title="无头浏览器"></a>无头浏览器</h2><p>无头浏览器即执行爬虫程序时浏览器在后台运行而不显示</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line"><span class="keyword">from</span> selenium.webdriver.edge.options <span class="keyword">import</span> Options</span><br><span class="line"></span><br><span class="line"><span class="comment"># 设置无头</span></span><br><span class="line">edge_options.add_argument(<span class="string">&#x27;--headless&#x27;</span>)</span><br><span class="line"><span class="comment"># 禁用GPU，防止无头模式出现莫名的BUG</span></span><br><span class="line">edge_options.add_argument(<span class="string">&#x27;--disable-gpu&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将参数传给浏览器</span></span><br><span class="line">edge = webdriver.Edge(options=edge_options)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="反selenium检测"><a href="#反selenium检测" class="headerlink" title="反selenium检测"></a>反selenium检测</h2><p>防止对应网站针对selenium进行反爬</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line"><span class="keyword">from</span> selenium.webdriver.edge.options <span class="keyword">import</span> Options</span><br><span class="line"></span><br><span class="line"><span class="comment"># 开启开发者模式</span></span><br><span class="line">edge_options.add_experimental_option(<span class="string">&#x27;excludeSwitches&#x27;</span>, [<span class="string">&#x27;enable-automation&#x27;</span>])</span><br><span class="line"><span class="comment"># 禁用启用Blink运行时的功能</span></span><br><span class="line">edge_options.add_argument(<span class="string">&#x27;--disable-blink-features=AutomationControlled&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将参数传给浏览器</span></span><br><span class="line">edge = webdriver.Edge(options=edge_options)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="selenium截取全屏"><a href="#selenium截取全屏" class="headerlink" title="selenium截取全屏"></a>selenium截取全屏</h2><p>使用selenium进行模拟登录时，如果网页存在验证码，那么是无法再通过requests对验证码的url发起get请求下载图片的，这就相当于用两个不同的浏览器进行登录，验证码肯定是不相同的</p>
+<p>那么只能对响浏览器进行截屏，接着定位到验证码图片的矩形区域以截取验证码图片</p>
+<p>我们当然希望通过程序自动截屏并且定位验证码图片的坐标，所以一般思路是获取验证码图片对应的标签，然后获取对应的坐标和长宽数据</p>
+<p>但是有一个问题是，如果页面无法全部显示在当前浏览器界面时，使用selenium截屏只能截取部分页面，也就是电脑显示的部分，而标签定位是相对于整张页面的，所以在部分页面截屏上无法准确定位到验证码图片坐标</p>
+<p>那么必须先通过selenium截取全部页面</p>
+<p>当然我们也可以借助其它工具在部分截屏页面中定位到验证码图片的坐标，但是一般都需要手动操作，那模拟登录还有什么意义。。。</p>
+<p><em><strong>截取整张页面的一般方法</strong></em></p>
+<ol>
+<li><p>最常见的就是先手动设置浏览器或者屏幕分辨率，使得整张页面可以在浏览器中显示，此时的截屏当然是整张页面了，这样做比较麻烦</p>
+</li>
+<li><p>通过js代码设置浏览器分辨率，但是此时只能使用<strong>无头浏览器</strong></p>
+</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">width = edge.execute_script(<span class="string">&quot;return document.documentElement.scrollWidth&quot;</span>)</span><br><span class="line">height = edge.execute_script(<span class="string">&quot;return document.documentElement.scrollHeight&quot;</span>)</span><br><span class="line"><span class="comment"># 将浏览器的宽高设置成页面的宽高</span></span><br><span class="line">edge.set_window_size(width, height)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><strong>ps.使用selenium进行图像处理时一定要用png格式，jpg格式会存在解码错误</strong></p>
+<h2 id="selenium不自动关闭浏览器"><a href="#selenium不自动关闭浏览器" class="headerlink" title="selenium不自动关闭浏览器"></a>selenium不自动关闭浏览器</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line"><span class="keyword">from</span> selenium.webdriver.edge.options <span class="keyword">import</span> Options</span><br><span class="line"></span><br><span class="line">edge_options.add_experimental_option(<span class="string">&quot;detach&quot;</span>, <span class="literal">True</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将参数传给浏览器</span></span><br><span class="line">edge = webdriver.Edge(options=edge_options)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>如果需要关闭可以加入<code>edge.quit()</code></p>
+<h2 id="selenium切换到iframe"><a href="#selenium切换到iframe" class="headerlink" title="selenium切换到iframe"></a>selenium切换到iframe</h2><ol>
+<li>如果iframe具有id或name属性，直接通过<code>edge.switch_to.frame(&quot;id\name&quot;)</code></li>
+</ol>
+<p>其中id是唯一的，name可能不唯一</p>
+<ol start="2">
+<li>如果iframe不具有id和name，那么首先利用一般定位方式定位到iframe标签，再切换到iframe</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">iframe=edge.find_element()</span><br><span class="line">edge.switch_to.frame(iframe)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="selenium窗口最大化"><a href="#selenium窗口最大化" class="headerlink" title="selenium窗口最大化"></a>selenium窗口最大化</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">edge.maximize_window()</span><br></pre></td></tr></table></figure>
+
+<p><img src="/selenium%E8%87%AA%E6%9F%A5/bottom.png" alt="bottom"></p>
+]]></content>
+      <categories>
+        <category>爬虫</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>关于MD锚点的坑</title>
+    <url>/%E5%85%B3%E4%BA%8EMD%E9%94%9A%E7%82%B9%E7%9A%84%E5%9D%91/</url>
+    <content><![CDATA[<h1 id="关于MD锚点的坑"><a href="#关于MD锚点的坑" class="headerlink" title="关于MD锚点的坑"></a>关于MD锚点的坑</h1><p>锚点是一个方便定位的东西，用起来还是很香的</p>
+<p>但是不同MarkDown对锚点的解释都有些许区别，导致不同平台上锚点可能会失效</p>
+<p>MarkDown中对于锚点的语法定义如下：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">[<span class="string">描述</span>](<span class="link">#定位的title</span>)</span><br><span class="line"></span><br><span class="line">...</span><br><span class="line"></span><br><span class="line"><span class="section"># 定位的Title</span></span><br></pre></td></tr></table></figure>
+
+<p>多级标题都可以作为’定位的title’，另外标题中大写字母会自动转为小写字母</p>
+<p><a href="#for-example">For Example</a></p>
+<p>…</p>
+<p>…</p>
+<p>…</p>
+<p>…</p>
+<p>…</p>
+<h2 id="For-Example"><a href="#For-Example" class="headerlink" title="For Example"></a>For Example</h2><p>这样的锚点在vscode这样的编辑器上是没有问题的，但是放到如github，csdn上会失效</p>
+<p>代码如下：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">[<span class="string">For Example</span>](<span class="link">#for-example</span>)</span><br><span class="line"></span><br><span class="line"><span class="section">## For Example</span></span><br></pre></td></tr></table></figure>
+
+<p>对于hexo+github搭建的博客，这样的锚点失效在于#后的内容和标题不一致，主要在于英文大小写，中文不存在如上问题</p>
+<p>修改为如下的代码，在hexo+github上可以实现锚点，然而对于vscode这样的编辑器当然失效了，另外这样的锚点在csdn上也会失效</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">[<span class="string">For Example2</span>](<span class="link">#For-Example2</span>)</span><br><span class="line"></span><br><span class="line"><span class="section">## For Example2</span></span><br></pre></td></tr></table></figure>
+
+<p><a href="#For-Example2">For Example2</a></p>
+<p>…</p>
+<p>…</p>
+<p>…</p>
+<p>…</p>
+<p>…</p>
+<h2 id="For-Example2"><a href="#For-Example2" class="headerlink" title="For Example2"></a>For Example2</h2><p>目前来看纯MarkDown语法的锚点总会存在一些坑，一个通用解决方法是配合html中锚点的使用，代码如下：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">[<span class="string">点击跳转到For Example3</span>](<span class="link">#Test</span>)</span><br><span class="line"></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">a</span> <span class="attr">id</span>=<span class="string">&quot;Test&quot;</span>&gt;</span></span>For Example3<span class="language-xml"><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+
+<p>其中id值只支持英文，id值和#后的值完全一致，不支持id值包含空格</p>
+<p>当然，这样的代码并非按照MarkDown的思想直接将标题作为锚点的定位点，但是这样的锚点在vscode，github，csdn上都可以<strong>work！</strong></p>
+<p><a href="#Test">点击跳转到For Example3</a></p>
+<p>…</p>
+<p>…</p>
+<p>…</p>
+<p>…</p>
+<p>…</p>
+<p>…</p>
+<p>…</p>
+<p><a id="Test">For Example3</a></p>
+<p>…</p>
+<p>…</p>
+<p>…</p>
+<p>…</p>
+<p>…</p>
+<p><img src="/%E5%85%B3%E4%BA%8EMD%E9%94%9A%E7%82%B9%E7%9A%84%E5%9D%91/bottom.png" alt="bottom"></p>
+]]></content>
+      <categories>
+        <category>MarkDown</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>反反爬</title>
+    <url>/%E5%8F%8D%E5%8F%8D%E7%88%AC/</url>
+    <content><![CDATA[<h1 id="反反爬总结"><a href="#反反爬总结" class="headerlink" title="反反爬总结"></a>反反爬总结</h1><p>以下都是在实践中遇到的反爬机制和对应的反反爬策略，虽然有些还没有解决，一点点总结下来终于明白了一句话</p>
+<blockquote>
+<p>爬虫的顶端是js逆向和APP逆向</p>
+</blockquote>
+<p>对于大部分简单的反爬机制而言，解决方案就藏在源代码中，主要是一个经验积累的过程</p>
+<p>而对于复杂的反爬机制，可能不得不去读js代码，搞懂了js代码就可以逆向，搞不懂就只能被挡在外面</p>
+<p><a href="#%E7%99%BE%E5%BA%A6%E5%AE%89%E5%85%A8%E9%AA%8C%E8%AF%81">1. 百度安全验证</a></p>
+<p><a href="#%E6%9F%90%E6%95%B0%E5%8F%8D%E7%88%AC">2. 某数反爬</a></p>
+<p><a href="#%E9%AA%8C%E8%AF%81%E7%A0%81">3. 验证码</a></p>
+<p><a href="#%E9%9A%90%E8%97%8F%E5%9F%9F">4. 隐藏域</a></p>
+<p><a href="#%E5%B0%81ip">5. 封ip</a></p>
+<p><a href="#ajax%E6%90%BA%E5%B8%A6%E9%9A%8F%E6%9C%BA%E5%8F%82%E6%95%B0">6. ajax携带随机参数</a></p>
+<p><a href="#%E4%BC%AAurl">7. 伪url</a></p>
+<p><a href="#http%E9%98%B2%E7%9B%97%E9%93%BE">8. http防盗链</a></p>
+<p><a href="#selenium%E8%A7%84%E9%81%BF%E6%A3%80%E6%B5%8B">9. selenium规避检测</a></p>
+<h1 id="百度安全验证"><a href="#百度安全验证" class="headerlink" title="百度安全验证"></a>百度安全验证</h1><p>通常修改request的请求头载体模拟时，使用浏览器的User-Agent字段：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36 Edg/103.0.1264.77</span><br></pre></td></tr></table></figure>
+
+<p>可能遭遇百度反爬拦截，自动跳转到百度安全验证</p>
+<p><img src="/%E5%8F%8D%E5%8F%8D%E7%88%AC/%E7%99%BE%E5%BA%A6%E5%AE%89%E5%85%A8%E9%AA%8C%E8%AF%81.png" alt="百度安全验证"></p>
+<p>常用解决方案：</p>
+<ul>
+<li>修改UA字段</li>
+<li>增加更多头信息，例如Accept-Language</li>
+</ul>
+<h1 id="某数反爬"><a href="#某数反爬" class="headerlink" title="某数反爬"></a>某数反爬</h1><p>在练习爬取<a href="http://scxk.nmpa.gov.cn:81/xk/">化妆品生产许可信息管理服务平台</a>时遇到HTTP状态码400，打开网络检查工具会直接跳转到源代码，一种说法是陷入无限debug中（每次返回的js代码不同），也无法添加断点，该站通过AJax请求更新页面时，提交的url携带两个随机生成的参数，无法通过后端的参数验证，暂时无法破解</p>
+<p><img src="/%E5%8F%8D%E5%8F%8D%E7%88%AC/moushu.png" alt="某数反爬随机数"></p>
+<h2 id="一些某数逆向方法"><a href="#一些某数逆向方法" class="headerlink" title="一些某数逆向方法"></a>一些某数逆向方法</h2><ul>
+<li>使用fiddler进行请求拦截，进行调试</li>
+<li>使用chrome的script监听器进行调试</li>
+<li>本地搭建环境</li>
+</ul>
+<h1 id="验证码"><a href="#验证码" class="headerlink" title="验证码"></a>验证码</h1><p>验证码，全称为Completely Automated Public Turing test to tell Computers and Humans Apart，即全自动区分计算机和人类的图灵测试（CAPTCHA）的缩写</p>
+<p>顾名思义，验证码是一种反爬机制，识别验证码模拟登录一般有两个方法</p>
+<ul>
+<li>肉眼识别<ul>
+<li>肉眼识别不是直接看浏览器图片，同样要爬取验证码图片到本地后再肉眼识别</li>
+</ul>
+</li>
+<li>借助第三方打码工具<ul>
+<li>云打码已经倒塌了</li>
+<li><a href="http://www.damagou.top/">打码狗</a></li>
+<li><a href="http://www.chaojiying.com/about.html">超级鹰</a></li>
+</ul>
+</li>
+</ul>
+<p>经过两天的满口芬芳，终于是明白了模拟普通中有关验证码的种种：</p>
+<ol>
+<li>首先，验证码图片的url一般是携带随机参数的，但是这个随机数和前端反爬没有关系，只是用来从后端库中随机选一张验证码图片（虽然url有点怪）</li>
+<li>其次，在get登录页面时，登录页面会自动向这个url发请求get一张验证码图片回来在前端显示，同时后端会记录下发起get请求的这个东西（浏览器或者是爬虫）究竟请求到了哪张验证码图片，所以当我们登录时后端才能进行比对</li>
+<li>所以事实上，前端登录页面显示出来的的验证码和后端关系其实并不大，后端并不care某一个东西究竟对登录页面get了多少次，后端care的是对验证码图片的url究竟get了多少次，只不过每次get登录页面时会自动get一下验证码图片来显示在前端，所以这两次get是有先后顺序的</li>
+<li>这个先后顺序非常重要，因为后端保存的永远是最后一次get验证码的记录，当我们在浏览器访问一个登录页面，我们会看到一个验证码A，而如果我们再去另一个窗口访问一下验证码图片的url后，我们会看到另一个验证码B，事实上，验证码B才是当前正确登录需要的验证码</li>
+<li>另外，大部分网站都会在登录后进行跳转，一般在response.headers[‘Location’]中保存，对应的状态码一般是302，303，程序并不需要特殊处理页面重定位，程序发起登录请求成功会自动进行页面的重定位直到取到最后登录成功的页面</li>
+<li>最后一点也是卡了我半天的点，我们知道登录时会有set-cookie字段设置cookie，所以程序一般要用requests.session()生成session对象发登录请求，session会自动保存response对象的set-cookie，这没什么，但是！<strong>一定要在get验证码图片时就使用session</strong>，不要先随便get一下等到发登录请求时再用session，否则你会寄的很惨</li>
+</ol>
+<p>附几个练习模拟登录的网站：</p>
+<p><a href="http://cslabcms.nju.edu.cn/login/index.php">南京大学计算机系本科支撑教育平台</a></p>
+<p><a href="https://www.examcoo.com/passport/login">考试酷</a></p>
+<p><a href="https://so.gushiwen.cn/user/login.aspx?from=http://so.gushiwen.cn/user/collect.aspx">古诗文网</a></p>
+<p><img src="/%E5%8F%8D%E5%8F%8D%E7%88%AC/wukong.jpg" alt="wukong"></p>
+<h1 id="隐藏域"><a href="#隐藏域" class="headerlink" title="隐藏域"></a>隐藏域</h1><p>隐藏域是一种常见的反爬手段，post请求提交的参数是由input表单域发起的，因此所有的参数都应该在网页中有对应的input文本框，但是有一些参数没有对应的input文<br>本框，这些参数被隐藏了，这类问题称为隐藏域问题。</p>
+<p>隐藏域对于用户是不可见的，一些网站在发生请求时会将隐藏域中的值作为参数传递，如果提交时缺省这些参数可能无法通过参数匹配，常见的解决方法时<strong>在源码中搜索对应隐藏域，解析获取其value值</strong></p>
+<p>例如<a href="https://so.gushiwen.cn/user/login.aspx?from=http://so.gushiwen.cn/user/collect.aspx">古诗词网</a>在登陆时会用到_VIEWSTATE、_VIEWSTATEGENERATOR两个隐藏域</p>
+<h1 id="封ip"><a href="#封ip" class="headerlink" title="封ip"></a>封ip</h1><p>在单位时间内某ip访问次数超过阈值，服务器会禁止该ip的访问，返回403或错误信息等</p>
+<ul>
+<li><p>最简单的处理方法，随便找个代理网站，随便拿一个ip贴过来，proxies&#x3D;{‘’}</p>
+</li>
+<li><p>搭个代理池，用的时候从里面拿一个ip</p>
+<ul>
+<li>大致思路是写个爬虫，把各个免费代理网站中的ip和端口号爬下来，测试可以用的存到本地，用的时候随便取一个</li>
+<li><a href="http://icanhazip.com/">测试http代理</a>，该网站会返回发起请求的ip，用于测试代理是否有效</li>
+<li>代理ip时效性强弱和本机物理位置有关，所以写个爬虫随时更新代理池还是很有必要的</li>
+<li>经过自己的测试，大部分免费的ip代理延时都很大，会出现连接错误，天下没有免费的午餐</li>
+<li>另外没有必要纠结于某一个ip或某一个网站代理，只要不是爬虫的bug，出错的直接丢掉就好不必纠结错误原因</li>
+</ul>
+</li>
+</ul>
+<p>一些提供有效的免费代理的网站：</p>
+<p><a href="https://proxy.seofangfa.com/">玛卡巴卡</a></p>
+<p><a href="https://ip.jiangxianli.com/">唔西迪西</a></p>
+<p><a href="https://proxy.ip3366.net/free/">依古比古</a>-该网站提供https代理</p>
+<h1 id="ajax携带随机参数"><a href="#ajax携带随机参数" class="headerlink" title="ajax携带随机参数"></a>ajax携带随机参数</h1><p>在爬取<a href="https://www.pearvideo.com/">梨视频</a>时，其中的视频url是动态加载的，定位ajax请求却发现参数中携带mrd随机数</p>
+<p>实际上，在ajax请求中携带的随机参数多数不用于反爬目的，是前端用于欺骗浏览器或服务器的</p>
+<blockquote>
+<p>某些代理服务器会忽略no-cache之类的标识对响应结果强行缓存（例如IE），如果url不改变的话浏览器可能不会真正向服务器发送请求而调用自己的缓存</p>
+</blockquote>
+<blockquote>
+<p>这样会导致后端的更新无法正确显示在前端，所以为保证每次请求都同服务器交互，前端会在url中携带一个随机数或一个时间戳，目的是使每次请求的url不同</p>
+</blockquote>
+<blockquote>
+<p>对于爬虫的模拟，需要在js源代码中找到对应的参数，找到其随机数的生成方式，直接在爬虫中模拟即可</p>
+</blockquote>
+<p>总之，ajax请求携带的随机参数本意不在反爬（也就是说后端不会对数值进行比对，只会对随机数格式进行比对），但正确找到随机数的生成方式确实会对爬虫造成阻碍</p>
+<h1 id="伪url"><a href="#伪url" class="headerlink" title="伪url"></a>伪url</h1><p>同样在爬取<a href="https://www.pearvideo.com/">梨视频</a>时，ajax请求返回的json数据中包含了视频的url，但直接访问该url得到404</p>
+<p>仔细观察，json数据中的url和最终前端标签中的url不完全一致，也就是说梨视频还进行了一个url的转换，json数据中的url是一个伪url</p>
+<p>这个就比较容易了，找到转换的规律进行替换就可以</p>
+<h1 id="http防盗链"><a href="#http防盗链" class="headerlink" title="http防盗链"></a>http防盗链</h1><p>http防盗链并不完全针对爬虫设计，但是确实起到了反爬的功能</p>
+<p>http防盗链主要利用请求头部的Referer字段实现，Referer字段指示了请求的来源——即从哪里链接到了当前url</p>
+<p>某些网站希望只能通过自己的网站链接到自己的资源时，会检查请求头的Referer字段，如果Referer字段不是自身网站的url则会拒绝访问并返回错误信息</p>
+<p>通常在headers中增加Referer键值对，值为当前的网站url即可直接请求资源</p>
+<h1 id="selenium规避检测"><a href="#selenium规避检测" class="headerlink" title="selenium规避检测"></a>selenium规避检测</h1><p>浏览器都带有一系列指纹特征，手动打开浏览器和通过selenium自动测试所携带的指纹特征并不一致，最典型的特征是当手动打开浏览器后，在控制台执行</p>
+<p><code>window.navigator.webdriver</code>会返回false，而通过selenium自动测试时会返回true</p>
+<p>门户网站很容易根据这些指纹特征识别出selenium并且返回错误数据，常见的如登录验证错误</p>
+<p><a href="https://bot.sannysoft.com/">玛卡巴卡</a>，这个网站用于检测是否来自selenium访问</p>
+<p>检测到selenium后的WebDriver字段如下：</p>
+<p><img src="/%E5%8F%8D%E5%8F%8D%E7%88%AC/test_fail.png" alt="fail"></p>
+<p>正常访问或成功反检测的WebDriver字段如下：</p>
+<p><img src="/%E5%8F%8D%E5%8F%8D%E7%88%AC/test_pass.png" alt="pass"></p>
+<p>规避selenium检测的本质是修改指纹特征，避免门户网站识别，目前最有效的方法是在访问前先执行stealth.min.js脚本，可以做到规避检测</p>
+<p><a href="https://github.com/requireCool/stealth.min.js">stealth.min.js源码</a></p>
+<p>在爬虫程序中执行</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">edge=webdriver.Edge()</span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&#x27;./stealth.min.js&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">    js = f.read()</span><br><span class="line"></span><br><span class="line">edge.execute_cdp_cmd(<span class="string">&quot;Page.addScriptToEvaluateOnNewDocument&quot;</span>, &#123;</span><br><span class="line">    <span class="string">&quot;source&quot;</span>: js</span><br><span class="line">&#125;)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><a href="https://jishuin.proginn.com/p/763bfbd33b73">推荐-最完美方案！如何防止 Selenium 被检测出来</a></p>
+<p><img src="/%E5%8F%8D%E5%8F%8D%E7%88%AC/bottom.png" alt="bottom"></p>
+]]></content>
+      <categories>
+        <category>爬虫</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>本地图片</title>
+    <url>/%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/</url>
+    <content><![CDATA[<p><img src="/%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/md_icon.png" alt="本地图片"></p>
+<p><img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wwun?ver=f5d4" alt="网络图片"></p>
+<p><img src="/%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/bottom.png" alt="bottom"></p>
+]]></content>
+      <categories>
+        <category>MarkDown</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>爬虫学习记录</title>
+    <url>/%E7%88%AC%E8%99%AB%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<h1 id="爬虫学习记录"><a href="#爬虫学习记录" class="headerlink" title="爬虫学习记录"></a>爬虫学习记录</h1><ol>
+<li>使用python第三方库requests库进行网页爬取<ul>
+<li>get方法</li>
+<li>post方法</li>
+</ul>
+</li>
+<li>Fn12利用浏览器抓包工具分析<ul>
+<li>User-Agent</li>
+<li>Content-Type</li>
+<li>获取网页真正请求的url</li>
+<li>查看网页提交请求的方法</li>
+</ul>
+</li>
+<li>Ajax数据分析<ul>
+<li>Asynchronous JavaScript and XML（异步的 JavaScript 和 XML）</li>
+<li>页面局部刷新</li>
+<li>利用爬虫爬取数据的第一步是<a href="#%E5%88%A4%E6%96%AD%E7%BD%91%E9%A1%B5%E6%98%AF%E5%90%A6%E9%87%87%E7%94%A8ajax">分析页面</a></li>
+</ul>
+</li>
+<li>XML<ul>
+<li>XML Extensiable Markup Language 可扩展标记语言</li>
+<li>html -&gt; xhtml -&gt; xml</li>
+<li>Ajax基于XML实现</li>
+</ul>
+</li>
+<li>json模块(JavsScript Object Notation)<br>一种信息标记格式规范<ul>
+<li>requests库的Response对象的json()方法返回一个json对象，类型为字典</li>
+<li>json模块提供了4个方便的方法编码和解析json数据</li>
+<li>json.dumps() -&gt; 将Python数据转换为json格式数据</li>
+<li>jsom.loads() -&gt; 将json编码的字符串转换为一个Python数据结构</li>
+<li>json.dump() -&gt; 用于文件</li>
+<li>json.load() -&gt; 用于文件</li>
+<li><a href="https://www.json.cn/">json数据格式化工具</a></li>
+</ul>
+</li>
+<li>Python正则表达式<ul>
+<li>进行数据解析从而实现聚焦爬虫</li>
+</ul>
+</li>
+<li>bs4库<ul>
+<li>bs4是Python独有的一种解析数据方式</li>
+<li>基于其它语言的爬虫不支持bs4</li>
+</ul>
+</li>
+<li>xpath库<ul>
+<li>xpath是通用的用于解析HTML数据的库</li>
+<li>xpath的语法简洁，但是容易出现返回空列表问题</li>
+<li>xpath尽量使用相对地址</li>
+</ul>
+</li>
+<li>验证码和打码<ul>
+<li>实现简单的模拟登录</li>
+</ul>
+</li>
+<li>base64数据编码</li>
+</ol>
+<ul>
+<li>用于将数据转换为可见字符字符串</li>
+</ul>
+<ol start="11">
+<li>ip代理</li>
+</ol>
+<ul>
+<li>解决封ip的反爬措施，但是https的免费代理不好找</li>
+</ul>
+<ol start="12">
+<li>Python线程池和进程池实现异步爬虫</li>
+<li>selenium模块<ul>
+<li>对应浏览器的驱动放在python安装目录下</li>
+<li>selenium4.0以上版本在3.x版本上做出了很大改变，API变化比较大，而且不向下兼容</li>
+<li>看起来chorme浏览器更加配合selenium模块，不过在selenium4.x版本中对其它浏览器也比较友好了，目前没有遇到过增强包什么的</li>
+<li>看起来selenium4.x中无头浏览器的使用API统一了，不需要额外依赖，而且不向下兼容</li>
+</ul>
+</li>
+</ol>
+<h2 id="动态加载数据"><a href="#动态加载数据" class="headerlink" title="动态加载数据"></a>动态加载数据</h2><p>在对一个url发起请求时，页面中的数据可能由动态加载得到，重新对该url提交请求在抓包工具中查看对应url数据包，进一步判断请求得到的数据是否包含页面中的某些数据</p>
+<h2 id="判断网页是否采用AJax"><a href="#判断网页是否采用AJax" class="headerlink" title="判断网页是否采用AJax"></a>判断网页是否采用AJax</h2><p>利用爬虫爬取网页数据时，首先需要分析数据到底是在服务器端组成好发回给浏览器的？还是通过AJax请求异步发送的？</p>
+<p>AJax请求数据包在XHR选项中</p>
+<ol>
+<li><p>利用AJax时，网页变化时url往往不会发生变化</p>
+</li>
+<li><p>对于一个AJax请求，会额外返回一个X-Requested-With: XMLHttpRequest头部字段，一个普通的请求没有该字段</p>
+</li>
+</ol>
+<p><img src="/%E7%88%AC%E8%99%AB%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/bottom.png" alt="bottom"></p>
+]]></content>
+      <categories>
+        <category>爬虫</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>10.5 木兰草原一日</title>
+    <url>/%E5%B0%8F%E5%8D%9A%E4%B8%93%E5%B1%9E/10_5_%E6%9C%A8%E5%85%B0%E8%8D%89%E5%8E%9F/</url>
+    <content><![CDATA[<h1 id="10-5-木兰草原一日"><a href="#10-5-木兰草原一日" class="headerlink" title="10.5 木兰草原一日"></a>10.5 木兰草原一日</h1><p><em>双人套票-云中战歌+萌心牧场+飞天魔毯+游乐项目9选4</em></p>
+<hr>
+<p>木兰草原国庆演出时间表</p>
+<div align="center">
+<img src="/%E5%B0%8F%E5%8D%9A%E4%B8%93%E5%B1%9E/10_5_%E6%9C%A8%E5%85%B0%E8%8D%89%E5%8E%9F/timetable.jpg" align="center" width="300">
+</div>
+
+<h3 id="plan-A"><a href="#plan-A" class="headerlink" title="plan A"></a>plan A</h3><p><em><strong>第一站-吉祥广场</strong></em></p>
+<p>《敖包祭祀》- 11:30</p>
+<hr>
+<p><em><strong>第二站-云中镇古街</strong></em></p>
+<ul>
+<li>《黄梅戏》- 14:30</li>
+</ul>
+<p>17:40（backup！）</p>
+<ul>
+<li>《王府招婿》- 15:00</li>
+</ul>
+<p>18:00（backup！）</p>
+<ul>
+<li>《木兰将军巡游》- 15:30</li>
+</ul>
+<p>18:30（backup！）</p>
+<hr>
+<p><em><strong>第三站-云中镇剧场</strong></em></p>
+<p>《花木兰·云中战歌》- 16:00-16:45</p>
+<p>19:00-19:45（backup！）</p>
+<hr>
+<p><em><strong>第四站-白鹭湖</strong></em></p>
+<p>《木兰情》- 18:50</p>
+<hr>
+<p><em><strong>第五站-梦栖谷·凤凰广场</strong></em></p>
+<ul>
+<li>《篝火晚会》- 20:10</li>
+</ul>
+<p><font color="#1E90FF" size="2">p.s 提早去有好位置</font></p>
+<ul>
+<li>《音乐烟花秀》- 20:30</li>
+</ul>
+<p>maybe之后会有篝火蹦野迪和泼水节&#9835;</p>
+<hr>
+<h4 id="游玩项目"><a href="#游玩项目" class="headerlink" title="游玩项目"></a>游玩项目</h4><ul>
+<li>激流勇进（地上有水的话不能站人）</li>
+<li>彩虹滑道（和滑草比较像 :worried: ）</li>
+<li>滑草（<font color="#FF0000">草道上有水很臭！:worried:</font>）</li>
+<li>水上自行车（凉快！）</li>
+<li>凌波飞度（吊着绳索过河）</li>
+<li>射箭（一人六只箭）</li>
+<li>竹筏（据说可）</li>
+<li>吃奶鱼</li>
+<li>悠波球</li>
+</ul>
+<p>演出间隔就闲逛找点乐子！</p>
+<hr>
+<p><strong><font color="#FF0000">WARNING!</font></strong></p>
+<ul>
+<li><p><strong>带！花！露！水！</strong></p>
+</li>
+<li><p><strong>带！伞！</strong></p>
+</li>
+</ul>
+<h3 id="plan-B"><a href="#plan-B" class="headerlink" title="plan B"></a>plan B</h3><p>lie still and sleep！<font color="#FF0000">&#10084;</font>:two_hearts:</p>
+<h4 id="Hotel"><a href="#Hotel" class="headerlink" title="Hotel"></a>Hotel</h4><ul>
+<li>草原可以租帐篷露营</li>
+<li>hotel待定</li>
+</ul>
+<h4 id="Eating"><a href="#Eating" class="headerlink" title="Eating"></a>Eating</h4><p>可以带零食野餐，景区maybe也有吃饭的地方。</p>
+<h4 id="Traffic"><a href="#Traffic" class="headerlink" title="Traffic"></a>Traffic</h4><p>Taxi or</p>
+<div align="center">
+<img src="/%E5%B0%8F%E5%8D%9A%E4%B8%93%E5%B1%9E/10_5_%E6%9C%A8%E5%85%B0%E8%8D%89%E5%8E%9F/bus.jpg" align="center" width="300">
+</div>
+
+<h4 id="木兰草原"><a href="#木兰草原" class="headerlink" title="木兰草原"></a>木兰草原</h4><img src="/%E5%B0%8F%E5%8D%9A%E4%B8%93%E5%B1%9E/10_5_%E6%9C%A8%E5%85%B0%E8%8D%89%E5%8E%9F/map1.jpg" align="left" width="50%">
+
+
+
+<img src="/%E5%B0%8F%E5%8D%9A%E4%B8%93%E5%B1%9E/10_5_%E6%9C%A8%E5%85%B0%E8%8D%89%E5%8E%9F/map2.jpg" align="right" width="50%">
+
+<p><img src="/%E5%B0%8F%E5%8D%9A%E4%B8%93%E5%B1%9E/10_5_%E6%9C%A8%E5%85%B0%E8%8D%89%E5%8E%9F/bottom.png" alt="bottom"></p>
+]]></content>
+      <categories>
+        <category>小博专属</category>
+      </categories>
+  </entry>
 </search>
